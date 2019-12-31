@@ -1,0 +1,17 @@
+[{
+    "picture": "/img/houses/Dungeons&Dragons.jpg",
+    "type": "Board Game",
+    "town": "Ostuni",
+    "title": "Beautiful flat in Ostuni!",
+    "rating": 4.93,
+    "reviewsCount": 198
+  },
+  {
+    "picture": "/img/houses/Super_Smash_Bros.jpg",
+    "type": "Video Game",
+    "town": "Isla Mujeres",
+    "title": "The World Famous Seashell House ~ Casa Caracol",
+    "rating": 4.77,
+    "reviewsCount": 246
+  }
+]
