@@ -184,103 +184,105 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! easy-peasy */ "./node_modules/easy-peasy/dist/easy-peasy.esm.js");
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/Header.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
+
 var Header = function Header() {
+  var setShowLoginModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_3__["useStoreActions"])(function (actions) {
+    return actions.modals.setShowLoginModal;
+  });
+  var setShowRegistrationModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_3__["useStoreActions"])(function (actions) {
+    return actions.modals.setShowRegistrationModal;
+  });
   return __jsx("div", {
-    className: "jsx-3553530342" + " " + 'nav-container',
+    className: "jsx-3160102859" + " " + 'nav-container',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 13
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 14
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-3553530342",
+    className: "jsx-3160102859",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 15
     },
     __self: this
   }, __jsx("img", {
     src: "/img/logo.png",
     alt: "",
-    className: "jsx-3553530342",
+    className: "jsx-3160102859",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 16
     },
     __self: this
   }))), __jsx("nav", {
-    className: "jsx-3553530342",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, __jsx("ul", {
-    className: "jsx-3553530342",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, __jsx("li", {
-    className: "jsx-3553530342",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/register",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx("a", {
-    className: "jsx-3553530342",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "Sign Up"))), __jsx("li", {
-    className: "jsx-3553530342",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/login",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, __jsx("a", {
-    className: "jsx-3553530342",
+    className: "jsx-3160102859",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, "Log In"))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3553530342",
+  }, __jsx("ul", {
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
     __self: this
-  }, "ul.jsx-3553530342{margin:0;padding:0;}li.jsx-3553530342{display:block;float:left;}a.jsx-3553530342{-webkit-text-decoration:none;text-decoration:none;display:block;margin-right:15px;color:#333;}nav.jsx-3553530342 a.jsx-3553530342{padding:1em 0.5em;}.nav-container.jsx-3553530342{border-bottom:1px solid #eee;height:100px;}img.jsx-3553530342{float:left;}ul.jsx-3553530342{float:right;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBeUJnQixBQUdrQixBQUtLLEFBS08sQUFPSCxBQUlXLEFBS2xCLEFBSUMsU0E3QkYsRUEwQlosQ0FJQSxFQXpCYSxJQVliLENBaEJBLE1BS0EsSUFlZSxhQUNmLFFBWmdCLGNBQ0ksa0JBQ1AsV0FDYiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL2NvbXBvbmVudHMvSGVhZGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcblxuY29uc3QgSGVhZGVyID0gKCkgPT4gKFxuICA8ZGl2IGNsYXNzTmFtZT0nbmF2LWNvbnRhaW5lcic+XG4gICAgPExpbmsgaHJlZj0nLyc+XG4gICAgICA8YT5cbiAgICAgICAgPGltZyBzcmM9Jy9pbWcvbG9nby5wbmcnIGFsdD0nJyAvPlxuICAgICAgPC9hPlxuICAgIDwvTGluaz5cbiAgICA8bmF2PlxuICAgICAgPHVsPlxuICAgICAgICA8bGk+XG4gICAgICAgICAgPExpbmsgaHJlZj0nL3JlZ2lzdGVyJz5cbiAgICAgICAgICAgIDxhPlNpZ24gVXA8L2E+XG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2xpPlxuXG4gICAgICAgIDxsaT5cbiAgICAgICAgICA8TGluayBocmVmPScvbG9naW4nPlxuICAgICAgICAgICAgPGE+TG9nIEluPC9hPlxuICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgPC9saT5cbiAgICAgIDwvdWw+XG4gICAgPC9uYXY+XG5cbiAgICA8c3R5bGUganN4PntgXG4gICAgICB1bCB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgIH1cblxuICAgICAgbGkge1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgZmxvYXQ6IGxlZnQ7XG4gICAgICB9XG5cbiAgICAgIGEge1xuICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICBtYXJnaW4tcmlnaHQ6IDE1cHg7XG4gICAgICAgIGNvbG9yOiAjMzMzO1xuICAgICAgfVxuXG4gICAgICBuYXYgYSB7XG4gICAgICAgIHBhZGRpbmc6IDFlbSAwLjVlbTtcbiAgICAgIH1cblxuICAgICAgLm5hdi1jb250YWluZXIge1xuICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2VlZTtcbiAgICAgICAgaGVpZ2h0OiAxMDBweDtcbiAgICAgIH1cblxuICAgICAgaW1nIHtcbiAgICAgICAgZmxvYXQ6IGxlZnQ7XG4gICAgICB9XG5cbiAgICAgIHVsIHtcbiAgICAgICAgZmxvYXQ6IHJpZ2h0O1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgPC9kaXY+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBIZWFkZXI7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Header.js */"));
+  }, __jsx("li", {
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    onClick: function onClick() {
+      return setShowRegistrationModal();
+    },
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "Sign up")), __jsx("li", {
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    onClick: function onClick() {
+      return setShowLoginModal();
+    },
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, "Log in")))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "3160102859",
+    __self: this
+  }, "ul.jsx-3160102859{margin:0;padding:0;}li.jsx-3160102859{display:block;float:left;}a.jsx-3160102859{-webkit-text-decoration:none;text-decoration:none;display:block;margin-right:15px;color:#333;}nav.jsx-3160102859 a.jsx-3160102859{padding:1em 0.5em;}.nav-container.jsx-3160102859{border-bottom:1px solid #eee;height:100px;}img.jsx-3160102859{float:left;}ul.jsx-3160102859{float:right;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0NrQixBQUdvQixBQUtLLEFBS08sQUFPSCxBQUlXLEFBS2xCLEFBSUMsU0E3QkYsRUEwQlosQ0FJQSxFQXpCYSxJQVliLENBaEJBLE1BS0EsSUFlZSxhQUNmLFFBWmdCLGNBQ0ksa0JBQ1AsV0FDYiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL2NvbXBvbmVudHMvSGVhZGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcbmltcG9ydCB7IHVzZVN0b3JlQWN0aW9ucywgdXNlU3RvcmVTdGF0ZSB9IGZyb20gJ2Vhc3ktcGVhc3knO1xuXG5jb25zdCBIZWFkZXIgPSAoKSA9PiB7XG4gIGNvbnN0IHNldFNob3dMb2dpbk1vZGFsID0gdXNlU3RvcmVBY3Rpb25zKFxuICAgIGFjdGlvbnMgPT4gYWN0aW9ucy5tb2RhbHMuc2V0U2hvd0xvZ2luTW9kYWxcbiAgKTtcbiAgY29uc3Qgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsID0gdXNlU3RvcmVBY3Rpb25zKFxuICAgIGFjdGlvbnMgPT4gYWN0aW9ucy5tb2RhbHMuc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsXG4gICk7XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT0nbmF2LWNvbnRhaW5lcic+XG4gICAgICA8TGluayBocmVmPScvJz5cbiAgICAgICAgPGE+XG4gICAgICAgICAgPGltZyBzcmM9Jy9pbWcvbG9nby5wbmcnIGFsdD0nJyAvPlxuICAgICAgICA8L2E+XG4gICAgICA8L0xpbms+XG5cbiAgICAgIDxuYXY+XG4gICAgICAgIDx1bD5cbiAgICAgICAgICA8bGk+XG4gICAgICAgICAgICA8YSBocmVmPScjJyBvbkNsaWNrPXsoKSA9PiBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwoKX0+XG4gICAgICAgICAgICAgIFNpZ24gdXBcbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICAgIDxsaT5cbiAgICAgICAgICAgIDxhIGhyZWY9JyMnIG9uQ2xpY2s9eygpID0+IHNldFNob3dMb2dpbk1vZGFsKCl9PlxuICAgICAgICAgICAgICBMb2cgaW5cbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICA8L3VsPlxuICAgICAgPC9uYXY+XG5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgdWwge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICB9XG5cbiAgICAgICAgbGkge1xuICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgIGZsb2F0OiBsZWZ0O1xuICAgICAgICB9XG5cbiAgICAgICAgYSB7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICAgICAgICBjb2xvcjogIzMzMztcbiAgICAgICAgfVxuXG4gICAgICAgIG5hdiBhIHtcbiAgICAgICAgICBwYWRkaW5nOiAxZW0gMC41ZW07XG4gICAgICAgIH1cblxuICAgICAgICAubmF2LWNvbnRhaW5lciB7XG4gICAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlZWU7XG4gICAgICAgICAgaGVpZ2h0OiAxMDBweDtcbiAgICAgICAgfVxuXG4gICAgICAgIGltZyB7XG4gICAgICAgICAgZmxvYXQ6IGxlZnQ7XG4gICAgICAgIH1cblxuICAgICAgICB1bCB7XG4gICAgICAgICAgZmxvYXQ6IHJpZ2h0O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBIZWFkZXI7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Header.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -300,10 +302,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Modal */ "./components/Modal.js");
-/* harmony import */ var _LoginModal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LoginModal */ "./components/LoginModal.js");
-/* harmony import */ var _RegistrationModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./RegistrationModal */ "./components/RegistrationModal.js");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! easy-peasy */ "./node_modules/easy-peasy/dist/easy-peasy.esm.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Modal */ "./components/Modal.js");
+/* harmony import */ var _LoginModal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./LoginModal */ "./components/LoginModal.js");
+/* harmony import */ var _RegistrationModal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./RegistrationModal */ "./components/RegistrationModal.js");
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/Layout.js";
 
 
@@ -314,75 +319,94 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 var Layout = function Layout(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true),
-      showModal = _useState[0],
-      setShowModal = _useState[1];
-
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true),
-      showLoginModal = _useState2[0],
-      setShowLoginModal = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
-      showRegistrationModal = _useState3[0],
-      setShowRegistrationModal = _useState3[1];
-
+  var showModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreState"])(function (state) {
+    return state.modals.showModal;
+  });
+  var showLoginModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreState"])(function (state) {
+    return state.modals.showLoginModal;
+  });
+  var showRegistrationModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreState"])(function (state) {
+    return state.modals.showRegistrationModal;
+  });
+  var setHideModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreActions"])(function (actions) {
+    return actions.modals.setHideModal;
+  });
+  var setShowRegistrationModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreActions"])(function (actions) {
+    return actions.modals.setShowRegistrationModal;
+  });
+  var setShowLoginModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreActions"])(function (actions) {
+    return actions.modals.setShowLoginModal;
+  });
   return __jsx("div", {
-    className: "jsx-4242418061",
+    className: "jsx-3091886797",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 25
     },
     __self: this
-  }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("script", {
+    src: "https://js.stripe.com/v3/",
+    className: "jsx-3091886797",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
     },
     __self: this
   }), __jsx("main", {
-    className: "jsx-4242418061",
+    className: "jsx-3091886797",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 31
     },
     __self: this
-  }, props.content), showModal && __jsx(_Modal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, props.content), showModal && __jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__["default"], {
     close: function close() {
-      return setShowModal(false);
+      return setHideModal();
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 34
     },
     __self: this
-  }, showLoginModal && __jsx(_LoginModal__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, showLoginModal && __jsx(_LoginModal__WEBPACK_IMPORTED_MODULE_6__["default"], {
     showSignup: function showSignup() {
-      setShowRegistrationModal(true);
-      setShowLoginModal(false);
+      setShowRegistrationModal();
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 36
     },
     __self: this
-  }), showRegistrationModal && __jsx(_RegistrationModal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), showRegistrationModal && __jsx(_RegistrationModal__WEBPACK_IMPORTED_MODULE_7__["default"], {
     showLogin: function showLogin() {
-      setShowRegistrationModal(false);
-      setShowLoginModal(true);
+      setShowLoginModal();
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 43
     },
     __self: this
   })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "205592485",
+    id: "2464272997",
     __self: this
-  }, "body{margin:0;font-family:Roboto,-apple-system,BlinkMacSystemFont,Segoe UI, Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;font-size:14px;line-height:1.5;color:#333;}button{background-color:rgb(255,90,95);color:white;font-size:13px;width:100%;height:40px;border-radius:4px;cursor:pointer;}input[type='text'],input[type='email'],input[type='password']{display:block;padding:20px;font-size:20px !important;width:100%;border:1px solid #ccc;box-sizing:border-box;margin-bottom:10px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9MYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUN5QixBQUdvQixBQVV5QixBQVlwQixTQW5CRixLQW9CQyxhQUNhLEtBYmQsWUFDRyxTQWFKLE1BWkEsS0FhVyxNQVpWLFlBQ00sSUFZSSxjQVhQLFFBWUksT0FYckIsWUFZQSxnQkF6QmlCLGVBQ0MsZ0JBQ0wsV0FDYiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL2NvbXBvbmVudHMvTGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBNb2RhbCBmcm9tICcuL01vZGFsJztcbmltcG9ydCBMb2dpbk1vZGFsIGZyb20gJy4vTG9naW5Nb2RhbCc7XG5pbXBvcnQgUmVnaXN0cmF0aW9uTW9kYWwgZnJvbSAnLi9SZWdpc3RyYXRpb25Nb2RhbCc7XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IHtcbiAgY29uc3QgW3Nob3dNb2RhbCwgc2V0U2hvd01vZGFsXSA9IHVzZVN0YXRlKHRydWUpO1xuICBjb25zdCBbc2hvd0xvZ2luTW9kYWwsIHNldFNob3dMb2dpbk1vZGFsXSA9IHVzZVN0YXRlKHRydWUpO1xuICBjb25zdCBbc2hvd1JlZ2lzdHJhdGlvbk1vZGFsLCBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWxdID0gdXNlU3RhdGUoZmFsc2UpO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxIZWFkZXIgLz5cbiAgICAgIDxtYWluPntwcm9wcy5jb250ZW50fTwvbWFpbj5cblxuICAgICAge3Nob3dNb2RhbCAmJiAoXG4gICAgICAgIDxNb2RhbCBjbG9zZT17KCkgPT4gc2V0U2hvd01vZGFsKGZhbHNlKX0+XG4gICAgICAgICAge3Nob3dMb2dpbk1vZGFsICYmIChcbiAgICAgICAgICAgIDxMb2dpbk1vZGFsXG4gICAgICAgICAgICAgIHNob3dTaWdudXA9eygpID0+IHtcbiAgICAgICAgICAgICAgICBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwodHJ1ZSk7XG4gICAgICAgICAgICAgICAgc2V0U2hvd0xvZ2luTW9kYWwoZmFsc2UpO1xuICAgICAgICAgICAgICB9fVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICApfVxuICAgICAgICAgIHtzaG93UmVnaXN0cmF0aW9uTW9kYWwgJiYgKFxuICAgICAgICAgICAgPFJlZ2lzdHJhdGlvbk1vZGFsXG4gICAgICAgICAgICAgIHNob3dMb2dpbj17KCkgPT4ge1xuICAgICAgICAgICAgICAgIHNldFNob3dSZWdpc3RyYXRpb25Nb2RhbChmYWxzZSk7XG4gICAgICAgICAgICAgICAgc2V0U2hvd0xvZ2luTW9kYWwodHJ1ZSk7XG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICl9XG4gICAgICAgIDwvTW9kYWw+XG4gICAgICApfVxuXG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICBib2R5IHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFJvYm90bywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBTZWdvZSBVSSxcbiAgICAgICAgICAgIE94eWdlbiwgVWJ1bnR1LCBDYW50YXJlbGwsIEZpcmEgU2FucywgRHJvaWQgU2FucywgSGVsdmV0aWNhIE5ldWUsXG4gICAgICAgICAgICBzYW5zLXNlcmlmO1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgICBsaW5lLWhlaWdodDogMS41O1xuICAgICAgICAgIGNvbG9yOiAjMzMzO1xuICAgICAgICB9XG5cbiAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCA5MCwgOTUpO1xuICAgICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICBmb250LXNpemU6IDEzcHg7XG4gICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgaGVpZ2h0OiA0MHB4O1xuICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIH1cblxuICAgICAgICBpbnB1dFt0eXBlPSd0ZXh0J10sXG4gICAgICAgIGlucHV0W3R5cGU9J2VtYWlsJ10sXG4gICAgICAgIGlucHV0W3R5cGU9J3Bhc3N3b3JkJ10ge1xuICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgIHBhZGRpbmc6IDIwcHg7XG4gICAgICAgICAgZm9udC1zaXplOiAyMHB4ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cblxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBtYWluIHtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgICAgbWF4LXdpZHRoOiA1NmVtO1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICAgIHBhZGRpbmc6IDJlbTtcbiAgICAgICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Layout.js */"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, "body{margin:0;font-family:Roboto,-apple-system,BlinkMacSystemFont,Segoe UI, Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;font-size:14px;line-height:1.5;color:#333;}button{background-color:rgb(255,90,95);color:white;font-size:13px;width:100%;border:none;height:40px;border-radius:4px;cursor:pointer;}input[type='text'],input[type='email'],input[type='password']{display:block;padding:20px;font-size:20px !important;width:100%;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;margin-bottom:10px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9MYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBbUR5QixBQUdvQixBQVN5QixBQVlwQixTQWxCRixLQW1CQyxhQUNhLEtBYmQsWUFDRyxTQWFKLE1BWkEsS0FhVyxNQVpWLFlBQ0EsSUFZTSxRQVhBLFVBWUksUUFYUCxjQVlJLENBWHJCLGdCQWJpQixFQXlCakIsYUF4QmtCLGdCQUNMLFdBQ2IiLCJmaWxlIjoiL1VzZXJzL2Jlbm55d2FuZy9Eb2N1bWVudHMvUHJvamVjdHMvZ2FtZWRuZC9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZVN0b3JlU3RhdGUsIHVzZVN0b3JlQWN0aW9ucyB9IGZyb20gJ2Vhc3ktcGVhc3knO1xuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcblxuaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgTW9kYWwgZnJvbSAnLi9Nb2RhbCc7XG5pbXBvcnQgTG9naW5Nb2RhbCBmcm9tICcuL0xvZ2luTW9kYWwnO1xuaW1wb3J0IFJlZ2lzdHJhdGlvbk1vZGFsIGZyb20gJy4vUmVnaXN0cmF0aW9uTW9kYWwnO1xuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiB7XG4gIGNvbnN0IHNob3dNb2RhbCA9IHVzZVN0b3JlU3RhdGUoc3RhdGUgPT4gc3RhdGUubW9kYWxzLnNob3dNb2RhbCk7XG4gIGNvbnN0IHNob3dMb2dpbk1vZGFsID0gdXNlU3RvcmVTdGF0ZShzdGF0ZSA9PiBzdGF0ZS5tb2RhbHMuc2hvd0xvZ2luTW9kYWwpO1xuICBjb25zdCBzaG93UmVnaXN0cmF0aW9uTW9kYWwgPSB1c2VTdG9yZVN0YXRlKFxuICAgIHN0YXRlID0+IHN0YXRlLm1vZGFscy5zaG93UmVnaXN0cmF0aW9uTW9kYWxcbiAgKTtcblxuICBjb25zdCBzZXRIaWRlTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRIaWRlTW9kYWwpO1xuICBjb25zdCBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoXG4gICAgYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRTaG93UmVnaXN0cmF0aW9uTW9kYWxcbiAgKTtcbiAgY29uc3Qgc2V0U2hvd0xvZ2luTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoXG4gICAgYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRTaG93TG9naW5Nb2RhbFxuICApO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8c2NyaXB0IHNyYz0naHR0cHM6Ly9qcy5zdHJpcGUuY29tL3YzLyc+PC9zY3JpcHQ+XG4gICAgICA8L0hlYWQ+XG5cbiAgICAgIDxIZWFkZXIgLz5cbiAgICAgIDxtYWluPntwcm9wcy5jb250ZW50fTwvbWFpbj5cblxuICAgICAge3Nob3dNb2RhbCAmJiAoXG4gICAgICAgIDxNb2RhbCBjbG9zZT17KCkgPT4gc2V0SGlkZU1vZGFsKCl9PlxuICAgICAgICAgIHtzaG93TG9naW5Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8TG9naW5Nb2RhbFxuICAgICAgICAgICAgICBzaG93U2lnbnVwPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsKCk7XG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICl9XG4gICAgICAgICAge3Nob3dSZWdpc3RyYXRpb25Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8UmVnaXN0cmF0aW9uTW9kYWxcbiAgICAgICAgICAgICAgc2hvd0xvZ2luPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd0xvZ2luTW9kYWwoKTtcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9Nb2RhbD5cbiAgICAgICl9XG5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBmb250LWZhbWlseTogUm9ib3RvLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIFNlZ29lIFVJLFxuICAgICAgICAgICAgT3h5Z2VuLCBVYnVudHUsIENhbnRhcmVsbCwgRmlyYSBTYW5zLCBEcm9pZCBTYW5zLCBIZWx2ZXRpY2EgTmV1ZSxcbiAgICAgICAgICAgIHNhbnMtc2VyaWY7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjU7XG4gICAgICAgICAgY29sb3I6ICMzMzM7XG4gICAgICAgIH1cbiAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCA5MCwgOTUpO1xuICAgICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICBmb250LXNpemU6IDEzcHg7XG4gICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgICAgIGhlaWdodDogNDBweDtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICB9XG4gICAgICAgIGlucHV0W3R5cGU9J3RleHQnXSxcbiAgICAgICAgaW5wdXRbdHlwZT0nZW1haWwnXSxcbiAgICAgICAgaW5wdXRbdHlwZT0ncGFzc3dvcmQnXSB7XG4gICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgcGFkZGluZzogMjBweDtcbiAgICAgICAgICBmb250LXNpemU6IDIwcHggIWltcG9ydGFudDtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjY2NjO1xuICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cblxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBtYWluIHtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgICAgbWF4LXdpZHRoOiA1NmVtO1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICAgIHBhZGRpbmc6IDJlbTtcbiAgICAgICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Layout.js */"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "103826465",
     __self: this
-  }, "main.jsx-4242418061{position:relative;max-width:56em;background-color:white;padding:2em;margin:0 auto;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9MYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBdUVrQixBQUc2QixrQkFDSCxlQUNRLHVCQUNYLFlBQ0UsY0FDUSxzQkFDeEIiLCJmaWxlIjoiL1VzZXJzL2Jlbm55d2FuZy9Eb2N1bWVudHMvUHJvamVjdHMvZ2FtZWRuZC9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkZXIgZnJvbSAnLi9IZWFkZXInO1xuaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgTW9kYWwgZnJvbSAnLi9Nb2RhbCc7XG5pbXBvcnQgTG9naW5Nb2RhbCBmcm9tICcuL0xvZ2luTW9kYWwnO1xuaW1wb3J0IFJlZ2lzdHJhdGlvbk1vZGFsIGZyb20gJy4vUmVnaXN0cmF0aW9uTW9kYWwnO1xuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiB7XG4gIGNvbnN0IFtzaG93TW9kYWwsIHNldFNob3dNb2RhbF0gPSB1c2VTdGF0ZSh0cnVlKTtcbiAgY29uc3QgW3Nob3dMb2dpbk1vZGFsLCBzZXRTaG93TG9naW5Nb2RhbF0gPSB1c2VTdGF0ZSh0cnVlKTtcbiAgY29uc3QgW3Nob3dSZWdpc3RyYXRpb25Nb2RhbCwgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsXSA9IHVzZVN0YXRlKGZhbHNlKTtcblxuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8SGVhZGVyIC8+XG4gICAgICA8bWFpbj57cHJvcHMuY29udGVudH08L21haW4+XG5cbiAgICAgIHtzaG93TW9kYWwgJiYgKFxuICAgICAgICA8TW9kYWwgY2xvc2U9eygpID0+IHNldFNob3dNb2RhbChmYWxzZSl9PlxuICAgICAgICAgIHtzaG93TG9naW5Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8TG9naW5Nb2RhbFxuICAgICAgICAgICAgICBzaG93U2lnbnVwPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsKHRydWUpO1xuICAgICAgICAgICAgICAgIHNldFNob3dMb2dpbk1vZGFsKGZhbHNlKTtcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgICB7c2hvd1JlZ2lzdHJhdGlvbk1vZGFsICYmIChcbiAgICAgICAgICAgIDxSZWdpc3RyYXRpb25Nb2RhbFxuICAgICAgICAgICAgICBzaG93TG9naW49eygpID0+IHtcbiAgICAgICAgICAgICAgICBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwoZmFsc2UpO1xuICAgICAgICAgICAgICAgIHNldFNob3dMb2dpbk1vZGFsKHRydWUpO1xuICAgICAgICAgICAgICB9fVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICApfVxuICAgICAgICA8L01vZGFsPlxuICAgICAgKX1cblxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBSb2JvdG8sIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgU2Vnb2UgVUksXG4gICAgICAgICAgICBPeHlnZW4sIFVidW50dSwgQ2FudGFyZWxsLCBGaXJhIFNhbnMsIERyb2lkIFNhbnMsIEhlbHZldGljYSBOZXVlLFxuICAgICAgICAgICAgc2Fucy1zZXJpZjtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgICAgbGluZS1oZWlnaHQ6IDEuNTtcbiAgICAgICAgICBjb2xvcjogIzMzMztcbiAgICAgICAgfVxuXG4gICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgOTAsIDk1KTtcbiAgICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgICAgZm9udC1zaXplOiAxM3B4O1xuICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgIGhlaWdodDogNDBweDtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICB9XG5cbiAgICAgICAgaW5wdXRbdHlwZT0ndGV4dCddLFxuICAgICAgICBpbnB1dFt0eXBlPSdlbWFpbCddLFxuICAgICAgICBpbnB1dFt0eXBlPSdwYXNzd29yZCddIHtcbiAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICBwYWRkaW5nOiAyMHB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMjBweCAhaW1wb3J0YW50O1xuICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgbWFpbiB7XG4gICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICAgIG1heC13aWR0aDogNTZlbTtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICBwYWRkaW5nOiAyZW07XG4gICAgICAgICAgbWFyZ2luOiAwIGF1dG87XG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgTGF5b3V0O1xuIl19 */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Layout.js */"));
+  }, "main.jsx-3091886797{position:relative;max-width:56em;background-color:white;padding:2em;margin:0 auto;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9MYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUZrQixBQUc2QixrQkFDSCxlQUNRLHVCQUNYLFlBQ0UsY0FDUSxzQkFDeEIiLCJmaWxlIjoiL1VzZXJzL2Jlbm55d2FuZy9Eb2N1bWVudHMvUHJvamVjdHMvZ2FtZWRuZC9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZVN0b3JlU3RhdGUsIHVzZVN0b3JlQWN0aW9ucyB9IGZyb20gJ2Vhc3ktcGVhc3knO1xuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcblxuaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgTW9kYWwgZnJvbSAnLi9Nb2RhbCc7XG5pbXBvcnQgTG9naW5Nb2RhbCBmcm9tICcuL0xvZ2luTW9kYWwnO1xuaW1wb3J0IFJlZ2lzdHJhdGlvbk1vZGFsIGZyb20gJy4vUmVnaXN0cmF0aW9uTW9kYWwnO1xuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiB7XG4gIGNvbnN0IHNob3dNb2RhbCA9IHVzZVN0b3JlU3RhdGUoc3RhdGUgPT4gc3RhdGUubW9kYWxzLnNob3dNb2RhbCk7XG4gIGNvbnN0IHNob3dMb2dpbk1vZGFsID0gdXNlU3RvcmVTdGF0ZShzdGF0ZSA9PiBzdGF0ZS5tb2RhbHMuc2hvd0xvZ2luTW9kYWwpO1xuICBjb25zdCBzaG93UmVnaXN0cmF0aW9uTW9kYWwgPSB1c2VTdG9yZVN0YXRlKFxuICAgIHN0YXRlID0+IHN0YXRlLm1vZGFscy5zaG93UmVnaXN0cmF0aW9uTW9kYWxcbiAgKTtcblxuICBjb25zdCBzZXRIaWRlTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRIaWRlTW9kYWwpO1xuICBjb25zdCBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoXG4gICAgYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRTaG93UmVnaXN0cmF0aW9uTW9kYWxcbiAgKTtcbiAgY29uc3Qgc2V0U2hvd0xvZ2luTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoXG4gICAgYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRTaG93TG9naW5Nb2RhbFxuICApO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8c2NyaXB0IHNyYz0naHR0cHM6Ly9qcy5zdHJpcGUuY29tL3YzLyc+PC9zY3JpcHQ+XG4gICAgICA8L0hlYWQ+XG5cbiAgICAgIDxIZWFkZXIgLz5cbiAgICAgIDxtYWluPntwcm9wcy5jb250ZW50fTwvbWFpbj5cblxuICAgICAge3Nob3dNb2RhbCAmJiAoXG4gICAgICAgIDxNb2RhbCBjbG9zZT17KCkgPT4gc2V0SGlkZU1vZGFsKCl9PlxuICAgICAgICAgIHtzaG93TG9naW5Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8TG9naW5Nb2RhbFxuICAgICAgICAgICAgICBzaG93U2lnbnVwPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsKCk7XG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICl9XG4gICAgICAgICAge3Nob3dSZWdpc3RyYXRpb25Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8UmVnaXN0cmF0aW9uTW9kYWxcbiAgICAgICAgICAgICAgc2hvd0xvZ2luPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd0xvZ2luTW9kYWwoKTtcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9Nb2RhbD5cbiAgICAgICl9XG5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBmb250LWZhbWlseTogUm9ib3RvLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIFNlZ29lIFVJLFxuICAgICAgICAgICAgT3h5Z2VuLCBVYnVudHUsIENhbnRhcmVsbCwgRmlyYSBTYW5zLCBEcm9pZCBTYW5zLCBIZWx2ZXRpY2EgTmV1ZSxcbiAgICAgICAgICAgIHNhbnMtc2VyaWY7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjU7XG4gICAgICAgICAgY29sb3I6ICMzMzM7XG4gICAgICAgIH1cbiAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCA5MCwgOTUpO1xuICAgICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICBmb250LXNpemU6IDEzcHg7XG4gICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgICAgIGhlaWdodDogNDBweDtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICB9XG4gICAgICAgIGlucHV0W3R5cGU9J3RleHQnXSxcbiAgICAgICAgaW5wdXRbdHlwZT0nZW1haWwnXSxcbiAgICAgICAgaW5wdXRbdHlwZT0ncGFzc3dvcmQnXSB7XG4gICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgcGFkZGluZzogMjBweDtcbiAgICAgICAgICBmb250LXNpemU6IDIwcHggIWltcG9ydGFudDtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjY2NjO1xuICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cblxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBtYWluIHtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgICAgbWF4LXdpZHRoOiA1NmVtO1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICAgIHBhZGRpbmc6IDJlbTtcbiAgICAgICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Layout.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -400,26 +424,29 @@ var Layout = function Layout(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! easy-peasy */ "./node_modules/easy-peasy/dist/easy-peasy.esm.js");
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/LoginModal.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+  var setUser = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_1__["useStoreActions"])(function (actions) {
+    return actions.user.setUser;
+  });
+  var setHideModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_1__["useStoreActions"])(function (actions) {
+    return actions.modals.setHideModal;
+  });
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
-    },
-    __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 10
     },
     __self: this
   }, "Log In"), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 11
     },
     __self: this
   }, __jsx("form", {
@@ -429,16 +456,16 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 12
     },
     __self: this
   }, __jsx("input", {
     id: "email",
     type: "email",
-    placeholder: "Email Address",
+    placeholder: "Email address",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 17
     },
     __self: this
   }), __jsx("input", {
@@ -447,29 +474,29 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     placeholder: "Password",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 18
     },
     __self: this
   }), __jsx("button", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 19
     },
     __self: this
-  }, "Log In")), __jsx("p", {
+  }, "Log in")), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 21
     },
     __self: this
   }, "Don't have an account yet?", ' ', __jsx("a", {
-    href: "javascript:;",
+    href: "#",
     onClick: function onClick() {
       return props.showSignup();
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 23
     },
     __self: this
   }, "Sign up"))));
@@ -538,26 +565,29 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! easy-peasy */ "./node_modules/easy-peasy/dist/easy-peasy.esm.js");
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/RegistrationModal.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+  var setUser = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_1__["useStoreActions"])(function (actions) {
+    return actions.user.setUser;
+  });
+  var setHideModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_1__["useStoreActions"])(function (actions) {
+    return actions.modals.setHideModal;
+  });
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 10
     },
     __self: this
-  }, __jsx("h2", {
+  }, "Sign up"), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
-    },
-    __self: this
-  }, "Sign Up"), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 11
     },
     __self: this
   }, __jsx("form", {
@@ -567,16 +597,16 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 12
     },
     __self: this
   }, __jsx("input", {
     id: "email",
     type: "email",
-    placeholder: "Email Address",
+    placeholder: "Email address",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 17
     },
     __self: this
   }), __jsx("input", {
@@ -585,38 +615,38 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     placeholder: "Password",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 18
     },
     __self: this
   }), __jsx("input", {
     id: "passwordconfirmation",
     type: "password",
-    placeholder: "Enter Password Again",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }), __jsx("button", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "Sign Up")), __jsx("p", {
+    placeholder: "Enter password again",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
+  }), __jsx("button", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "Sign Up")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
   }, "Already have an account?", ' ', __jsx("a", {
-    href: "javascript:;",
+    href: "#",
     onClick: function onClick() {
       return props.showLogin();
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 28
     },
     __self: this
   }, "Log in"))));
@@ -10504,6 +10534,1518 @@ function toDate(argument) {
 
 /***/ }),
 
+/***/ "./node_modules/debounce/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/debounce/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Returns a function, that, as long as it continues to be invoked, will not
+ * be triggered. The function will be called after it stops being called for
+ * N milliseconds. If `immediate` is passed, trigger the function on the
+ * leading edge, instead of the trailing. The function also has a property 'clear' 
+ * that is a function which will clear the timer to prevent previously scheduled executions. 
+ *
+ * @source underscore.js
+ * @see http://unscriptable.com/2009/03/20/debouncing-javascript-methods/
+ * @param {Function} function to wrap
+ * @param {Number} timeout in ms (`100`)
+ * @param {Boolean} whether to execute at the beginning (`false`)
+ * @api public
+ */
+function debounce(func, wait, immediate){
+  var timeout, args, context, timestamp, result;
+  if (null == wait) wait = 100;
+
+  function later() {
+    var last = Date.now() - timestamp;
+
+    if (last < wait && last >= 0) {
+      timeout = setTimeout(later, wait - last);
+    } else {
+      timeout = null;
+      if (!immediate) {
+        result = func.apply(context, args);
+        context = args = null;
+      }
+    }
+  };
+
+  var debounced = function(){
+    context = this;
+    args = arguments;
+    timestamp = Date.now();
+    var callNow = immediate && !timeout;
+    if (!timeout) timeout = setTimeout(later, wait);
+    if (callNow) {
+      result = func.apply(context, args);
+      context = args = null;
+    }
+
+    return result;
+  };
+
+  debounced.clear = function() {
+    if (timeout) {
+      clearTimeout(timeout);
+      timeout = null;
+    }
+  };
+  
+  debounced.flush = function() {
+    if (timeout) {
+      result = func.apply(context, args);
+      context = args = null;
+      
+      clearTimeout(timeout);
+      timeout = null;
+    }
+  };
+
+  return debounced;
+};
+
+// Adds compatibility for ES modules
+debounce.debounce = debounce;
+
+module.exports = debounce;
+
+
+/***/ }),
+
+/***/ "./node_modules/easy-peasy/dist/easy-peasy.esm.js":
+/*!********************************************************!*\
+  !*** ./node_modules/easy-peasy/dist/easy-peasy.esm.js ***!
+  \********************************************************/
+/*! exports provided: StoreProvider, action, actionOn, computed, createComponentStore, createContextStore, createStore, createTransform, createTypedHooks, debug, memo, persist, reducer, thunk, thunkOn, useStore, useStoreActions, useStoreDispatch, useStoreRehydrated, useStoreState */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StoreProvider", function() { return StoreProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "action", function() { return action; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionOn", function() { return actionOn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "computed", function() { return computed; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createComponentStore", function() { return createComponentStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createContextStore", function() { return createContextStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return createStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createTransform", function() { return createTransform; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createTypedHooks", function() { return createTypedHooks; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "debug", function() { return debug; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "memo", function() { return memo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "persist", function() { return persist; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "thunk", function() { return thunk; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "thunkOn", function() { return thunkOn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStore", function() { return useStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStoreActions", function() { return useStoreActions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStoreDispatch", function() { return useStoreDispatch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStoreRehydrated", function() { return useStoreRehydrated; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useStoreState", function() { return useStoreState; });
+/* harmony import */ var immer_peasy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! immer-peasy */ "./node_modules/immer-peasy/dist/immer.module.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
+/* harmony import */ var memoizerific__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! memoizerific */ "./node_modules/memoizerific/memoizerific.js");
+/* harmony import */ var memoizerific__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(memoizerific__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var is_plain_object__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! is-plain-object */ "./node_modules/easy-peasy/node_modules/is-plain-object/index.js");
+/* harmony import */ var debounce__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! debounce */ "./node_modules/debounce/index.js");
+/* harmony import */ var debounce__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(debounce__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+
+
+var StoreContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
+
+// To get around it, we can conditionally useEffect on the server (no-op) and
+// useLayoutEffect in the browser. We need useLayoutEffect to ensure the store
+// subscription callback always has the selector from the latest render commit
+// available, otherwise a store update may happen between render and the effect,
+// which may cause missed updates; we also must ensure the store subscription
+// is created synchronously, otherwise a store update may occur before the
+// subscription is created and an inconsistent state may be observed
+
+var useIsomorphicLayoutEffect = typeof window !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_1__["useLayoutEffect"] : react__WEBPACK_IMPORTED_MODULE_1__["useEffect"];
+function createStoreStateHook(Context) {
+  return function useStoreState(mapState) {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(Context);
+    var mapStateRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(mapState);
+    var stateRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])();
+    var mountedRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(true);
+    var subscriptionMapStateError = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])();
+
+    var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])(function (s) {
+      return s + 1;
+    }, 0),
+        forceRender = _useReducer[1];
+
+    if (subscriptionMapStateError.current || mapStateRef.current !== mapState || stateRef.current === undefined) {
+      try {
+        stateRef.current = mapState(store.getState());
+      } catch (err) {
+        if (true) {
+          var errorMessage = "An error occurred trying to map state in a useStoreState hook: " + err.message + ".";
+
+          if (subscriptionMapStateError.current) {
+            errorMessage += "\nThis error may be related to the following error:\n" + subscriptionMapStateError.current.stack + "\n\nOriginal stack trace:";
+          }
+
+          throw new Error(errorMessage);
+        }
+
+        throw subscriptionMapStateError.current || err;
+      }
+    }
+
+    useIsomorphicLayoutEffect(function () {
+      mapStateRef.current = mapState;
+      subscriptionMapStateError.current = undefined;
+    });
+    useIsomorphicLayoutEffect(function () {
+      var checkMapState = function checkMapState() {
+        try {
+          var newState = mapStateRef.current(store.getState());
+
+          if (newState === stateRef.current) {
+            return;
+          }
+
+          stateRef.current = newState;
+        } catch (err) {
+          // see https://github.com/reduxjs/react-redux/issues/1179
+          // There is a possibility mapState will fail due to stale state or
+          // props, therefore we will just track the error and force our
+          // component to update. It should then receive the updated state
+          subscriptionMapStateError.current = err;
+        }
+
+        if (mountedRef.current) {
+          forceRender({});
+        }
+      };
+
+      var unsubscribe = store.subscribe(checkMapState);
+      checkMapState();
+      return function () {
+        mountedRef.current = false;
+        unsubscribe();
+      };
+    }, []);
+    return stateRef.current;
+  };
+}
+var useStoreState = createStoreStateHook(StoreContext);
+function createStoreActionsHook(Context) {
+  return function useStoreActions(mapActions) {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(Context);
+    return mapActions(store.getActions());
+  };
+}
+var useStoreActions = createStoreActionsHook(StoreContext);
+function createStoreDispatchHook(Context) {
+  return function useStoreDispatch() {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(Context);
+    return store.dispatch;
+  };
+}
+var useStoreDispatch = createStoreDispatchHook(StoreContext);
+function useStore() {
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(StoreContext);
+}
+function createStoreRehydratedHook(Context) {
+  return function useStoreRehydrated() {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(Context);
+
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+        rehydrated = _useState[0],
+        setRehydrated = _useState[1];
+
+    Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+      store.persist.resolveRehydration().then(function () {
+        return setRehydrated(true);
+      });
+    }, []);
+    return rehydrated;
+  };
+}
+var useStoreRehydrated = createStoreRehydratedHook(StoreContext);
+function createTypedHooks() {
+  return {
+    useStoreActions: useStoreActions,
+    useStoreDispatch: useStoreDispatch,
+    useStoreState: useStoreState,
+    useStoreRehydrated: useStoreRehydrated,
+    useStore: useStore
+  };
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+var actionSymbol = 'a';
+var actionOnSymbol = 'aO';
+var computedSymbol = 'c';
+var persistSymbol = 'p';
+var reducerSymbol = 'r';
+var thunkOnSymbol = 'tO';
+var thunkSymbol = 't';
+
+var debug = function debug(state) {
+  if (Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["isDraft"])(state)) {
+    return Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["original"])(state);
+  }
+
+  return state;
+};
+var memo = function memo(fn, cacheSize) {
+  return memoizerific__WEBPACK_IMPORTED_MODULE_4___default()(cacheSize)(fn);
+};
+var actionOn = function actionOn(targetResolver, fn) {
+  fn[actionOnSymbol] = {
+    targetResolver: targetResolver
+  };
+  return fn;
+};
+var action = function action(fn) {
+  fn[actionSymbol] = {};
+  return fn;
+};
+var defaultStateResolvers = [function (state) {
+  return state;
+}];
+var computed = function computed(fnOrStateResolvers, fn) {
+  if (typeof fn === 'function') {
+    fn[computedSymbol] = {
+      stateResolvers: fnOrStateResolvers
+    };
+    return fn;
+  }
+
+  fnOrStateResolvers[computedSymbol] = {
+    stateResolvers: defaultStateResolvers
+  };
+  return fnOrStateResolvers;
+};
+var persist = function persist(model, config) {
+  var _extends2;
+
+  return _extends({}, model, (_extends2 = {}, _extends2[persistSymbol] = config, _extends2));
+};
+var thunkOn = function thunkOn(targetResolver, fn) {
+  fn[thunkOnSymbol] = {
+    targetResolver: targetResolver
+  };
+  return fn;
+};
+var thunk = function thunk(fn) {
+  fn[thunkSymbol] = {};
+  return fn;
+};
+var reducer = function reducer(fn) {
+  fn[reducerSymbol] = {};
+  return fn;
+};
+
+var deepCloneStateWithoutComputed = function deepCloneStateWithoutComputed(source) {
+  var recursiveClone = function recursiveClone(current) {
+    var next = Object.keys(current).reduce(function (acc, key) {
+      if (Object.getOwnPropertyDescriptor(current, key).get == null) {
+        acc[key] = current[key];
+      }
+
+      return acc;
+    }, {});
+    Object.keys(next).forEach(function (key) {
+      if (Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(next[key])) {
+        next[key] = recursiveClone(next[key]);
+      }
+    });
+    return next;
+  };
+
+  return recursiveClone(source);
+};
+var isPromise = function isPromise(x) {
+  return x != null && typeof x === 'object' && typeof x.then === 'function';
+};
+function get(path, target) {
+  return path.reduce(function (acc, cur) {
+    return Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(acc) ? acc[cur] : undefined;
+  }, target);
+}
+function newify(currentPath, currentState, finalValue) {
+  if (currentPath.length === 0) {
+    return finalValue;
+  }
+
+  var newState = _extends({}, currentState);
+
+  var key = currentPath[0];
+
+  if (currentPath.length === 1) {
+    newState[key] = finalValue;
+  } else {
+    newState[key] = newify(currentPath.slice(1), newState[key], finalValue);
+  }
+
+  return newState;
+}
+var set = function set(path, target, value) {
+  if (path.length === 0) {
+    if (typeof value === 'object') {
+      Object.keys(target).forEach(function (key) {
+        delete target[key];
+      });
+      Object.keys(value).forEach(function (key) {
+        target[key] = value[key];
+      });
+    }
+
+    return;
+  }
+
+  path.reduce(function (acc, cur, idx) {
+    if (idx + 1 === path.length) {
+      acc[cur] = value;
+    } else {
+      acc[cur] = acc[cur] || {};
+    }
+
+    return acc[cur];
+  }, target);
+};
+function createSimpleProduce(disableImmer) {
+  if (disableImmer === void 0) {
+    disableImmer = false;
+  }
+
+  return function simpleProduce(path, state, fn) {
+    if (disableImmer) {
+      var _current = get(path, state);
+
+      var next = fn(_current);
+
+      if (_current !== next) {
+        return newify(path, state, next);
+      }
+
+      return state;
+    }
+
+    if (path.length === 0) {
+      var _draft = Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["createDraft"])(state);
+
+      var _result = fn(_draft);
+
+      if (_result) {
+        return Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["isDraft"])(_result) ? Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["finishDraft"])(_result) : _result;
+      }
+
+      return Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["finishDraft"])(_draft);
+    }
+
+    var parentPath = path.slice(0, path.length - 1);
+    var draft = Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["createDraft"])(state);
+    var parent = get(parentPath, state);
+    var current = get(path, draft);
+    var result = fn(current);
+
+    if (result) {
+      parent[path[path.length - 1]] = result;
+    }
+
+    return Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["finishDraft"])(draft);
+  };
+}
+
+function createReducer(disableImmer, actionReducersDict, customReducers, computedProperties) {
+  var simpleProduce = createSimpleProduce(disableImmer);
+
+  var runActionReducerAtPath = function runActionReducerAtPath(state, action, actionReducer, path) {
+    return simpleProduce(path, state, function (draft) {
+      return actionReducer(draft, action.payload);
+    });
+  };
+
+  var reducerForActions = function reducerForActions(state, action) {
+    var actionReducer = actionReducersDict[action.type];
+
+    if (actionReducer) {
+      var actionMeta = actionReducer[actionSymbol] || actionReducer[actionOnSymbol];
+      return runActionReducerAtPath(state, action, actionReducer, actionMeta.parent);
+    }
+
+    return state;
+  };
+
+  var reducerForCustomReducers = function reducerForCustomReducers(state, action) {
+    return customReducers.reduce(function (acc, _ref) {
+      var parentPath = _ref.parentPath,
+          key = _ref.key,
+          red = _ref.reducer;
+      return simpleProduce(parentPath, acc, function (draft) {
+        draft[key] = red(draft[key], action);
+        return draft;
+      });
+    }, state);
+  };
+
+  var rootReducer = function rootReducer(state, action) {
+    var stateAfterActions = reducerForActions(state, action);
+    var next = customReducers.length > 0 ? reducerForCustomReducers(stateAfterActions, action) : stateAfterActions;
+
+    if (state !== next) {
+      computedProperties.forEach(function (_ref2) {
+        var parentPath = _ref2.parentPath,
+            bindComputedProperty = _ref2.bindComputedProperty;
+        bindComputedProperty(get(parentPath, next));
+      });
+    }
+
+    return next;
+  };
+
+  return rootReducer;
+}
+
+var noopStorage = {
+  getItem: function getItem() {
+    return undefined;
+  },
+  setItem: function setItem() {
+    return undefined;
+  },
+  removeItem: function removeItem() {
+    return undefined;
+  }
+};
+var localStorage = typeof window !== 'undefined' && typeof window.localStorage !== 'undefined' ? window.localStorage : noopStorage;
+var sessionStorage = typeof window !== 'undefined' && typeof window.sessionStorage !== 'undefined' ? window.sessionStorage : noopStorage;
+
+function createStorageWrapper(storage, transformers) {
+  if (storage === void 0) {
+    storage = sessionStorage;
+  }
+
+  if (transformers === void 0) {
+    transformers = [];
+  }
+
+  if (typeof storage === 'string') {
+    if (storage === 'localStorage') {
+      storage = localStorage;
+    } else if (storage === 'sessionStorage') {
+      storage = sessionStorage;
+    } else {
+      if (true) {
+        console.warn("Invalid storage provider specified for Easy Peasy persist: " + storage + "\nValid values include \"localStorage\", \"sessionStorage\" or a custom storage engine.");
+      }
+
+      storage = noopStorage;
+    }
+  }
+
+  var outTransformers = transformers.reverse();
+
+  var serialize = function serialize(data, key) {
+    var simpleKey = key.substr(key.indexOf('@') + 1);
+    var transformed = transformers.reduce(function (acc, cur) {
+      return cur.in(acc, simpleKey);
+    }, data);
+    return storage === localStorage || storage === sessionStorage ? JSON.stringify({
+      data: transformed
+    }) : transformed;
+  };
+
+  var deserialize = function deserialize(data, key) {
+    var simpleKey = key.substr(key.indexOf('@') + 1);
+    var result = storage === localStorage || storage === sessionStorage ? JSON.parse(data).data : data;
+    return outTransformers.reduce(function (acc, cur) {
+      return cur.out(acc, simpleKey);
+    }, result);
+  };
+
+  var isAsync = isPromise(storage.getItem('_'));
+  return {
+    isAsync: isAsync,
+    getItem: function getItem(key) {
+      if (isAsync) {
+        return storage.getItem(key).then(function (wrapped) {
+          return wrapped != null ? deserialize(wrapped, key) : undefined;
+        });
+      }
+
+      var wrapped = storage.getItem(key);
+      return wrapped != null ? deserialize(wrapped, key) : undefined;
+    },
+    setItem: function setItem(key, data) {
+      return storage.setItem(key, serialize(data, key));
+    },
+    removeItem: function removeItem(key) {
+      return storage.removeItem(key);
+    }
+  };
+}
+
+function extractPersistConfig(path, persistDefinition) {
+  if (persistDefinition === void 0) {
+    persistDefinition = {};
+  }
+
+  return {
+    path: path,
+    config: {
+      blacklist: persistDefinition.blacklist || [],
+      mergeStrategy: persistDefinition.mergeStrategy || 'merge',
+      storage: createStorageWrapper(persistDefinition.storage, persistDefinition.transformers),
+      whitelist: persistDefinition.whitelist || []
+    }
+  };
+}
+
+function resolvePersistTargets(target, whitelist, blacklist) {
+  var targets = Object.keys(target);
+
+  if (whitelist.length > 0) {
+    targets = targets.reduce(function (acc, cur) {
+      if (whitelist.findIndex(function (x) {
+        return x === cur;
+      }) !== -1) {
+        return [].concat(acc, [cur]);
+      }
+
+      return acc;
+    }, []);
+  }
+
+  if (blacklist.length > 0) {
+    targets = targets.reduce(function (acc, cur) {
+      if (blacklist.findIndex(function (x) {
+        return x === cur;
+      }) !== -1) {
+        return acc;
+      }
+
+      return [].concat(acc, [cur]);
+    }, []);
+  }
+
+  return targets;
+}
+
+function createPersistor(persistKey, references) {
+  return debounce__WEBPACK_IMPORTED_MODULE_6___default()(function () {
+    references.internals.persistenceConfig.forEach(function (_ref) {
+      var path = _ref.path,
+          config = _ref.config;
+      var storage = config.storage,
+          whitelist = config.whitelist,
+          blacklist = config.blacklist;
+      var state = references.getState();
+      var persistRoot = deepCloneStateWithoutComputed(get(path, state));
+      var targets = resolvePersistTargets(persistRoot, whitelist, blacklist);
+      targets.forEach(function (key) {
+        var targetPath = [].concat(path, [key]);
+        storage.setItem(persistKey(targetPath), get(targetPath, state));
+      });
+    });
+  }, 1000);
+}
+function createPersistMiddleware(persistor, references) {
+  return function () {
+    return function (next) {
+      return function (action) {
+        var state = next(action);
+
+        if (action && action.type !== '@action.ePRS' && references.internals.persistenceConfig.length > 0) {
+          persistor(state);
+        }
+
+        return state;
+      };
+    };
+  };
+}
+function createPersistenceClearer(persistKey, references) {
+  return function () {
+    return new Promise(function (resolve, reject) {
+      references.internals.persistenceConfig.forEach(function (_ref2) {
+        var path = _ref2.path,
+            config = _ref2.config;
+        var storage = config.storage,
+            whitelist = config.whitelist,
+            blacklist = config.blacklist;
+        var persistRoot = get(path, references.getState());
+        var targets = resolvePersistTargets(persistRoot, whitelist, blacklist);
+
+        if (targets.length > 0) {
+          Promise.all(targets.map(function (key) {
+            var targetPath = [].concat(path, [key]);
+            return storage.removeItem(persistKey(targetPath));
+          })).then(function () {
+            return resolve();
+          }, reject);
+        } else {
+          resolve();
+        }
+      });
+    });
+  };
+}
+function rehydrateStateFromPersistIfNeeded(persistKey, replaceState, references) {
+  // If we have any persist configs we will attemp to perform a state rehydration
+  var resolveRehydration = Promise.resolve();
+
+  if (references.internals.persistenceConfig.length > 0) {
+    references.internals.persistenceConfig.forEach(function (persistInstance) {
+      var path = persistInstance.path,
+          config = persistInstance.config;
+      var blacklist = config.blacklist,
+          mergeStrategy = config.mergeStrategy,
+          storage = config.storage,
+          whitelist = config.whitelist;
+      var state = references.internals.defaultState;
+      var persistRoot = deepCloneStateWithoutComputed(get(path, state));
+      var targets = resolvePersistTargets(persistRoot, whitelist, blacklist);
+
+      var applyRehydrationStrategy = function applyRehydrationStrategy(originalState, rehydratedState) {
+        if (mergeStrategy === 'overwrite') {
+          set(path, originalState, rehydratedState);
+        } else if (mergeStrategy === 'merge') {
+          var target = get(path, originalState);
+          Object.keys(rehydratedState).forEach(function (key) {
+            target[key] = rehydratedState[key];
+          });
+        } else if (mergeStrategy === 'mergeDeep') {
+          var _target = get(path, originalState);
+
+          var setAt = function setAt(currentTarget, currentNext) {
+            Object.keys(currentNext).forEach(function (key) {
+              var data = currentNext[key];
+
+              if (Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(data)) {
+                if (!Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(currentTarget[key])) {
+                  currentTarget[key] = {};
+                }
+
+                setAt(currentTarget[key], data);
+              } else {
+                currentTarget[key] = data;
+              }
+            });
+          };
+
+          setAt(_target, rehydratedState);
+        }
+      };
+
+      if (storage.isAsync) {
+        var asyncStateResolvers = targets.reduce(function (acc, key) {
+          var targetPath = [].concat(path, [key]);
+          var dataPromise = storage.getItem(persistKey(targetPath));
+
+          if (isPromise(dataPromise)) {
+            acc.push({
+              key: key,
+              dataPromise: dataPromise
+            });
+          }
+
+          return acc;
+        }, []);
+
+        if (asyncStateResolvers.length > 0) {
+          resolveRehydration = Promise.all(asyncStateResolvers.map(function (x) {
+            return x.dataPromise;
+          })).then(function (resolvedData) {
+            var next = resolvedData.reduce(function (acc, cur, idx) {
+              var key = asyncStateResolvers[idx].key;
+
+              if (cur !== undefined) {
+                acc[key] = cur;
+              }
+
+              return acc;
+            }, {});
+
+            if (Object.keys(next).length === 0) {
+              return;
+            }
+
+            applyRehydrationStrategy(state, next);
+            replaceState(state);
+          });
+        }
+      } else {
+        var next = targets.reduce(function (acc, key) {
+          var targetPath = [].concat(path, [key]);
+          var data = storage.getItem(persistKey(targetPath));
+
+          if (data !== undefined) {
+            acc[key] = data;
+          }
+
+          return acc;
+        }, {});
+        applyRehydrationStrategy(state, next);
+        replaceState(state);
+      }
+    });
+  }
+
+  return resolveRehydration;
+}
+
+function createActionCreator(actionDefinition, meta, references) {
+  var prefix = actionDefinition[actionSymbol] ? '@action' : '@actionOn';
+  var type = prefix + "." + meta.path.join('.');
+  var actionMeta = actionDefinition[actionSymbol] || actionDefinition[actionOnSymbol];
+  actionMeta.actionName = meta.key;
+  actionMeta.type = type;
+  actionMeta.parent = meta.parent;
+  actionMeta.path = meta.path;
+
+  var actionCreator = function actionCreator(payload) {
+    var action = {
+      type: type,
+      payload: payload
+    };
+
+    if (actionDefinition[actionOnSymbol] && actionMeta.resolvedTargets) {
+      payload.resolvedTargets = [].concat(actionMeta.resolvedTargets);
+    }
+
+    var result = references.dispatch(action);
+    return result;
+  };
+
+  actionCreator.type = type;
+  return actionCreator;
+}
+
+function createThunkHandler(thunkDefinition, meta, references, injections, actionCreators) {
+  var thunkMeta = thunkDefinition[thunkSymbol] || thunkDefinition[thunkOnSymbol];
+  return function (payload) {
+    var helpers = {
+      dispatch: references.dispatch,
+      getState: function getState() {
+        return get(meta.parent, references.getState());
+      },
+      getStoreActions: function getStoreActions() {
+        return actionCreators;
+      },
+      getStoreState: references.getState,
+      injections: injections,
+      meta: meta
+    };
+
+    if (thunkDefinition[thunkOnSymbol] && thunkMeta.resolvedTargets) {
+      payload.resolvedTargets = [].concat(thunkMeta.resolvedTargets);
+    }
+
+    return thunkDefinition(get(meta.parent, actionCreators), payload, helpers);
+  };
+}
+function createThunkActionsCreator(thunkDefinition, meta, references, thunkHandler) {
+  var prefix = thunkDefinition[thunkSymbol] ? '@thunk' : '@thunkOn';
+  var type = prefix + "." + meta.path.join('.');
+  var startType = type + "(start)";
+  var successType = type + "(success)";
+  var failType = type + "(fail)";
+  var thunkMeta = thunkDefinition[thunkSymbol] || thunkDefinition[thunkOnSymbol];
+  thunkMeta.type = type;
+  thunkMeta.actionName = meta.key;
+  thunkMeta.parent = meta.parent;
+  thunkMeta.path = meta.path;
+
+  var actionCreator = function actionCreator(payload) {
+    var dispatchError = function dispatchError(err) {
+      references.dispatch({
+        type: failType,
+        payload: payload,
+        error: err
+      });
+      references.dispatch({
+        type: type,
+        payload: payload,
+        error: err
+      });
+    };
+
+    var dispatchSuccess = function dispatchSuccess(result) {
+      references.dispatch({
+        type: successType,
+        payload: payload,
+        result: result
+      });
+      references.dispatch({
+        type: type,
+        payload: payload,
+        result: result
+      });
+    };
+
+    references.dispatch({
+      type: startType,
+      payload: payload
+    });
+
+    try {
+      var result = references.dispatch(function () {
+        return thunkHandler(payload);
+      });
+
+      if (isPromise(result)) {
+        return result.then(function (resolved) {
+          dispatchSuccess(resolved);
+          return resolved;
+        }).catch(function (err) {
+          dispatchError(err);
+          throw err;
+        });
+      }
+
+      dispatchSuccess(result);
+      return result;
+    } catch (err) {
+      dispatchError(err);
+      throw err;
+    }
+  };
+
+  actionCreator.type = type;
+  actionCreator.startType = startType;
+  actionCreator.successType = successType;
+  actionCreator.failType = failType;
+  return actionCreator;
+}
+
+function createListenerMiddleware(references) {
+  return function () {
+    return function (next) {
+      return function (action) {
+        var result = next(action);
+
+        if (action && references.internals.listenerActionMap[action.type] && references.internals.listenerActionMap[action.type].length > 0) {
+          var sourceAction = references.internals.actionCreatorDict[action.type];
+          references.internals.listenerActionMap[action.type].forEach(function (actionCreator) {
+            actionCreator({
+              type: sourceAction ? sourceAction.type : action.type,
+              payload: action.payload,
+              error: action.error,
+              result: action.result
+            });
+          });
+        }
+
+        return result;
+      };
+    };
+  };
+}
+function bindListenerDefinitions(listenerDefinitions, actionCreators, actionCreatorDict, listenerActionMap) {
+  listenerDefinitions.forEach(function (listenerActionOrThunk) {
+    var listenerMeta = listenerActionOrThunk[actionOnSymbol] || listenerActionOrThunk[thunkOnSymbol];
+    var targets = listenerMeta.targetResolver(get(listenerMeta.parent, actionCreators), actionCreators);
+    var targetTypes = (Array.isArray(targets) ? targets : [targets]).reduce(function (acc, target) {
+      if (typeof target === 'function' && target.type && actionCreatorDict[target.type]) {
+        acc.push(target.type);
+      } else if (typeof target === 'string') {
+        acc.push(target);
+      }
+
+      return acc;
+    }, []);
+    listenerMeta.resolvedTargets = targetTypes;
+    targetTypes.forEach(function (targetType) {
+      var listenerReg = listenerActionMap[targetType] || [];
+      listenerReg.push(actionCreatorDict[listenerMeta.type]);
+      listenerActionMap[targetType] = listenerReg;
+    });
+  });
+}
+
+function createComputedPropertyBinder(parentPath, key, definition, computedState, references) {
+  var computedMeta = definition[computedSymbol];
+  var memoisedResultFn = memoizerific__WEBPACK_IMPORTED_MODULE_4___default()(1)(definition);
+  return function createComputedProperty(o) {
+    Object.defineProperty(o, key, {
+      configurable: true,
+      enumerable: true,
+      get: function get$1() {
+        var storeState;
+
+        if (computedState.isInReducer) {
+          storeState = computedState.currentState;
+        } else if (references.getState == null) {
+          return undefined;
+        } else {
+          try {
+            storeState = references.getState();
+          } catch (err) {
+            if (true) {
+              console.warn('Invalid access attempt to a computed property');
+            }
+
+            return undefined;
+          }
+        }
+
+        var state = get(parentPath, storeState);
+
+        var inputs = computedMeta.stateResolvers.map(function (resolver) {
+          return resolver(state, storeState);
+        });
+        return memoisedResultFn.apply(void 0, inputs);
+      }
+    });
+  };
+}
+function createComputedPropertiesMiddleware(references) {
+  return function (store) {
+    return function (next) {
+      return function (action) {
+        references.internals.computedState.currentState = store.getState();
+        references.internals.computedState.isInReducer = true;
+        return next(action);
+      };
+    };
+  };
+}
+
+function extractDataFromModel(model, initialState, injections, references) {
+  var defaultState = initialState;
+  var actionCreatorDict = {};
+  var actionCreators = {};
+  var actionReducersDict = {};
+  var actionThunks = {};
+  var computedProperties = [];
+  var customReducers = [];
+  var listenerActionCreators = {};
+  var listenerActionMap = {};
+  var listenerDefinitions = [];
+  var persistenceConfig = [];
+  var computedState = {
+    isInReducer: false,
+    currentState: defaultState
+  };
+
+  var recursiveExtractFromModel = function recursiveExtractFromModel(current, parentPath) {
+    return Object.keys(current).forEach(function (key) {
+      var value = current[key];
+      var path = [].concat(parentPath, [key]);
+      var meta = {
+        parent: parentPath,
+        path: path,
+        key: key
+      };
+
+      var handleValueAsState = function handleValueAsState() {
+        var initialParentRef = get(parentPath, initialState);
+
+        if (initialParentRef && key in initialParentRef) {
+          set(path, defaultState, initialParentRef[key]);
+        } else {
+          set(path, defaultState, value);
+        }
+      };
+
+      if (key === persistSymbol) {
+        persistenceConfig.push(extractPersistConfig(parentPath, value));
+        return;
+      }
+
+      if (typeof value === 'function') {
+        if (value[actionSymbol] || value[actionOnSymbol]) {
+          var actionReducer = value;
+          var actionCreator = createActionCreator(value, meta, references);
+          actionCreatorDict[actionCreator.type] = actionCreator;
+          actionReducersDict[actionCreator.type] = actionReducer;
+
+          if (meta.key !== 'ePRS') {
+            if (value[actionOnSymbol]) {
+              listenerDefinitions.push(value);
+              set(path, listenerActionCreators, actionCreator);
+            } else {
+              set(path, actionCreators, actionCreator);
+            }
+          }
+        } else if (value[thunkSymbol] || value[thunkOnSymbol]) {
+          var thunkHandler = createThunkHandler(value, meta, references, injections, actionCreators);
+
+          var _actionCreator = createThunkActionsCreator(value, meta, references, thunkHandler);
+
+          set(path, actionThunks, thunkHandler);
+          actionCreatorDict[_actionCreator.type] = _actionCreator;
+
+          if (value[thunkOnSymbol]) {
+            listenerDefinitions.push(value);
+            set(path, listenerActionCreators, _actionCreator);
+          } else {
+            set(path, actionCreators, _actionCreator);
+          }
+        } else if (value[computedSymbol]) {
+          var parent = get(parentPath, defaultState);
+          var bindComputedProperty = createComputedPropertyBinder(parentPath, key, value, computedState, references);
+          bindComputedProperty(parent);
+          computedProperties.push({
+            key: key,
+            parentPath: parentPath,
+            bindComputedProperty: bindComputedProperty
+          });
+        } else if (value[reducerSymbol]) {
+          customReducers.push({
+            key: key,
+            parentPath: parentPath,
+            reducer: value
+          });
+        } else {
+          handleValueAsState();
+        }
+      } else if (Object(is_plain_object__WEBPACK_IMPORTED_MODULE_5__["default"])(value)) {
+        var existing = get(path, defaultState);
+
+        if (existing == null) {
+          set(path, defaultState, {});
+        }
+
+        recursiveExtractFromModel(value, path);
+      } else {
+        handleValueAsState();
+      }
+    });
+  };
+
+  recursiveExtractFromModel(model, []);
+  bindListenerDefinitions(listenerDefinitions, actionCreators, actionCreatorDict, listenerActionMap);
+  return {
+    actionCreatorDict: actionCreatorDict,
+    actionCreators: actionCreators,
+    actionReducersDict: actionReducersDict,
+    computedProperties: computedProperties,
+    customReducers: customReducers,
+    computedState: computedState,
+    defaultState: defaultState,
+    listenerActionCreators: listenerActionCreators,
+    listenerActionMap: listenerActionMap,
+    persistenceConfig: persistenceConfig
+  };
+}
+
+function createStoreInternals(_ref) {
+  var disableImmer = _ref.disableImmer,
+      initialState = _ref.initialState,
+      injections = _ref.injections,
+      model = _ref.model,
+      reducerEnhancer = _ref.reducerEnhancer,
+      references = _ref.references;
+
+  var _extractDataFromModel = extractDataFromModel(model, initialState, injections, references),
+      actionCreatorDict = _extractDataFromModel.actionCreatorDict,
+      actionCreators = _extractDataFromModel.actionCreators,
+      actionReducersDict = _extractDataFromModel.actionReducersDict,
+      computedState = _extractDataFromModel.computedState,
+      computedProperties = _extractDataFromModel.computedProperties,
+      customReducers = _extractDataFromModel.customReducers,
+      defaultState = _extractDataFromModel.defaultState,
+      listenerActionCreators = _extractDataFromModel.listenerActionCreators,
+      listenerActionMap = _extractDataFromModel.listenerActionMap,
+      persistenceConfig = _extractDataFromModel.persistenceConfig;
+
+  var rootReducer = createReducer(disableImmer, actionReducersDict, customReducers, computedProperties);
+  return {
+    actionCreatorDict: actionCreatorDict,
+    actionCreators: actionCreators,
+    computedProperties: computedProperties,
+    computedState: computedState,
+    defaultState: defaultState,
+    listenerActionCreators: listenerActionCreators,
+    listenerActionMap: listenerActionMap,
+    persistenceConfig: persistenceConfig,
+    reducer: reducerEnhancer(rootReducer)
+  };
+}
+
+function createStore(model, options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  var modelClone = deepCloneStateWithoutComputed(model);
+  var _options = options,
+      compose$1 = _options.compose,
+      _options$devTools = _options.devTools,
+      devTools = _options$devTools === void 0 ? true : _options$devTools,
+      _options$disableImmer = _options.disableImmer,
+      disableImmer = _options$disableImmer === void 0 ? false : _options$disableImmer,
+      _options$enhancers = _options.enhancers,
+      enhancers = _options$enhancers === void 0 ? [] : _options$enhancers,
+      _options$initialState = _options.initialState,
+      initialState = _options$initialState === void 0 ? {} : _options$initialState,
+      injections = _options.injections,
+      _options$middleware = _options.middleware,
+      middleware = _options$middleware === void 0 ? [] : _options$middleware,
+      _options$mockActions = _options.mockActions,
+      mockActions = _options$mockActions === void 0 ? false : _options$mockActions,
+      _options$name = _options.name,
+      storeName = _options$name === void 0 ? "EasyPeasyStore" : _options$name,
+      _options$reducerEnhan = _options.reducerEnhancer,
+      reducerEnhancer = _options$reducerEnhan === void 0 ? function (rootReducer) {
+    return rootReducer;
+  } : _options$reducerEnhan;
+
+  var bindReplaceState = function bindReplaceState(modelDef) {
+    return _extends({}, modelDef, {
+      ePRS: action(function (_, payload) {
+        return payload;
+      })
+    });
+  };
+
+  var references = {};
+  var modelDefinition = bindReplaceState(modelClone);
+  var mockedActions = [];
+
+  var persistKey = function persistKey(targetPath) {
+    return "[" + storeName + "]@" + targetPath.join('.');
+  };
+
+  var persistor = createPersistor(persistKey, references);
+  var persistMiddleware = createPersistMiddleware(persistor, references);
+  var clearPersistance = createPersistenceClearer(persistKey, references);
+
+  var replaceState = function replaceState(nextState) {
+    return references.internals.actionCreatorDict['@action.ePRS'](nextState);
+  };
+
+  var bindStoreInternals = function bindStoreInternals(state) {
+    if (state === void 0) {
+      state = {};
+    }
+
+    references.internals = createStoreInternals({
+      disableImmer: disableImmer,
+      initialState: state,
+      injections: injections,
+      model: modelDefinition,
+      reducerEnhancer: reducerEnhancer,
+      references: references
+    });
+  };
+
+  var mockActionsMiddleware = function mockActionsMiddleware() {
+    return function () {
+      return function (action) {
+        if (action != null) {
+          mockedActions.push(action);
+        }
+
+        return undefined;
+      };
+    };
+  };
+
+  var composeEnhancers = compose$1 || (devTools && typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+    name: storeName
+  }) : redux__WEBPACK_IMPORTED_MODULE_2__["compose"]);
+  bindStoreInternals(initialState);
+  var easyPeasyMiddleware = [createComputedPropertiesMiddleware(references), redux_thunk__WEBPACK_IMPORTED_MODULE_3__["default"]].concat(middleware, [createListenerMiddleware(references), persistMiddleware]);
+
+  if (mockActions) {
+    easyPeasyMiddleware.push(mockActionsMiddleware);
+  }
+
+  var store = Object(redux__WEBPACK_IMPORTED_MODULE_2__["createStore"])(references.internals.reducer, references.internals.defaultState, composeEnhancers.apply(void 0, [redux__WEBPACK_IMPORTED_MODULE_2__["applyMiddleware"].apply(void 0, easyPeasyMiddleware)].concat(enhancers)));
+  store.subscribe(function () {
+    references.internals.computedState.isInReducer = false;
+  });
+  references.dispatch = store.dispatch;
+  references.getState = store.getState;
+
+  var bindActionCreators = function bindActionCreators() {
+    Object.keys(store.dispatch).forEach(function (actionsKey) {
+      delete store.dispatch[actionsKey];
+    });
+    Object.keys(references.internals.actionCreators).forEach(function (key) {
+      store.dispatch[key] = references.internals.actionCreators[key];
+    });
+  };
+
+  bindActionCreators();
+
+  var rebindStore = function rebindStore(removeKey) {
+    var currentState = store.getState();
+
+    if (removeKey) {
+      delete currentState[removeKey];
+    }
+
+    bindStoreInternals(currentState);
+    store.replaceReducer(references.internals.reducer);
+    replaceState(references.internals.defaultState);
+    bindActionCreators();
+  };
+
+  var _resolveRehydration = rehydrateStateFromPersistIfNeeded(persistKey, replaceState, references);
+
+  return Object.assign(store, {
+    addModel: function addModel(key, modelForKey) {
+      if (modelDefinition[key] && "development" !== 'production') {
+        // eslint-disable-next-line no-console
+        console.warn("easy-peasy: The store model already contains a model definition for \"" + key + "\"");
+        store.removeModel(key);
+      }
+
+      modelDefinition[key] = modelForKey;
+      rebindStore();
+    },
+    clearMockedActions: function clearMockedActions() {
+      mockedActions = [];
+    },
+    getActions: function getActions() {
+      return references.internals.actionCreators;
+    },
+    getListeners: function getListeners() {
+      return references.internals.listenerActionCreators;
+    },
+    getMockedActions: function getMockedActions() {
+      return [].concat(mockedActions);
+    },
+    persist: {
+      clear: clearPersistance,
+      flush: function flush() {
+        return persistor.flush();
+      },
+      resolveRehydration: function resolveRehydration() {
+        return _resolveRehydration;
+      }
+    },
+    reconfigure: function reconfigure(newModel) {
+      modelDefinition = bindReplaceState(newModel);
+      rebindStore();
+    },
+    removeModel: function removeModel(key) {
+      if (!modelDefinition[key]) {
+        if (true) {
+          // eslint-disable-next-line no-console
+          console.warn("easy-peasy: The store model does not contain a model definition for \"" + key + "\"");
+        }
+
+        return;
+      }
+
+      delete modelDefinition[key];
+      rebindStore(key);
+    }
+  });
+}
+
+/* eslint-disable react/prop-types */
+function createContextStore(model, config) {
+  var StoreContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
+
+  function Provider(_ref) {
+    var children = _ref.children,
+        initialData = _ref.initialData;
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(function () {
+      return createStore(typeof model === 'function' ? model(initialData) : model, config);
+    }, []);
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StoreContext.Provider, {
+      value: store
+    }, children);
+  }
+
+  function useStore() {
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(StoreContext);
+  }
+
+  return {
+    Provider: Provider,
+    useStore: useStore,
+    useStoreState: createStoreStateHook(StoreContext),
+    useStoreActions: createStoreActionsHook(StoreContext),
+    useStoreDispatch: createStoreDispatchHook(StoreContext),
+    useStoreRehydrated: createStoreRehydratedHook(StoreContext)
+  };
+}
+
+/**
+ * Some good references on the topic of reinitialisation:
+ * - https://github.com/facebook/react/issues/14830
+ */
+
+function createComponentStore(model, config) {
+  return function useLocalStore(initialData) {
+    var store = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(function () {
+      return createStore(typeof model === 'function' ? model(initialData) : model, config);
+    }, []);
+    var previousStateRef = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(store.getState());
+
+    var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(function () {
+      return store.getState();
+    }),
+        currentState = _useState[0],
+        setCurrentState = _useState[1];
+
+    Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+      return store.subscribe(function () {
+        var nextState = store.getState();
+
+        if (previousStateRef.current !== nextState) {
+          previousStateRef.current = nextState;
+          setCurrentState(nextState);
+        }
+      });
+    }, [store]);
+    return [currentState, store.getActions()];
+  };
+}
+
+/**
+ * This file has been copied from redux-persist.
+ * The intention being to support as much of the redux-persist API as possible.
+ */
+function createTransform(inbound, outbound, config) {
+  if (config === void 0) {
+    config = {};
+  }
+
+  var whitelist = config.whitelist || null;
+  var blacklist = config.blacklist || null;
+
+  function whitelistBlacklistCheck(key) {
+    if (whitelist && whitelist.indexOf(key) === -1) return true;
+    if (blacklist && blacklist.indexOf(key) !== -1) return true;
+    return false;
+  }
+
+  return {
+    in: function _in(data, key, fullState) {
+      return !whitelistBlacklistCheck(key) && inbound ? inbound(data, key, fullState) : data;
+    },
+    out: function out(data, key, fullState) {
+      return !whitelistBlacklistCheck(key) && outbound ? outbound(data, key, fullState) : data;
+    }
+  };
+}
+
+function StoreProvider(_ref) {
+  var children = _ref.children,
+      store = _ref.store;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StoreContext.Provider, {
+    value: store
+  }, children);
+}
+
+/**
+ * The auto freeze feature of immer doesn't seem to work in our testing. We have
+ * explicitly disabled it to avoid perf issues.
+ */
+
+Object(immer_peasy__WEBPACK_IMPORTED_MODULE_0__["setAutoFreeze"])(false);
+
+
+//# sourceMappingURL=easy-peasy.esm.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/easy-peasy/node_modules/is-plain-object/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/easy-peasy/node_modules/is-plain-object/index.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isPlainObject; });
+/* harmony import */ var isobject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! isobject */ "./node_modules/easy-peasy/node_modules/isobject/index.js");
+/*!
+ * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+
+
+function isObjectObject(o) {
+  return Object(isobject__WEBPACK_IMPORTED_MODULE_0__["default"])(o) === true
+    && Object.prototype.toString.call(o) === '[object Object]';
+}
+
+function isPlainObject(o) {
+  var ctor,prot;
+
+  if (isObjectObject(o) === false) return false;
+
+  // If has modified constructor
+  ctor = o.constructor;
+  if (typeof ctor !== 'function') return false;
+
+  // If has modified prototype
+  prot = ctor.prototype;
+  if (isObjectObject(prot) === false) return false;
+
+  // If constructor does not have an Object-specific method
+  if (prot.hasOwnProperty('isPrototypeOf') === false) {
+    return false;
+  }
+
+  // Most likely a plain Object
+  return true;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/easy-peasy/node_modules/isobject/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/easy-peasy/node_modules/isobject/index.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isObject; });
+/*!
+ * isobject <https://github.com/jonschlinkert/isobject>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+function isObject(val) {
+  return val != null && typeof val === 'object' && Array.isArray(val) === false;
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/function-bind/implementation.js":
 /*!******************************************************!*\
   !*** ./node_modules/function-bind/implementation.js ***!
@@ -10599,6 +12141,1394 @@ var bind = __webpack_require__(/*! function-bind */ "./node_modules/function-bin
 
 module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
+
+/***/ }),
+
+/***/ "./node_modules/immer-peasy/dist/immer.module.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/immer-peasy/dist/immer.module.js ***!
+  \*******************************************************/
+/*! exports provided: default, Immer, applyPatches, createDraft, finishDraft, immerable, isDraft, isDraftable, nothing, original, produce, setAutoFreeze, setUseProxies */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Immer", function() { return Immer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "applyPatches", function() { return applyPatches$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createDraft", function() { return createDraft; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "finishDraft", function() { return finishDraft; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "immerable", function() { return DRAFTABLE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isDraft", function() { return isDraft; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isDraftable", function() { return isDraftable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nothing", function() { return NOTHING; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "original", function() { return original; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "produce", function() { return produce; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setAutoFreeze", function() { return setAutoFreeze; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setUseProxies", function() { return setUseProxies; });
+var obj;
+var NOTHING = typeof Symbol !== "undefined" ? Symbol("immer-nothing") : ( obj = {}, obj["immer-nothing"] = true, obj );
+var DRAFTABLE = typeof Symbol !== "undefined" && Symbol.for ? Symbol.for("immer-draftable") : "__$immer_draftable";
+var DRAFT_STATE = typeof Symbol !== "undefined" && Symbol.for ? Symbol.for("immer-state") : "__$immer_state";
+function isDraft(value) {
+  return !!value && !!value[DRAFT_STATE];
+}
+function isDraftable(value) {
+  if (!value || typeof value !== "object") { return false; }
+  if (Array.isArray(value)) { return true; }
+  var proto = Object.getPrototypeOf(value);
+  if (!proto || proto === Object.prototype) { return true; }
+  return !!value[DRAFTABLE] || !!value.constructor[DRAFTABLE];
+}
+function original(value) {
+  if (value && value[DRAFT_STATE]) {
+    return value[DRAFT_STATE].base;
+  } // otherwise return undefined
+
+}
+var assign = Object.assign || function assign(target, value) {
+  for (var key in value) {
+    if (has(value, key)) {
+      target[key] = value[key];
+    }
+  }
+
+  return target;
+};
+var ownKeys = typeof Reflect !== "undefined" && Reflect.ownKeys ? Reflect.ownKeys : typeof Object.getOwnPropertySymbols !== "undefined" ? function (obj) { return Object.getOwnPropertyNames(obj).concat(Object.getOwnPropertySymbols(obj)); } : Object.getOwnPropertyNames;
+function shallowCopy(base, invokeGetters) {
+  if ( invokeGetters === void 0 ) invokeGetters = false;
+
+  if (Array.isArray(base)) { return base.slice(); }
+  var clone = Object.create(Object.getPrototypeOf(base));
+  ownKeys(base).forEach(function (key) {
+    if (key === DRAFT_STATE) {
+      return; // Never copy over draft state.
+    }
+
+    var desc = Object.getOwnPropertyDescriptor(base, key);
+    var value = desc.value;
+
+    if (desc.get) {
+      if (invokeGetters) {
+        value = desc.get.call(base);
+      }
+    }
+
+    if (desc.enumerable) {
+      clone[key] = value;
+    } else if (invokeGetters) {
+      Object.defineProperty(clone, key, {
+        value: value,
+        writable: true,
+        configurable: true
+      });
+    }
+  });
+  return clone;
+}
+function each(value, cb) {
+  if (Array.isArray(value)) {
+    for (var i = 0; i < value.length; i++) { cb(i, value[i], value); }
+  } else {
+    ownKeys(value).forEach(function (key) { return cb(key, value[key], value); });
+  }
+}
+function isEnumerable(base, prop) {
+  var desc = Object.getOwnPropertyDescriptor(base, prop);
+  return !!desc && desc.enumerable;
+}
+function has(thing, prop) {
+  return Object.prototype.hasOwnProperty.call(thing, prop);
+}
+function is(x, y) {
+  // From: https://github.com/facebook/fbjs/blob/c69904a511b900266935168223063dd8772dfc40/packages/fbjs/src/core/shallowEqual.js
+  if (x === y) {
+    return x !== 0 || 1 / x === 1 / y;
+  } else {
+    return x !== x && y !== y;
+  }
+}
+
+/** Each scope represents a `produce` call. */
+
+var ImmerScope = function ImmerScope(parent) {
+  this.drafts = [];
+  this.parent = parent; // Whenever the modified draft contains a draft from another scope, we
+  // need to prevent auto-freezing so the unowned draft can be finalized.
+
+  this.canAutoFreeze = true; // To avoid prototype lookups:
+
+  this.patches = null;
+};
+
+ImmerScope.prototype.usePatches = function usePatches (patchListener) {
+  if (patchListener) {
+    this.patches = [];
+    this.inversePatches = [];
+    this.patchListener = patchListener;
+  }
+};
+
+ImmerScope.prototype.revoke = function revoke$1 () {
+  this.leave();
+  this.drafts.forEach(revoke);
+  this.drafts = null; // Make draft-related methods throw.
+};
+
+ImmerScope.prototype.leave = function leave () {
+  if (this === ImmerScope.current) {
+    ImmerScope.current = this.parent;
+  }
+};
+ImmerScope.current = null;
+
+ImmerScope.enter = function () {
+  return this.current = new ImmerScope(this.current);
+};
+
+function revoke(draft) {
+  draft[DRAFT_STATE].revoke();
+}
+
+// but share them all instead
+
+var descriptors = {};
+function willFinalize(scope, result, isReplaced) {
+  scope.drafts.forEach(function (draft) {
+    draft[DRAFT_STATE].finalizing = true;
+  });
+
+  if (!isReplaced) {
+    if (scope.patches) {
+      markChangesRecursively(scope.drafts[0]);
+    } // This is faster when we don't care about which attributes changed.
+
+
+    markChangesSweep(scope.drafts);
+  } // When a child draft is returned, look for changes.
+  else if (isDraft(result) && result[DRAFT_STATE].scope === scope) {
+      markChangesSweep(scope.drafts);
+    }
+}
+function createProxy(base, parent) {
+  var isArray = Array.isArray(base);
+  var draft = clonePotentialDraft(base);
+  each(draft, function (prop) {
+    proxyProperty(draft, prop, isArray || isEnumerable(base, prop));
+  }); // See "proxy.js" for property documentation.
+
+  var scope = parent ? parent.scope : ImmerScope.current;
+  var state = {
+    scope: scope,
+    modified: false,
+    finalizing: false,
+    // es5 only
+    finalized: false,
+    assigned: {},
+    parent: parent,
+    base: base,
+    draft: draft,
+    copy: null,
+    revoke: revoke$1,
+    revoked: false // es5 only
+
+  };
+  createHiddenProperty(draft, DRAFT_STATE, state);
+  scope.drafts.push(draft);
+  return draft;
+}
+
+function revoke$1() {
+  this.revoked = true;
+}
+
+function source(state) {
+  return state.copy || state.base;
+} // Access a property without creating an Immer draft.
+
+
+function peek(draft, prop) {
+  var state = draft[DRAFT_STATE];
+
+  if (state && !state.finalizing) {
+    state.finalizing = true;
+    var value = draft[prop];
+    state.finalizing = false;
+    return value;
+  }
+
+  return draft[prop];
+}
+
+function get(state, prop) {
+  assertUnrevoked(state);
+  var value = peek(source(state), prop);
+  if (state.finalizing) { return value; } // Create a draft if the value is unmodified.
+
+  if (value === peek(state.base, prop) && isDraftable(value)) {
+    prepareCopy(state);
+    return state.copy[prop] = createProxy(value, state);
+  }
+
+  return value;
+}
+
+function set(state, prop, value) {
+  assertUnrevoked(state);
+  state.assigned[prop] = true;
+
+  if (!state.modified) {
+    if (is(value, peek(source(state), prop))) { return; }
+    markChanged(state);
+    prepareCopy(state);
+  }
+
+  state.copy[prop] = value;
+}
+
+function markChanged(state) {
+  if (!state.modified) {
+    state.modified = true;
+    if (state.parent) { markChanged(state.parent); }
+  }
+}
+
+function prepareCopy(state) {
+  if (!state.copy) { state.copy = clonePotentialDraft(state.base); }
+}
+
+function clonePotentialDraft(base) {
+  var state = base && base[DRAFT_STATE];
+
+  if (state) {
+    state.finalizing = true;
+    var draft = shallowCopy(state.draft, true);
+    state.finalizing = false;
+    return draft;
+  }
+
+  return shallowCopy(base);
+}
+
+function proxyProperty(draft, prop, enumerable) {
+  var desc = descriptors[prop];
+
+  if (desc) {
+    desc.enumerable = enumerable;
+  } else {
+    descriptors[prop] = desc = {
+      configurable: true,
+      enumerable: enumerable,
+
+      get: function get$1() {
+        return get(this[DRAFT_STATE], prop);
+      },
+
+      set: function set$1(value) {
+        set(this[DRAFT_STATE], prop, value);
+      }
+
+    };
+  }
+
+  Object.defineProperty(draft, prop, desc);
+}
+
+function assertUnrevoked(state) {
+  if (state.revoked === true) { throw new Error("Cannot use a proxy that has been revoked. Did you pass an object from inside an immer function to an async process? " + JSON.stringify(source(state))); }
+} // This looks expensive, but only proxies are visited, and only objects without known changes are scanned.
+
+
+function markChangesSweep(drafts) {
+  // The natural order of drafts in the `scope` array is based on when they
+  // were accessed. By processing drafts in reverse natural order, we have a
+  // better chance of processing leaf nodes first. When a leaf node is known to
+  // have changed, we can avoid any traversal of its ancestor nodes.
+  for (var i = drafts.length - 1; i >= 0; i--) {
+    var state = drafts[i][DRAFT_STATE];
+
+    if (!state.modified) {
+      if (Array.isArray(state.base)) {
+        if (hasArrayChanges(state)) { markChanged(state); }
+      } else if (hasObjectChanges(state)) { markChanged(state); }
+    }
+  }
+}
+
+function markChangesRecursively(object) {
+  if (!object || typeof object !== "object") { return; }
+  var state = object[DRAFT_STATE];
+  if (!state) { return; }
+  var base = state.base;
+  var draft = state.draft;
+  var assigned = state.assigned;
+
+  if (!Array.isArray(object)) {
+    // Look for added keys.
+    Object.keys(draft).forEach(function (key) {
+      // The `undefined` check is a fast path for pre-existing keys.
+      if (base[key] === undefined && !has(base, key)) {
+        assigned[key] = true;
+        markChanged(state);
+      } else if (!assigned[key]) {
+        // Only untouched properties trigger recursion.
+        markChangesRecursively(draft[key]);
+      }
+    }); // Look for removed keys.
+
+    Object.keys(base).forEach(function (key) {
+      // The `undefined` check is a fast path for pre-existing keys.
+      if (draft[key] === undefined && !has(draft, key)) {
+        assigned[key] = false;
+        markChanged(state);
+      }
+    });
+  } else if (hasArrayChanges(state)) {
+    markChanged(state);
+    assigned.length = true;
+
+    if (draft.length < base.length) {
+      for (var i = draft.length; i < base.length; i++) { assigned[i] = false; }
+    } else {
+      for (var i$1 = base.length; i$1 < draft.length; i$1++) { assigned[i$1] = true; }
+    }
+
+    for (var i$2 = 0; i$2 < draft.length; i$2++) {
+      // Only untouched indices trigger recursion.
+      if (assigned[i$2] === undefined) { markChangesRecursively(draft[i$2]); }
+    }
+  }
+}
+
+function hasObjectChanges(state) {
+  var base = state.base;
+  var draft = state.draft; // Search for added keys and changed keys. Start at the back, because
+  // non-numeric keys are ordered by time of definition on the object.
+
+  var keys = Object.keys(draft);
+
+  for (var i = keys.length - 1; i >= 0; i--) {
+    var key = keys[i];
+    var baseValue = base[key]; // The `undefined` check is a fast path for pre-existing keys.
+
+    if (baseValue === undefined && !has(base, key)) {
+      return true;
+    } // Once a base key is deleted, future changes go undetected, because its
+    // descriptor is erased. This branch detects any missed changes.
+    else {
+        var value = draft[key];
+        var state$1 = value && value[DRAFT_STATE];
+
+        if (state$1 ? state$1.base !== baseValue : !is(value, baseValue)) {
+          return true;
+        }
+      }
+  } // At this point, no keys were added or changed.
+  // Compare key count to determine if keys were deleted.
+
+
+  return keys.length !== Object.keys(base).length;
+}
+
+function hasArrayChanges(state) {
+  var draft = state.draft;
+  if (draft.length !== state.base.length) { return true; } // See #116
+  // If we first shorten the length, our array interceptors will be removed.
+  // If after that new items are added, result in the same original length,
+  // those last items will have no intercepting property.
+  // So if there is no own descriptor on the last position, we know that items were removed and added
+  // N.B.: splice, unshift, etc only shift values around, but not prop descriptors, so we only have to check
+  // the last one
+
+  var descriptor = Object.getOwnPropertyDescriptor(draft, draft.length - 1); // descriptor can be null, but only for newly created sparse arrays, eg. new Array(10)
+
+  if (descriptor && !descriptor.get) { return true; } // For all other cases, we don't have to compare, as they would have been picked up by the index setters
+
+  return false;
+}
+
+function createHiddenProperty(target, prop, value) {
+  Object.defineProperty(target, prop, {
+    value: value,
+    enumerable: false,
+    writable: true
+  });
+}
+
+var legacyProxy = /*#__PURE__*/Object.freeze({
+    willFinalize: willFinalize,
+    createProxy: createProxy
+});
+
+function willFinalize$1() {}
+function createProxy$1(base, parent) {
+  var scope = parent ? parent.scope : ImmerScope.current;
+  var state = {
+    // Track which produce call this is associated with.
+    scope: scope,
+    // True for both shallow and deep changes.
+    modified: false,
+    // Used during finalization.
+    finalized: false,
+    // Track which properties have been assigned (true) or deleted (false).
+    assigned: {},
+    // The parent draft state.
+    parent: parent,
+    // The base state.
+    base: base,
+    // The base proxy.
+    draft: null,
+    // Any property proxies.
+    drafts: {},
+    // The base copy with any updated values.
+    copy: null,
+    // Called by the `produce` function.
+    revoke: null
+  };
+  var ref = Array.isArray(base) ? // [state] is used for arrays, to make sure the proxy is array-ish and not violate invariants,
+  // although state itself is an object
+  Proxy.revocable([state], arrayTraps) : Proxy.revocable(state, objectTraps);
+  var revoke = ref.revoke;
+  var proxy = ref.proxy;
+  state.draft = proxy;
+  state.revoke = revoke;
+  scope.drafts.push(proxy);
+  return proxy;
+}
+var objectTraps = {
+  get: get$1,
+
+  has: function has(target, prop) {
+    return prop in source$1(target);
+  },
+
+  ownKeys: function ownKeys(target) {
+    return Reflect.ownKeys(source$1(target));
+  },
+
+  set: set$1,
+  deleteProperty: deleteProperty,
+  getOwnPropertyDescriptor: getOwnPropertyDescriptor,
+
+  defineProperty: function defineProperty() {
+    throw new Error("Object.defineProperty() cannot be used on an Immer draft"); // prettier-ignore
+  },
+
+  getPrototypeOf: function getPrototypeOf(target) {
+    return Object.getPrototypeOf(target.base);
+  },
+
+  setPrototypeOf: function setPrototypeOf() {
+    throw new Error("Object.setPrototypeOf() cannot be used on an Immer draft"); // prettier-ignore
+  }
+
+};
+var arrayTraps = {};
+each(objectTraps, function (key, fn) {
+  arrayTraps[key] = function () {
+    arguments[0] = arguments[0][0];
+    return fn.apply(this, arguments);
+  };
+});
+
+arrayTraps.deleteProperty = function (state, prop) {
+  if (isNaN(parseInt(prop))) {
+    throw new Error("Immer only supports deleting array indices"); // prettier-ignore
+  }
+
+  return objectTraps.deleteProperty.call(this, state[0], prop);
+};
+
+arrayTraps.set = function (state, prop, value) {
+  if (prop !== "length" && isNaN(parseInt(prop))) {
+    throw new Error("Immer only supports setting array indices and the 'length' property"); // prettier-ignore
+  }
+
+  return objectTraps.set.call(this, state[0], prop, value);
+}; // returns the object we should be reading the current value from, which is base, until some change has been made
+
+
+function source$1(state) {
+  return state.copy || state.base;
+} // Access a property without creating an Immer draft.
+
+
+function peek$1(draft, prop) {
+  var state = draft[DRAFT_STATE];
+  var desc = Reflect.getOwnPropertyDescriptor(state ? source$1(state) : draft, prop);
+  return desc && desc.value;
+}
+
+function get$1(state, prop) {
+  if (prop === DRAFT_STATE) { return state; }
+  var drafts = state.drafts; // Check for existing draft in unmodified state.
+
+  if (!state.modified && has(drafts, prop)) {
+    return drafts[prop];
+  }
+
+  var value = source$1(state)[prop];
+
+  if (state.finalized || !isDraftable(value)) {
+    return value;
+  } // Check for existing draft in modified state.
+
+
+  if (state.modified) {
+    // Assigned values are never drafted. This catches any drafts we created, too.
+    if (value !== peek$1(state.base, prop)) { return value; } // Store drafts on the copy (when one exists).
+
+    drafts = state.copy;
+  }
+
+  return drafts[prop] = createProxy$1(value, state);
+}
+
+function set$1(state, prop, value) {
+  if (!state.modified) {
+    var baseValue = peek$1(state.base, prop); // Optimize based on value's truthiness. Truthy values are guaranteed to
+    // never be undefined, so we can avoid the `in` operator. Lastly, truthy
+    // values may be drafts, but falsy values are never drafts.
+
+    var isUnchanged = value ? is(baseValue, value) || value === state.drafts[prop] : is(baseValue, value) && prop in state.base;
+    if (isUnchanged) { return true; }
+    markChanged$1(state);
+  }
+
+  state.assigned[prop] = true;
+  state.copy[prop] = value;
+  return true;
+}
+
+function deleteProperty(state, prop) {
+  // The `undefined` check is a fast path for pre-existing keys.
+  if (peek$1(state.base, prop) !== undefined || prop in state.base) {
+    state.assigned[prop] = false;
+    markChanged$1(state);
+  }
+
+  if (state.copy) { delete state.copy[prop]; }
+  return true;
+} // Note: We never coerce `desc.value` into an Immer draft, because we can't make
+// the same guarantee in ES5 mode.
+
+
+function getOwnPropertyDescriptor(state, prop) {
+  var owner = source$1(state);
+  var desc = Reflect.getOwnPropertyDescriptor(owner, prop);
+
+  if (desc) {
+    desc.writable = true;
+    desc.configurable = !Array.isArray(owner) || prop !== "length";
+  }
+
+  return desc;
+}
+
+function markChanged$1(state) {
+  if (!state.modified) {
+    state.modified = true;
+    state.copy = assign(shallowCopy(state.base), state.drafts);
+    state.drafts = null;
+    if (state.parent) { markChanged$1(state.parent); }
+  }
+}
+
+var modernProxy = /*#__PURE__*/Object.freeze({
+    willFinalize: willFinalize$1,
+    createProxy: createProxy$1
+});
+
+function generatePatches(state, basePath, patches, inversePatches) {
+  Array.isArray(state.base) ? generateArrayPatches(state, basePath, patches, inversePatches) : generateObjectPatches(state, basePath, patches, inversePatches);
+}
+
+function generateArrayPatches(state, basePath, patches, inversePatches) {
+  var assign, assign$1;
+
+  var base = state.base;
+  var copy = state.copy;
+  var assigned = state.assigned; // Reduce complexity by ensuring `base` is never longer.
+
+  if (copy.length < base.length) {
+    (assign = [copy, base], base = assign[0], copy = assign[1]);
+    (assign$1 = [inversePatches, patches], patches = assign$1[0], inversePatches = assign$1[1]);
+  }
+
+  var delta = copy.length - base.length; // Find the first replaced index.
+
+  var start = 0;
+
+  while (base[start] === copy[start] && start < base.length) {
+    ++start;
+  } // Find the last replaced index. Search from the end to optimize splice patches.
+
+
+  var end = base.length;
+
+  while (end > start && base[end - 1] === copy[end + delta - 1]) {
+    --end;
+  } // Process replaced indices.
+
+
+  for (var i = start; i < end; ++i) {
+    if (assigned[i] && copy[i] !== base[i]) {
+      var path = basePath.concat([i]);
+      patches.push({
+        op: "replace",
+        path: path,
+        value: copy[i]
+      });
+      inversePatches.push({
+        op: "replace",
+        path: path,
+        value: base[i]
+      });
+    }
+  }
+
+  var useRemove = end != base.length;
+  var replaceCount = patches.length; // Process added indices.
+
+  for (var i$1 = end + delta - 1; i$1 >= end; --i$1) {
+    var path$1 = basePath.concat([i$1]);
+    patches[replaceCount + i$1 - end] = {
+      op: "add",
+      path: path$1,
+      value: copy[i$1]
+    };
+
+    if (useRemove) {
+      inversePatches.push({
+        op: "remove",
+        path: path$1
+      });
+    }
+  } // One "replace" patch reverses all non-splicing "add" patches.
+
+
+  if (!useRemove) {
+    inversePatches.push({
+      op: "replace",
+      path: basePath.concat(["length"]),
+      value: base.length
+    });
+  }
+}
+
+function generateObjectPatches(state, basePath, patches, inversePatches) {
+  var base = state.base;
+  var copy = state.copy;
+  each(state.assigned, function (key, assignedValue) {
+    var origValue = base[key];
+    var value = copy[key];
+    var op = !assignedValue ? "remove" : key in base ? "replace" : "add";
+    if (origValue === value && op === "replace") { return; }
+    var path = basePath.concat(key);
+    patches.push(op === "remove" ? {
+      op: op,
+      path: path
+    } : {
+      op: op,
+      path: path,
+      value: value
+    });
+    inversePatches.push(op === "add" ? {
+      op: "remove",
+      path: path
+    } : op === "remove" ? {
+      op: "add",
+      path: path,
+      value: origValue
+    } : {
+      op: "replace",
+      path: path,
+      value: origValue
+    });
+  });
+}
+
+function applyPatches(draft, patches) {
+  for (var i = 0; i < patches.length; i++) {
+    var patch = patches[i];
+    var path = patch.path;
+
+    if (path.length === 0 && patch.op === "replace") {
+      draft = patch.value;
+    } else {
+      var base = draft;
+
+      for (var i$1 = 0; i$1 < path.length - 1; i$1++) {
+        base = base[path[i$1]];
+        if (!base || typeof base !== "object") { throw new Error("Cannot apply patch, path doesn't resolve: " + path.join("/")); } // prettier-ignore
+      }
+
+      var key = path[path.length - 1];
+
+      switch (patch.op) {
+        case "replace":
+          base[key] = patch.value;
+          break;
+
+        case "add":
+          if (Array.isArray(base)) {
+            // TODO: support "foo/-" paths for appending to an array
+            base.splice(key, 0, patch.value);
+          } else {
+            base[key] = patch.value;
+          }
+
+          break;
+
+        case "remove":
+          if (Array.isArray(base)) {
+            base.splice(key, 1);
+          } else {
+            delete base[key];
+          }
+
+          break;
+
+        default:
+          throw new Error("Unsupported patch operation: " + patch.op);
+      }
+    }
+  }
+
+  return draft;
+}
+
+function verifyMinified() {}
+
+var configDefaults = {
+  useProxies: typeof Proxy !== "undefined" && typeof Reflect !== "undefined",
+  autoFreeze: typeof process !== "undefined" ? "development" !== "production" : verifyMinified.name === "verifyMinified",
+  onAssign: null,
+  onDelete: null,
+  onCopy: null
+};
+var Immer = function Immer(config) {
+  assign(this, configDefaults, config);
+  this.setUseProxies(this.useProxies);
+  this.produce = this.produce.bind(this);
+};
+
+Immer.prototype.produce = function produce (base, recipe, patchListener) {
+    var this$1 = this;
+
+  // curried invocation
+  if (typeof base === "function" && typeof recipe !== "function") {
+    var defaultBase = recipe;
+    recipe = base;
+    var self = this;
+    return function curriedProduce(base) {
+        var this$1 = this;
+        if ( base === void 0 ) base = defaultBase;
+        var args = [], len = arguments.length - 1;
+        while ( len-- > 0 ) args[ len ] = arguments[ len + 1 ];
+
+      return self.produce(base, function (draft) { return recipe.call.apply(recipe, [ this$1, draft ].concat( args )); }); // prettier-ignore
+    };
+  } // prettier-ignore
+
+
+  {
+    if (typeof recipe !== "function") {
+      throw new Error("The first or second argument to `produce` must be a function");
+    }
+
+    if (patchListener !== undefined && typeof patchListener !== "function") {
+      throw new Error("The third argument to `produce` must be a function or undefined");
+    }
+  }
+  var result; // Only plain objects, arrays, and "immerable classes" are drafted.
+
+  if (isDraftable(base)) {
+    var scope = ImmerScope.enter();
+    var proxy = this.createProxy(base);
+    var hasError = true;
+
+    try {
+      result = recipe(proxy);
+      hasError = false;
+    } finally {
+      // finally instead of catch + rethrow better preserves original stack
+      if (hasError) { scope.revoke(); }else { scope.leave(); }
+    }
+
+    if (result instanceof Promise) {
+      return result.then(function (result) {
+        scope.usePatches(patchListener);
+        return this$1.processResult(result, scope);
+      }, function (error) {
+        scope.revoke();
+        throw error;
+      });
+    }
+
+    scope.usePatches(patchListener);
+    return this.processResult(result, scope);
+  } else {
+    result = recipe(base);
+    if (result === undefined) { return base; }
+    return result !== NOTHING ? result : undefined;
+  }
+};
+
+Immer.prototype.createDraft = function createDraft (base) {
+  if (!isDraftable(base)) {
+    throw new Error("First argument to `createDraft` must be a plain object, an array, or an immerable object"); // prettier-ignore
+  }
+
+  var scope = ImmerScope.enter();
+  var proxy = this.createProxy(base);
+  proxy[DRAFT_STATE].isManual = true;
+  scope.leave();
+  return proxy;
+};
+
+Immer.prototype.finishDraft = function finishDraft (draft, patchListener) {
+  var state = draft && draft[DRAFT_STATE];
+
+  if (!state || !state.isManual) {
+    throw new Error("First argument to `finishDraft` must be a draft returned by `createDraft`"); // prettier-ignore
+  }
+
+  if (state.finalized) {
+    throw new Error("The given draft is already finalized"); // prettier-ignore
+  }
+
+  var scope = state.scope;
+  scope.usePatches(patchListener);
+  return this.processResult(undefined, scope);
+};
+
+Immer.prototype.setAutoFreeze = function setAutoFreeze (value) {
+  this.autoFreeze = value;
+};
+
+Immer.prototype.setUseProxies = function setUseProxies (value) {
+  this.useProxies = value;
+  assign(this, value ? modernProxy : legacyProxy);
+};
+
+Immer.prototype.applyPatches = function applyPatches$1 (base, patches) {
+  // Mutate the base state when a draft is passed.
+  if (isDraft(base)) {
+    return applyPatches(base, patches);
+  } // Otherwise, produce a copy of the base state.
+
+
+  return this.produce(base, function (draft) { return applyPatches(draft, patches); });
+};
+/** @internal */
+
+
+Immer.prototype.processResult = function processResult (result, scope) {
+  var baseDraft = scope.drafts[0];
+  var isReplaced = result !== undefined && result !== baseDraft;
+  this.willFinalize(scope, result, isReplaced);
+
+  if (isReplaced) {
+    if (baseDraft[DRAFT_STATE].modified) {
+      scope.revoke();
+      throw new Error("An immer producer returned a new value *and* modified its draft. Either return a new value *or* modify the draft."); // prettier-ignore
+    }
+
+    if (isDraftable(result)) {
+      // Finalize the result in case it contains (or is) a subset of the draft.
+      result = this.finalize(result, null, scope);
+    }
+
+    if (scope.patches) {
+      scope.patches.push({
+        op: "replace",
+        path: [],
+        value: result
+      });
+      scope.inversePatches.push({
+        op: "replace",
+        path: [],
+        value: baseDraft[DRAFT_STATE].base
+      });
+    }
+  } else {
+    // Finalize the base draft.
+    result = this.finalize(baseDraft, [], scope);
+  }
+
+  scope.revoke();
+
+  if (scope.patches) {
+    scope.patchListener(scope.patches, scope.inversePatches);
+  }
+
+  return result !== NOTHING ? result : undefined;
+};
+/**
+ * @internal
+ * Finalize a draft, returning either the unmodified base state or a modified
+ * copy of the base state.
+ */
+
+
+Immer.prototype.finalize = function finalize (draft, path, scope) {
+    var this$1 = this;
+
+  var state = draft[DRAFT_STATE];
+
+  if (!state) {
+    if (Object.isFrozen(draft)) { return draft; }
+    return this.finalizeTree(draft, null, scope);
+  } // Never finalize drafts owned by another scope.
+
+
+  if (state.scope !== scope) {
+    return draft;
+  }
+
+  if (!state.modified) {
+    return state.base;
+  }
+
+  if (!state.finalized) {
+    state.finalized = true;
+    this.finalizeTree(state.draft, path, scope);
+
+    if (this.onDelete) {
+      // The `assigned` object is unreliable with ES5 drafts.
+      if (this.useProxies) {
+        var assigned = state.assigned;
+
+        for (var prop in assigned) {
+          if (!assigned[prop]) { this.onDelete(state, prop); }
+        }
+      } else {
+        var base = state.base;
+          var copy = state.copy;
+        each(base, function (prop) {
+          if (!has(copy, prop)) { this$1.onDelete(state, prop); }
+        });
+      }
+    }
+
+    if (this.onCopy) {
+      this.onCopy(state);
+    } // At this point, all descendants of `state.copy` have been finalized,
+    // so we can be sure that `scope.canAutoFreeze` is accurate.
+
+
+    if (this.autoFreeze && scope.canAutoFreeze) {
+      Object.freeze(state.copy);
+    }
+
+    if (path && scope.patches) {
+      generatePatches(state, path, scope.patches, scope.inversePatches);
+    }
+  }
+
+  return state.copy;
+};
+/**
+ * @internal
+ * Finalize all drafts in the given state tree.
+ */
+
+
+Immer.prototype.finalizeTree = function finalizeTree (root, rootPath, scope) {
+    var this$1 = this;
+
+  var state = root[DRAFT_STATE];
+
+  if (state) {
+    if (!this.useProxies) {
+      // Create the final copy, with added keys and without deleted keys.
+      state.copy = shallowCopy(state.draft, true);
+    }
+
+    root = state.copy;
+  }
+
+  var needPatches = !!rootPath && !!scope.patches;
+
+  var finalizeProperty = function (prop, value, parent) {
+    if (value === parent) {
+      throw Error("Immer forbids circular references");
+    } // In the `finalizeTree` method, only the `root` object may be a draft.
+
+
+    var isDraftProp = !!state && parent === root;
+
+    if (isDraft(value)) {
+      var path = isDraftProp && needPatches && !state.assigned[prop] ? rootPath.concat(prop) : null; // Drafts owned by `scope` are finalized here.
+
+      value = this$1.finalize(value, path, scope); // Drafts from another scope must prevent auto-freezing.
+
+      if (isDraft(value)) {
+        scope.canAutoFreeze = false;
+      } // Preserve non-enumerable properties.
+
+
+      if (Array.isArray(parent) || isEnumerable(parent, prop)) {
+        parent[prop] = value;
+      } else {
+        Object.defineProperty(parent, prop, {
+          value: value
+        });
+      } // Unchanged drafts are never passed to the `onAssign` hook.
+
+
+      if (isDraftProp && value === state.base[prop]) { return; }
+    } // Unchanged draft properties are ignored.
+    else if (isDraftProp && is(value, state.base[prop])) {
+        return;
+      } // Search new objects for unfinalized drafts. Frozen objects should never contain drafts.
+      else if (isDraftable(value) && !Object.isFrozen(value)) {
+          each(value, finalizeProperty);
+        }
+
+    if (isDraftProp && this$1.onAssign) {
+      this$1.onAssign(state, prop, value);
+    }
+  };
+
+  each(root, finalizeProperty);
+  return root;
+};
+
+var immer = new Immer();
+/**
+ * The `produce` function takes a value and a "recipe function" (whose
+ * return value often depends on the base state). The recipe function is
+ * free to mutate its first argument however it wants. All mutations are
+ * only ever applied to a __copy__ of the base state.
+ *
+ * Pass only a function to create a "curried producer" which relieves you
+ * from passing the recipe function every time.
+ *
+ * Only plain objects and arrays are made mutable. All other objects are
+ * considered uncopyable.
+ *
+ * Note: This function is __bound__ to its `Immer` instance.
+ *
+ * @param {any} base - the initial state
+ * @param {Function} producer - function that receives a proxy of the base state as first argument and which can be freely modified
+ * @param {Function} patchListener - optional function that will be called with all the patches produced here
+ * @returns {any} a new state, or the initial state if nothing was modified
+ */
+
+var produce = immer.produce;
+/**
+ * Pass true to automatically freeze all copies created by Immer.
+ *
+ * By default, auto-freezing is disabled in production.
+ */
+
+var setAutoFreeze = immer.setAutoFreeze.bind(immer);
+/**
+ * Pass true to use the ES2015 `Proxy` class when creating drafts, which is
+ * always faster than using ES5 proxies.
+ *
+ * By default, feature detection is used, so calling this is rarely necessary.
+ */
+
+var setUseProxies = immer.setUseProxies.bind(immer);
+/**
+ * Apply an array of Immer patches to the first argument.
+ *
+ * This function is a producer, which means copy-on-write is in effect.
+ */
+
+var applyPatches$1 = immer.applyPatches.bind(immer);
+/**
+ * Create an Immer draft from the given base state, which may be a draft itself.
+ * The draft can be modified until you finalize it with the `finishDraft` function.
+ */
+
+var createDraft = immer.createDraft.bind(immer);
+/**
+ * Finalize an Immer draft from a `createDraft` call, returning the base state
+ * (if no changes were made) or a modified copy. The draft must *not* be
+ * mutated afterwards.
+ *
+ * Pass a function as the 2nd argument to generate Immer patches based on the
+ * changes that were made.
+ */
+
+var finishDraft = immer.finishDraft.bind(immer);
+
+/* harmony default export */ __webpack_exports__["default"] = (produce);
+
+//# sourceMappingURL=immer.module.js.map
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/memoizerific/memoizerific.js":
+/*!***************************************************!*\
+  !*** ./node_modules/memoizerific/memoizerific.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var require;var require;(function(f){if(true){module.exports=f()}else { var g; }})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+module.exports = function(forceSimilar) {
+	if (typeof Map !== 'function' || forceSimilar) {
+		var Similar = _dereq_('./similar');
+		return new Similar();
+	}
+	else {
+		return new Map();
+	}
+}
+
+},{"./similar":2}],2:[function(_dereq_,module,exports){
+function Similar() {
+	this.list = [];
+	this.lastItem = undefined;
+	this.size = 0;
+
+	return this;
+}
+
+Similar.prototype.get = function(key) {
+	var index;
+
+	if (this.lastItem && this.isEqual(this.lastItem.key, key)) {
+		return this.lastItem.val;
+	}
+
+	index = this.indexOf(key);
+	if (index >= 0) {
+		this.lastItem = this.list[index];
+		return this.list[index].val;
+	}
+
+	return undefined;
+};
+
+Similar.prototype.set = function(key, val) {
+	var index;
+
+	if (this.lastItem && this.isEqual(this.lastItem.key, key)) {
+		this.lastItem.val = val;
+		return this;
+	}
+
+	index = this.indexOf(key);
+	if (index >= 0) {
+		this.lastItem = this.list[index];
+		this.list[index].val = val;
+		return this;
+	}
+
+	this.lastItem = { key: key, val: val };
+	this.list.push(this.lastItem);
+	this.size++;
+
+	return this;
+};
+
+Similar.prototype.delete = function(key) {
+	var index;
+
+	if (this.lastItem && this.isEqual(this.lastItem.key, key)) {
+		this.lastItem = undefined;
+	}
+
+	index = this.indexOf(key);
+	if (index >= 0) {
+		this.size--;
+		return this.list.splice(index, 1)[0];
+	}
+
+	return undefined;
+};
+
+
+// important that has() doesn't use get() in case an existing key has a falsy value, in which case has() would return false
+Similar.prototype.has = function(key) {
+	var index;
+
+	if (this.lastItem && this.isEqual(this.lastItem.key, key)) {
+		return true;
+	}
+
+	index = this.indexOf(key);
+	if (index >= 0) {
+		this.lastItem = this.list[index];
+		return true;
+	}
+
+	return false;
+};
+
+Similar.prototype.forEach = function(callback, thisArg) {
+	var i;
+	for (i = 0; i < this.size; i++) {
+		callback.call(thisArg || this, this.list[i].val, this.list[i].key, this);
+	}
+};
+
+Similar.prototype.indexOf = function(key) {
+	var i;
+	for (i = 0; i < this.size; i++) {
+		if (this.isEqual(this.list[i].key, key)) {
+			return i;
+		}
+	}
+	return -1;
+};
+
+// check if the numbers are equal, or whether they are both precisely NaN (isNaN returns true for all non-numbers)
+Similar.prototype.isEqual = function(val1, val2) {
+	return val1 === val2 || (val1 !== val1 && val2 !== val2);
+};
+
+module.exports = Similar;
+},{}],3:[function(_dereq_,module,exports){
+var MapOrSimilar = _dereq_('map-or-similar');
+
+module.exports = function (limit) {
+	var cache = new MapOrSimilar(undefined === 'true'),
+		lru = [];
+
+	return function (fn) {
+		var memoizerific = function () {
+			var currentCache = cache,
+				newMap,
+				fnResult,
+				argsLengthMinusOne = arguments.length - 1,
+				lruPath = Array(argsLengthMinusOne + 1),
+				isMemoized = true,
+				i;
+
+			if ((memoizerific.numArgs || memoizerific.numArgs === 0) && memoizerific.numArgs !== argsLengthMinusOne + 1) {
+				throw new Error('Memoizerific functions should always be called with the same number of arguments');
+			}
+
+			// loop through each argument to traverse the map tree
+			for (i = 0; i < argsLengthMinusOne; i++) {
+				lruPath[i] = {
+					cacheItem: currentCache,
+					arg: arguments[i]
+				};
+
+				// climb through the hierarchical map tree until the second-last argument has been found, or an argument is missing.
+				// if all arguments up to the second-last have been found, this will potentially be a cache hit (determined later)
+				if (currentCache.has(arguments[i])) {
+					currentCache = currentCache.get(arguments[i]);
+					continue;
+				}
+
+				isMemoized = false;
+
+				// make maps until last value
+				newMap = new MapOrSimilar(undefined === 'true');
+				currentCache.set(arguments[i], newMap);
+				currentCache = newMap;
+			}
+
+			// we are at the last arg, check if it is really memoized
+			if (isMemoized) {
+				if (currentCache.has(arguments[argsLengthMinusOne])) {
+					fnResult = currentCache.get(arguments[argsLengthMinusOne]);
+				}
+				else {
+					isMemoized = false;
+				}
+			}
+
+			if (!isMemoized) {
+				fnResult = fn.apply(null, arguments);
+				currentCache.set(arguments[argsLengthMinusOne], fnResult);
+			}
+
+			if (limit > 0) {
+				lruPath[argsLengthMinusOne] = {
+					cacheItem: currentCache,
+					arg: arguments[argsLengthMinusOne]
+				};
+
+				if (isMemoized) {
+					moveToMostRecentLru(lru, lruPath);
+				}
+				else {
+					lru.push(lruPath);
+				}
+
+				if (lru.length > limit) {
+					removeCachedResult(lru.shift());
+				}
+			}
+
+			memoizerific.wasMemoized = isMemoized;
+			memoizerific.numArgs = argsLengthMinusOne + 1;
+
+			return fnResult;
+		};
+
+		memoizerific.limit = limit;
+		memoizerific.wasMemoized = false;
+		memoizerific.cache = cache;
+		memoizerific.lru = lru;
+
+		return memoizerific;
+	};
+};
+
+// move current args to most recent position
+function moveToMostRecentLru(lru, lruPath) {
+	var lruLen = lru.length,
+		lruPathLen = lruPath.length,
+		isMatch,
+		i, ii;
+
+	for (i = 0; i < lruLen; i++) {
+		isMatch = true;
+		for (ii = 0; ii < lruPathLen; ii++) {
+			if (!isEqual(lru[i][ii].arg, lruPath[ii].arg)) {
+				isMatch = false;
+				break;
+			}
+		}
+		if (isMatch) {
+			break;
+		}
+	}
+
+	lru.push(lru.splice(i, 1)[0]);
+}
+
+// remove least recently used cache item and all dead branches
+function removeCachedResult(removedLru) {
+	var removedLruLen = removedLru.length,
+		currentLru = removedLru[removedLruLen - 1],
+		tmp,
+		i;
+
+	currentLru.cacheItem.delete(currentLru.arg);
+
+	// walk down the tree removing dead branches (size 0) along the way
+	for (i = removedLruLen - 2; i >= 0; i--) {
+		currentLru = removedLru[i];
+		tmp = currentLru.cacheItem.get(currentLru.arg);
+
+		if (!tmp || !tmp.size) {
+			currentLru.cacheItem.delete(currentLru.arg);
+		} else {
+			break;
+		}
+	}
+}
+
+// check if the numbers are equal, or whether they are both precisely NaN (isNaN returns true for all non-numbers)
+function isEqual(val1, val2) {
+	return val1 === val2 || (val1 !== val1 && val2 !== val2);
+}
+},{"map-or-similar":1}]},{},[3])(3)
+});
 
 /***/ }),
 
@@ -17346,6 +20276,721 @@ module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f
 
 /***/ }),
 
+/***/ "./node_modules/redux-thunk/es/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/redux-thunk/es/index.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function createThunkMiddleware(extraArgument) {
+  return function (_ref) {
+    var dispatch = _ref.dispatch,
+        getState = _ref.getState;
+    return function (next) {
+      return function (action) {
+        if (typeof action === 'function') {
+          return action(dispatch, getState, extraArgument);
+        }
+
+        return next(action);
+      };
+    };
+  };
+}
+
+var thunk = createThunkMiddleware();
+thunk.withExtraArgument = createThunkMiddleware;
+
+/* harmony default export */ __webpack_exports__["default"] = (thunk);
+
+/***/ }),
+
+/***/ "./node_modules/redux/es/redux.js":
+/*!****************************************!*\
+  !*** ./node_modules/redux/es/redux.js ***!
+  \****************************************/
+/*! exports provided: __DO_NOT_USE__ActionTypes, applyMiddleware, bindActionCreators, combineReducers, compose, createStore */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__DO_NOT_USE__ActionTypes", function() { return ActionTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "applyMiddleware", function() { return applyMiddleware; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bindActionCreators", function() { return bindActionCreators; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "combineReducers", function() { return combineReducers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "compose", function() { return compose; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return createStore; });
+/* harmony import */ var symbol_observable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! symbol-observable */ "./node_modules/symbol-observable/es/index.js");
+
+
+/**
+ * These are private action types reserved by Redux.
+ * For any unknown actions, you must return the current state.
+ * If the current state is undefined, you must return the initial state.
+ * Do not reference these action types directly in your code.
+ */
+var randomString = function randomString() {
+  return Math.random().toString(36).substring(7).split('').join('.');
+};
+
+var ActionTypes = {
+  INIT: "@@redux/INIT" + randomString(),
+  REPLACE: "@@redux/REPLACE" + randomString(),
+  PROBE_UNKNOWN_ACTION: function PROBE_UNKNOWN_ACTION() {
+    return "@@redux/PROBE_UNKNOWN_ACTION" + randomString();
+  }
+};
+
+/**
+ * @param {any} obj The object to inspect.
+ * @returns {boolean} True if the argument appears to be a plain object.
+ */
+function isPlainObject(obj) {
+  if (typeof obj !== 'object' || obj === null) return false;
+  var proto = obj;
+
+  while (Object.getPrototypeOf(proto) !== null) {
+    proto = Object.getPrototypeOf(proto);
+  }
+
+  return Object.getPrototypeOf(obj) === proto;
+}
+
+/**
+ * Creates a Redux store that holds the state tree.
+ * The only way to change the data in the store is to call `dispatch()` on it.
+ *
+ * There should only be a single store in your app. To specify how different
+ * parts of the state tree respond to actions, you may combine several reducers
+ * into a single reducer function by using `combineReducers`.
+ *
+ * @param {Function} reducer A function that returns the next state tree, given
+ * the current state tree and the action to handle.
+ *
+ * @param {any} [preloadedState] The initial state. You may optionally specify it
+ * to hydrate the state from the server in universal apps, or to restore a
+ * previously serialized user session.
+ * If you use `combineReducers` to produce the root reducer function, this must be
+ * an object with the same shape as `combineReducers` keys.
+ *
+ * @param {Function} [enhancer] The store enhancer. You may optionally specify it
+ * to enhance the store with third-party capabilities such as middleware,
+ * time travel, persistence, etc. The only store enhancer that ships with Redux
+ * is `applyMiddleware()`.
+ *
+ * @returns {Store} A Redux store that lets you read the state, dispatch actions
+ * and subscribe to changes.
+ */
+
+function createStore(reducer, preloadedState, enhancer) {
+  var _ref2;
+
+  if (typeof preloadedState === 'function' && typeof enhancer === 'function' || typeof enhancer === 'function' && typeof arguments[3] === 'function') {
+    throw new Error('It looks like you are passing several store enhancers to ' + 'createStore(). This is not supported. Instead, compose them ' + 'together to a single function.');
+  }
+
+  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
+    enhancer = preloadedState;
+    preloadedState = undefined;
+  }
+
+  if (typeof enhancer !== 'undefined') {
+    if (typeof enhancer !== 'function') {
+      throw new Error('Expected the enhancer to be a function.');
+    }
+
+    return enhancer(createStore)(reducer, preloadedState);
+  }
+
+  if (typeof reducer !== 'function') {
+    throw new Error('Expected the reducer to be a function.');
+  }
+
+  var currentReducer = reducer;
+  var currentState = preloadedState;
+  var currentListeners = [];
+  var nextListeners = currentListeners;
+  var isDispatching = false;
+  /**
+   * This makes a shallow copy of currentListeners so we can use
+   * nextListeners as a temporary list while dispatching.
+   *
+   * This prevents any bugs around consumers calling
+   * subscribe/unsubscribe in the middle of a dispatch.
+   */
+
+  function ensureCanMutateNextListeners() {
+    if (nextListeners === currentListeners) {
+      nextListeners = currentListeners.slice();
+    }
+  }
+  /**
+   * Reads the state tree managed by the store.
+   *
+   * @returns {any} The current state tree of your application.
+   */
+
+
+  function getState() {
+    if (isDispatching) {
+      throw new Error('You may not call store.getState() while the reducer is executing. ' + 'The reducer has already received the state as an argument. ' + 'Pass it down from the top reducer instead of reading it from the store.');
+    }
+
+    return currentState;
+  }
+  /**
+   * Adds a change listener. It will be called any time an action is dispatched,
+   * and some part of the state tree may potentially have changed. You may then
+   * call `getState()` to read the current state tree inside the callback.
+   *
+   * You may call `dispatch()` from a change listener, with the following
+   * caveats:
+   *
+   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
+   * If you subscribe or unsubscribe while the listeners are being invoked, this
+   * will not have any effect on the `dispatch()` that is currently in progress.
+   * However, the next `dispatch()` call, whether nested or not, will use a more
+   * recent snapshot of the subscription list.
+   *
+   * 2. The listener should not expect to see all state changes, as the state
+   * might have been updated multiple times during a nested `dispatch()` before
+   * the listener is called. It is, however, guaranteed that all subscribers
+   * registered before the `dispatch()` started will be called with the latest
+   * state by the time it exits.
+   *
+   * @param {Function} listener A callback to be invoked on every dispatch.
+   * @returns {Function} A function to remove this change listener.
+   */
+
+
+  function subscribe(listener) {
+    if (typeof listener !== 'function') {
+      throw new Error('Expected the listener to be a function.');
+    }
+
+    if (isDispatching) {
+      throw new Error('You may not call store.subscribe() while the reducer is executing. ' + 'If you would like to be notified after the store has been updated, subscribe from a ' + 'component and invoke store.getState() in the callback to access the latest state. ' + 'See https://redux.js.org/api-reference/store#subscribelistener for more details.');
+    }
+
+    var isSubscribed = true;
+    ensureCanMutateNextListeners();
+    nextListeners.push(listener);
+    return function unsubscribe() {
+      if (!isSubscribed) {
+        return;
+      }
+
+      if (isDispatching) {
+        throw new Error('You may not unsubscribe from a store listener while the reducer is executing. ' + 'See https://redux.js.org/api-reference/store#subscribelistener for more details.');
+      }
+
+      isSubscribed = false;
+      ensureCanMutateNextListeners();
+      var index = nextListeners.indexOf(listener);
+      nextListeners.splice(index, 1);
+      currentListeners = null;
+    };
+  }
+  /**
+   * Dispatches an action. It is the only way to trigger a state change.
+   *
+   * The `reducer` function, used to create the store, will be called with the
+   * current state tree and the given `action`. Its return value will
+   * be considered the **next** state of the tree, and the change listeners
+   * will be notified.
+   *
+   * The base implementation only supports plain object actions. If you want to
+   * dispatch a Promise, an Observable, a thunk, or something else, you need to
+   * wrap your store creating function into the corresponding middleware. For
+   * example, see the documentation for the `redux-thunk` package. Even the
+   * middleware will eventually dispatch plain object actions using this method.
+   *
+   * @param {Object} action A plain object representing “what changed”. It is
+   * a good idea to keep actions serializable so you can record and replay user
+   * sessions, or use the time travelling `redux-devtools`. An action must have
+   * a `type` property which may not be `undefined`. It is a good idea to use
+   * string constants for action types.
+   *
+   * @returns {Object} For convenience, the same action object you dispatched.
+   *
+   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
+   * return something else (for example, a Promise you can await).
+   */
+
+
+  function dispatch(action) {
+    if (!isPlainObject(action)) {
+      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
+    }
+
+    if (typeof action.type === 'undefined') {
+      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
+    }
+
+    if (isDispatching) {
+      throw new Error('Reducers may not dispatch actions.');
+    }
+
+    try {
+      isDispatching = true;
+      currentState = currentReducer(currentState, action);
+    } finally {
+      isDispatching = false;
+    }
+
+    var listeners = currentListeners = nextListeners;
+
+    for (var i = 0; i < listeners.length; i++) {
+      var listener = listeners[i];
+      listener();
+    }
+
+    return action;
+  }
+  /**
+   * Replaces the reducer currently used by the store to calculate the state.
+   *
+   * You might need this if your app implements code splitting and you want to
+   * load some of the reducers dynamically. You might also need this if you
+   * implement a hot reloading mechanism for Redux.
+   *
+   * @param {Function} nextReducer The reducer for the store to use instead.
+   * @returns {void}
+   */
+
+
+  function replaceReducer(nextReducer) {
+    if (typeof nextReducer !== 'function') {
+      throw new Error('Expected the nextReducer to be a function.');
+    }
+
+    currentReducer = nextReducer; // This action has a similiar effect to ActionTypes.INIT.
+    // Any reducers that existed in both the new and old rootReducer
+    // will receive the previous state. This effectively populates
+    // the new state tree with any relevant data from the old one.
+
+    dispatch({
+      type: ActionTypes.REPLACE
+    });
+  }
+  /**
+   * Interoperability point for observable/reactive libraries.
+   * @returns {observable} A minimal observable of state changes.
+   * For more information, see the observable proposal:
+   * https://github.com/tc39/proposal-observable
+   */
+
+
+  function observable() {
+    var _ref;
+
+    var outerSubscribe = subscribe;
+    return _ref = {
+      /**
+       * The minimal observable subscription method.
+       * @param {Object} observer Any object that can be used as an observer.
+       * The observer object should have a `next` method.
+       * @returns {subscription} An object with an `unsubscribe` method that can
+       * be used to unsubscribe the observable from the store, and prevent further
+       * emission of values from the observable.
+       */
+      subscribe: function subscribe(observer) {
+        if (typeof observer !== 'object' || observer === null) {
+          throw new TypeError('Expected the observer to be an object.');
+        }
+
+        function observeState() {
+          if (observer.next) {
+            observer.next(getState());
+          }
+        }
+
+        observeState();
+        var unsubscribe = outerSubscribe(observeState);
+        return {
+          unsubscribe: unsubscribe
+        };
+      }
+    }, _ref[symbol_observable__WEBPACK_IMPORTED_MODULE_0__["default"]] = function () {
+      return this;
+    }, _ref;
+  } // When a store is created, an "INIT" action is dispatched so that every
+  // reducer returns their initial state. This effectively populates
+  // the initial state tree.
+
+
+  dispatch({
+    type: ActionTypes.INIT
+  });
+  return _ref2 = {
+    dispatch: dispatch,
+    subscribe: subscribe,
+    getState: getState,
+    replaceReducer: replaceReducer
+  }, _ref2[symbol_observable__WEBPACK_IMPORTED_MODULE_0__["default"]] = observable, _ref2;
+}
+
+/**
+ * Prints a warning in the console if it exists.
+ *
+ * @param {String} message The warning message.
+ * @returns {void}
+ */
+function warning(message) {
+  /* eslint-disable no-console */
+  if (typeof console !== 'undefined' && typeof console.error === 'function') {
+    console.error(message);
+  }
+  /* eslint-enable no-console */
+
+
+  try {
+    // This error was thrown as a convenience so that if you enable
+    // "break on all exceptions" in your console,
+    // it would pause the execution at this line.
+    throw new Error(message);
+  } catch (e) {} // eslint-disable-line no-empty
+
+}
+
+function getUndefinedStateErrorMessage(key, action) {
+  var actionType = action && action.type;
+  var actionDescription = actionType && "action \"" + String(actionType) + "\"" || 'an action';
+  return "Given " + actionDescription + ", reducer \"" + key + "\" returned undefined. " + "To ignore an action, you must explicitly return the previous state. " + "If you want this reducer to hold no value, you can return null instead of undefined.";
+}
+
+function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, unexpectedKeyCache) {
+  var reducerKeys = Object.keys(reducers);
+  var argumentName = action && action.type === ActionTypes.INIT ? 'preloadedState argument passed to createStore' : 'previous state received by the reducer';
+
+  if (reducerKeys.length === 0) {
+    return 'Store does not have a valid reducer. Make sure the argument passed ' + 'to combineReducers is an object whose values are reducers.';
+  }
+
+  if (!isPlainObject(inputState)) {
+    return "The " + argumentName + " has unexpected type of \"" + {}.toString.call(inputState).match(/\s([a-z|A-Z]+)/)[1] + "\". Expected argument to be an object with the following " + ("keys: \"" + reducerKeys.join('", "') + "\"");
+  }
+
+  var unexpectedKeys = Object.keys(inputState).filter(function (key) {
+    return !reducers.hasOwnProperty(key) && !unexpectedKeyCache[key];
+  });
+  unexpectedKeys.forEach(function (key) {
+    unexpectedKeyCache[key] = true;
+  });
+  if (action && action.type === ActionTypes.REPLACE) return;
+
+  if (unexpectedKeys.length > 0) {
+    return "Unexpected " + (unexpectedKeys.length > 1 ? 'keys' : 'key') + " " + ("\"" + unexpectedKeys.join('", "') + "\" found in " + argumentName + ". ") + "Expected to find one of the known reducer keys instead: " + ("\"" + reducerKeys.join('", "') + "\". Unexpected keys will be ignored.");
+  }
+}
+
+function assertReducerShape(reducers) {
+  Object.keys(reducers).forEach(function (key) {
+    var reducer = reducers[key];
+    var initialState = reducer(undefined, {
+      type: ActionTypes.INIT
+    });
+
+    if (typeof initialState === 'undefined') {
+      throw new Error("Reducer \"" + key + "\" returned undefined during initialization. " + "If the state passed to the reducer is undefined, you must " + "explicitly return the initial state. The initial state may " + "not be undefined. If you don't want to set a value for this reducer, " + "you can use null instead of undefined.");
+    }
+
+    if (typeof reducer(undefined, {
+      type: ActionTypes.PROBE_UNKNOWN_ACTION()
+    }) === 'undefined') {
+      throw new Error("Reducer \"" + key + "\" returned undefined when probed with a random type. " + ("Don't try to handle " + ActionTypes.INIT + " or other actions in \"redux/*\" ") + "namespace. They are considered private. Instead, you must return the " + "current state for any unknown actions, unless it is undefined, " + "in which case you must return the initial state, regardless of the " + "action type. The initial state may not be undefined, but can be null.");
+    }
+  });
+}
+/**
+ * Turns an object whose values are different reducer functions, into a single
+ * reducer function. It will call every child reducer, and gather their results
+ * into a single state object, whose keys correspond to the keys of the passed
+ * reducer functions.
+ *
+ * @param {Object} reducers An object whose values correspond to different
+ * reducer functions that need to be combined into one. One handy way to obtain
+ * it is to use ES6 `import * as reducers` syntax. The reducers may never return
+ * undefined for any action. Instead, they should return their initial state
+ * if the state passed to them was undefined, and the current state for any
+ * unrecognized action.
+ *
+ * @returns {Function} A reducer function that invokes every reducer inside the
+ * passed object, and builds a state object with the same shape.
+ */
+
+
+function combineReducers(reducers) {
+  var reducerKeys = Object.keys(reducers);
+  var finalReducers = {};
+
+  for (var i = 0; i < reducerKeys.length; i++) {
+    var key = reducerKeys[i];
+
+    if (true) {
+      if (typeof reducers[key] === 'undefined') {
+        warning("No reducer provided for key \"" + key + "\"");
+      }
+    }
+
+    if (typeof reducers[key] === 'function') {
+      finalReducers[key] = reducers[key];
+    }
+  }
+
+  var finalReducerKeys = Object.keys(finalReducers); // This is used to make sure we don't warn about the same
+  // keys multiple times.
+
+  var unexpectedKeyCache;
+
+  if (true) {
+    unexpectedKeyCache = {};
+  }
+
+  var shapeAssertionError;
+
+  try {
+    assertReducerShape(finalReducers);
+  } catch (e) {
+    shapeAssertionError = e;
+  }
+
+  return function combination(state, action) {
+    if (state === void 0) {
+      state = {};
+    }
+
+    if (shapeAssertionError) {
+      throw shapeAssertionError;
+    }
+
+    if (true) {
+      var warningMessage = getUnexpectedStateShapeWarningMessage(state, finalReducers, action, unexpectedKeyCache);
+
+      if (warningMessage) {
+        warning(warningMessage);
+      }
+    }
+
+    var hasChanged = false;
+    var nextState = {};
+
+    for (var _i = 0; _i < finalReducerKeys.length; _i++) {
+      var _key = finalReducerKeys[_i];
+      var reducer = finalReducers[_key];
+      var previousStateForKey = state[_key];
+      var nextStateForKey = reducer(previousStateForKey, action);
+
+      if (typeof nextStateForKey === 'undefined') {
+        var errorMessage = getUndefinedStateErrorMessage(_key, action);
+        throw new Error(errorMessage);
+      }
+
+      nextState[_key] = nextStateForKey;
+      hasChanged = hasChanged || nextStateForKey !== previousStateForKey;
+    }
+
+    hasChanged = hasChanged || finalReducerKeys.length !== Object.keys(state).length;
+    return hasChanged ? nextState : state;
+  };
+}
+
+function bindActionCreator(actionCreator, dispatch) {
+  return function () {
+    return dispatch(actionCreator.apply(this, arguments));
+  };
+}
+/**
+ * Turns an object whose values are action creators, into an object with the
+ * same keys, but with every function wrapped into a `dispatch` call so they
+ * may be invoked directly. This is just a convenience method, as you can call
+ * `store.dispatch(MyActionCreators.doSomething())` yourself just fine.
+ *
+ * For convenience, you can also pass an action creator as the first argument,
+ * and get a dispatch wrapped function in return.
+ *
+ * @param {Function|Object} actionCreators An object whose values are action
+ * creator functions. One handy way to obtain it is to use ES6 `import * as`
+ * syntax. You may also pass a single function.
+ *
+ * @param {Function} dispatch The `dispatch` function available on your Redux
+ * store.
+ *
+ * @returns {Function|Object} The object mimicking the original object, but with
+ * every action creator wrapped into the `dispatch` call. If you passed a
+ * function as `actionCreators`, the return value will also be a single
+ * function.
+ */
+
+
+function bindActionCreators(actionCreators, dispatch) {
+  if (typeof actionCreators === 'function') {
+    return bindActionCreator(actionCreators, dispatch);
+  }
+
+  if (typeof actionCreators !== 'object' || actionCreators === null) {
+    throw new Error("bindActionCreators expected an object or a function, instead received " + (actionCreators === null ? 'null' : typeof actionCreators) + ". " + "Did you write \"import ActionCreators from\" instead of \"import * as ActionCreators from\"?");
+  }
+
+  var boundActionCreators = {};
+
+  for (var key in actionCreators) {
+    var actionCreator = actionCreators[key];
+
+    if (typeof actionCreator === 'function') {
+      boundActionCreators[key] = bindActionCreator(actionCreator, dispatch);
+    }
+  }
+
+  return boundActionCreators;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    keys.push.apply(keys, Object.getOwnPropertySymbols(object));
+  }
+
+  if (enumerableOnly) keys = keys.filter(function (sym) {
+    return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+  });
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(source, true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(source).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+/**
+ * Composes single-argument functions from right to left. The rightmost
+ * function can take multiple arguments as it provides the signature for
+ * the resulting composite function.
+ *
+ * @param {...Function} funcs The functions to compose.
+ * @returns {Function} A function obtained by composing the argument functions
+ * from right to left. For example, compose(f, g, h) is identical to doing
+ * (...args) => f(g(h(...args))).
+ */
+function compose() {
+  for (var _len = arguments.length, funcs = new Array(_len), _key = 0; _key < _len; _key++) {
+    funcs[_key] = arguments[_key];
+  }
+
+  if (funcs.length === 0) {
+    return function (arg) {
+      return arg;
+    };
+  }
+
+  if (funcs.length === 1) {
+    return funcs[0];
+  }
+
+  return funcs.reduce(function (a, b) {
+    return function () {
+      return a(b.apply(void 0, arguments));
+    };
+  });
+}
+
+/**
+ * Creates a store enhancer that applies middleware to the dispatch method
+ * of the Redux store. This is handy for a variety of tasks, such as expressing
+ * asynchronous actions in a concise manner, or logging every action payload.
+ *
+ * See `redux-thunk` package as an example of the Redux middleware.
+ *
+ * Because middleware is potentially asynchronous, this should be the first
+ * store enhancer in the composition chain.
+ *
+ * Note that each middleware will be given the `dispatch` and `getState` functions
+ * as named arguments.
+ *
+ * @param {...Function} middlewares The middleware chain to be applied.
+ * @returns {Function} A store enhancer applying the middleware.
+ */
+
+function applyMiddleware() {
+  for (var _len = arguments.length, middlewares = new Array(_len), _key = 0; _key < _len; _key++) {
+    middlewares[_key] = arguments[_key];
+  }
+
+  return function (createStore) {
+    return function () {
+      var store = createStore.apply(void 0, arguments);
+
+      var _dispatch = function dispatch() {
+        throw new Error('Dispatching while constructing your middleware is not allowed. ' + 'Other middleware would not be applied to this dispatch.');
+      };
+
+      var middlewareAPI = {
+        getState: store.getState,
+        dispatch: function dispatch() {
+          return _dispatch.apply(void 0, arguments);
+        }
+      };
+      var chain = middlewares.map(function (middleware) {
+        return middleware(middlewareAPI);
+      });
+      _dispatch = compose.apply(void 0, chain)(store.dispatch);
+      return _objectSpread2({}, store, {
+        dispatch: _dispatch
+      });
+    };
+  };
+}
+
+/*
+ * This is a dummy function to check if the function name has been altered by minification.
+ * If the function has been minified and NODE_ENV !== 'production', warn the user.
+ */
+
+function isCrushed() {}
+
+if ( true && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed') {
+  warning('You are currently using minified code outside of NODE_ENV === "production". ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or setting mode to production in webpack (https://webpack.js.org/concepts/mode/) ' + 'to ensure you have the correct code for your production build.');
+}
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/regenerator-runtime/runtime.js":
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
@@ -18776,6 +22421,135 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
+/***/ "./node_modules/symbol-observable/es/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/symbol-observable/es/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global, module) {/* harmony import */ var _ponyfill_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ponyfill.js */ "./node_modules/symbol-observable/es/ponyfill.js");
+/* global window */
+
+
+var root;
+
+if (typeof self !== 'undefined') {
+  root = self;
+} else if (typeof window !== 'undefined') {
+  root = window;
+} else if (typeof global !== 'undefined') {
+  root = global;
+} else if (true) {
+  root = module;
+} else {}
+
+var result = Object(_ponyfill_js__WEBPACK_IMPORTED_MODULE_0__["default"])(root);
+/* harmony default export */ __webpack_exports__["default"] = (result);
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../../webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./node_modules/symbol-observable/es/ponyfill.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/symbol-observable/es/ponyfill.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return symbolObservablePonyfill; });
+function symbolObservablePonyfill(root) {
+	var result;
+	var Symbol = root.Symbol;
+
+	if (typeof Symbol === 'function') {
+		if (Symbol.observable) {
+			result = Symbol.observable;
+		} else {
+			result = Symbol('observable');
+			Symbol.observable = result;
+		}
+	} else {
+		result = '@@observable';
+	}
+
+	return result;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/harmony-module.js":
+/*!*******************************************!*\
+  !*** (webpack)/buildin/harmony-module.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function(originalModule) {
+	if (!originalModule.webpackPolyfill) {
+		var module = Object.create(originalModule);
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		Object.defineProperty(module, "exports", {
+			enumerable: true
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+
+/***/ }),
+
 /***/ "./pages/houses/[id].js":
 /*!******************************!*\
   !*** ./pages/houses/[id].js ***!
@@ -18789,16 +22563,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_DateRangePicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/DateRangePicker */ "./components/DateRangePicker.js");
-/* harmony import */ var _houses_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../houses.json */ "./houses.json");
-var _houses_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../houses.json */ "./houses.json", 1);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! easy-peasy */ "./node_modules/easy-peasy/dist/easy-peasy.esm.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_DateRangePicker__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/DateRangePicker */ "./components/DateRangePicker.js");
+/* harmony import */ var _houses_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../houses.json */ "./houses.json");
+var _houses_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../houses.json */ "./houses.json", 1);
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/pages/houses/[id].js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
@@ -18825,42 +22601,52 @@ var House = function House(props) {
 
   var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
       dateChosen = _useState2[0],
-      setDateChosen = _useState2[1]; //create new dateChosen state propery, which defaults to false;
+      setDateChosen = _useState2[1];
 
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(),
+      startDate = _useState3[0],
+      setStartDate = _useState3[1];
 
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  var _useState4 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(),
+      endDate = _useState4[0],
+      setEndDate = _useState4[1];
+
+  var setShowLoginModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreActions"])(function (actions) {
+    return actions.modals.setShowLoginModal;
+  });
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     content: __jsx("div", {
       className: "jsx-1671841858" + " " + 'container',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 37
       },
       __self: this
-    }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 38
       },
       __self: this
     }, __jsx("title", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 39
       },
       __self: this
     }, props.house.title)), __jsx("article", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 41
       },
       __self: this
     }, __jsx("h1", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 42
       },
       __self: this
     }, "Welcome to ", props.house.hostName || 'no name', "'s listing"), __jsx("img", {
@@ -18870,45 +22656,45 @@ var House = function House(props) {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 43
       },
       __self: this
     }), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 44
       },
       __self: this
     }, props.house.type, " - ", props.house.town), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 47
       },
       __self: this
     }, props.house.title), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 48
       },
       __self: this
     }, props.house.rating, " (", props.house.reviewsCount, ")")), __jsx("aside", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 52
       },
       __self: this
     }, __jsx("h2", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 53
       },
       __self: this
-    }, "Add dates for prices"), __jsx(_components_DateRangePicker__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }, "Add dates for prices"), __jsx(_components_DateRangePicker__WEBPACK_IMPORTED_MODULE_5__["default"], {
       datesChanged: function datesChanged(startDate, endDate) {
         console.log('start', startDate, 'end', endDate);
         setNumberOfNightsBetweenDates(calcNumberOfNightsBetweenDates(startDate, endDate));
@@ -18916,58 +22702,61 @@ var House = function House(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 54
       },
       __self: this
     }), dateChosen && __jsx("div", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 64
       },
       __self: this
     }, __jsx("h2", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 65
       },
       __self: this
     }, "Price per night"), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 66
       },
       __self: this
     }, "$", props.house.price), __jsx("h2", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 67
       },
       __self: this
     }, "Total price for booking"), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 68
       },
       __self: this
     }, "$", (numberOfNightsBetweenDates * props.house.price).toFixed(2)), __jsx("button", {
+      onClick: function onClick() {
+        setShowLoginModal();
+      },
       className: "jsx-1671841858" + " " + 'reserve',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 71
       },
       __self: this
     }, "Reserve"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
       id: "1671841858",
       __self: this
-    }, ".container.jsx-1671841858{display:grid;grid-template-columns:60% 40%;grid-gap:30px;}aside.jsx-1671841858{border:1px solid #ccc;padding:20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvcGFnZXMvaG91c2VzL1tpZF0uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUVzQixBQUc0QixBQU1TLGFBTFEsU0FNakIsYUFDZixRQU5nQixjQUNoQiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL3BhZ2VzL2hvdXNlcy9baWRdLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuaW1wb3J0IERhdGVSYW5nZVBpY2tlciBmcm9tICcuLi8uLi9jb21wb25lbnRzL0RhdGVSYW5nZVBpY2tlcic7XG5pbXBvcnQgaG91c2VzIGZyb20gJy4uLy4uL2hvdXNlcy5qc29uJztcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vLi4vY29tcG9uZW50cy9MYXlvdXQnO1xuXG5jb25zdCBjYWxjTnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMgPSAoc3RhcnREYXRlLCBlbmREYXRlKSA9PiB7XG4gIGNvbnN0IHN0YXJ0ID0gbmV3IERhdGUoc3RhcnREYXRlKTtcbiAgY29uc3QgZW5kID0gbmV3IERhdGUoZW5kRGF0ZSk7XG4gIGxldCBkYXlDb3VudCA9IDA7XG5cbiAgd2hpbGUgKGVuZCA+IHN0YXJ0KSB7XG4gICAgZGF5Q291bnQrKztcbiAgICBzdGFydC5zZXREYXRlKHN0YXJ0LmdldERhdGUoKSArIDEpO1xuICB9XG4gIHJldHVybiBkYXlDb3VudDtcbn07XG5cbmNvbnN0IEhvdXNlID0gcHJvcHMgPT4ge1xuICBjb25zdCBbbnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMsIHNldE51bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzXSA9IHVzZVN0YXRlKFxuICAgIDBcbiAgKTtcbiAgY29uc3QgW2RhdGVDaG9zZW4sIHNldERhdGVDaG9zZW5dID0gdXNlU3RhdGUoZmFsc2UpOyAvL2NyZWF0ZSBuZXcgZGF0ZUNob3NlbiBzdGF0ZSBwcm9wZXJ5LCB3aGljaCBkZWZhdWx0cyB0byBmYWxzZTtcblxuICByZXR1cm4gKFxuICAgIDxMYXlvdXRcbiAgICAgIGNvbnRlbnQ9e1xuICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nY29udGFpbmVyJz5cbiAgICAgICAgICA8SGVhZD5cbiAgICAgICAgICAgIDx0aXRsZT57cHJvcHMuaG91c2UudGl0bGV9PC90aXRsZT5cbiAgICAgICAgICA8L0hlYWQ+XG4gICAgICAgICAgPGFydGljbGU+XG4gICAgICAgICAgICA8aDE+V2VsY29tZSB0byB7cHJvcHMuaG91c2UuaG9zdE5hbWUgfHwgJ25vIG5hbWUnfSdzIGxpc3Rpbmc8L2gxPlxuICAgICAgICAgICAgPGltZyBzcmM9e3Byb3BzLmhvdXNlLnBpY3R1cmV9IHdpZHRoPScxMDAlJyBhbHQ9J0hvdXNlIHBpY3R1cmUnIC8+XG4gICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAge3Byb3BzLmhvdXNlLnR5cGV9IC0ge3Byb3BzLmhvdXNlLnRvd259XG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8cD57cHJvcHMuaG91c2UudGl0bGV9PC9wPlxuICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgIHtwcm9wcy5ob3VzZS5yYXRpbmd9ICh7cHJvcHMuaG91c2UucmV2aWV3c0NvdW50fSlcbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8L2FydGljbGU+XG4gICAgICAgICAgPGFzaWRlPlxuICAgICAgICAgICAgPGgyPkFkZCBkYXRlcyBmb3IgcHJpY2VzPC9oMj5cbiAgICAgICAgICAgIDxEYXRlUmFuZ2VQaWNrZXJcbiAgICAgICAgICAgICAgZGF0ZXNDaGFuZ2VkPXsoc3RhcnREYXRlLCBlbmREYXRlKSA9PiB7XG4gICAgICAgICAgICAgICAgY29uc29sZS5sb2coJ3N0YXJ0Jywgc3RhcnREYXRlLCAnZW5kJywgZW5kRGF0ZSk7XG4gICAgICAgICAgICAgICAgc2V0TnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMoXG4gICAgICAgICAgICAgICAgICBjYWxjTnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMoc3RhcnREYXRlLCBlbmREYXRlKVxuICAgICAgICAgICAgICAgICk7XG4gICAgICAgICAgICAgICAgc2V0RGF0ZUNob3Nlbih0cnVlKTtcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgICB7ZGF0ZUNob3NlbiAmJiAoXG4gICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgPGgyPlByaWNlIHBlciBuaWdodDwvaDI+XG4gICAgICAgICAgICAgICAgPHA+JHtwcm9wcy5ob3VzZS5wcmljZX08L3A+XG4gICAgICAgICAgICAgICAgPGgyPlRvdGFsIHByaWNlIGZvciBib29raW5nPC9oMj5cbiAgICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICAgICR7KG51bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzICogcHJvcHMuaG91c2UucHJpY2UpLnRvRml4ZWQoMil9XG4gICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSdyZXNlcnZlJz5SZXNlcnZlPC9idXR0b24+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgKX1cbiAgICAgICAgICA8L2FzaWRlPlxuICAgICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAgIC5jb250YWluZXIge1xuICAgICAgICAgICAgICBkaXNwbGF5OiBncmlkO1xuICAgICAgICAgICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDYwJSA0MCU7XG4gICAgICAgICAgICAgIGdyaWQtZ2FwOiAzMHB4O1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICBhc2lkZSB7XG4gICAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XG4gICAgICAgICAgICAgIHBhZGRpbmc6IDIwcHg7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIH1cbiAgICAvPlxuICApO1xufTtcblxuSG91c2UuZ2V0SW5pdGlhbFByb3BzID0gKHsgcXVlcnkgfSkgPT4ge1xuICBjb25zb2xlLmxvZyhxdWVyeSk7XG4gIGNvbnN0IHsgaWQgfSA9IHF1ZXJ5O1xuXG4gIHJldHVybiB7XG4gICAgaG91c2U6IGhvdXNlcy5maWx0ZXIoaG91c2UgPT4gaG91c2UuaWQgPT09IGlkKVswXSxcbiAgfTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEhvdXNlO1xuIl19 */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/pages/houses/[id].js */")),
+    }, ".container.jsx-1671841858{display:grid;grid-template-columns:60% 40%;grid-gap:30px;}aside.jsx-1671841858{border:1px solid #ccc;padding:20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvcGFnZXMvaG91c2VzL1tpZF0uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZ0ZzQixBQUc0QixBQU1TLGFBTFEsU0FNakIsYUFDZixRQU5nQixjQUNoQiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL3BhZ2VzL2hvdXNlcy9baWRdLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyB1c2VTdG9yZUFjdGlvbnMsIHVzZVN0b3JlU3RhdGUgfSBmcm9tICdlYXN5LXBlYXN5JztcblxuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vLi4vY29tcG9uZW50cy9MYXlvdXQnO1xuaW1wb3J0IERhdGVSYW5nZVBpY2tlciBmcm9tICcuLi8uLi9jb21wb25lbnRzL0RhdGVSYW5nZVBpY2tlcic7XG5cbmltcG9ydCBob3VzZXMgZnJvbSAnLi4vLi4vaG91c2VzLmpzb24nO1xuXG5jb25zdCBjYWxjTnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMgPSAoc3RhcnREYXRlLCBlbmREYXRlKSA9PiB7XG4gIGNvbnN0IHN0YXJ0ID0gbmV3IERhdGUoc3RhcnREYXRlKTtcbiAgY29uc3QgZW5kID0gbmV3IERhdGUoZW5kRGF0ZSk7XG4gIGxldCBkYXlDb3VudCA9IDA7XG5cbiAgd2hpbGUgKGVuZCA+IHN0YXJ0KSB7XG4gICAgZGF5Q291bnQrKztcbiAgICBzdGFydC5zZXREYXRlKHN0YXJ0LmdldERhdGUoKSArIDEpO1xuICB9XG4gIHJldHVybiBkYXlDb3VudDtcbn07XG5cbmNvbnN0IEhvdXNlID0gcHJvcHMgPT4ge1xuICBjb25zdCBbbnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMsIHNldE51bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzXSA9IHVzZVN0YXRlKFxuICAgIDBcbiAgKTtcbiAgY29uc3QgW2RhdGVDaG9zZW4sIHNldERhdGVDaG9zZW5dID0gdXNlU3RhdGUoZmFsc2UpO1xuICBjb25zdCBbc3RhcnREYXRlLCBzZXRTdGFydERhdGVdID0gdXNlU3RhdGUoKTtcbiAgY29uc3QgW2VuZERhdGUsIHNldEVuZERhdGVdID0gdXNlU3RhdGUoKTtcblxuICBjb25zdCBzZXRTaG93TG9naW5Nb2RhbCA9IHVzZVN0b3JlQWN0aW9ucyhcbiAgICBhY3Rpb25zID0+IGFjdGlvbnMubW9kYWxzLnNldFNob3dMb2dpbk1vZGFsXG4gICk7XG5cbiAgcmV0dXJuIChcbiAgICA8TGF5b3V0XG4gICAgICBjb250ZW50PXtcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9J2NvbnRhaW5lcic+XG4gICAgICAgICAgPEhlYWQ+XG4gICAgICAgICAgICA8dGl0bGU+e3Byb3BzLmhvdXNlLnRpdGxlfTwvdGl0bGU+XG4gICAgICAgICAgPC9IZWFkPlxuICAgICAgICAgIDxhcnRpY2xlPlxuICAgICAgICAgICAgPGgxPldlbGNvbWUgdG8ge3Byb3BzLmhvdXNlLmhvc3ROYW1lIHx8ICdubyBuYW1lJ30ncyBsaXN0aW5nPC9oMT5cbiAgICAgICAgICAgIDxpbWcgc3JjPXtwcm9wcy5ob3VzZS5waWN0dXJlfSB3aWR0aD0nMTAwJScgYWx0PSdIb3VzZSBwaWN0dXJlJyAvPlxuICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgIHtwcm9wcy5ob3VzZS50eXBlfSAtIHtwcm9wcy5ob3VzZS50b3dufVxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgPHA+e3Byb3BzLmhvdXNlLnRpdGxlfTwvcD5cbiAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICB7cHJvcHMuaG91c2UucmF0aW5nfSAoe3Byb3BzLmhvdXNlLnJldmlld3NDb3VudH0pXG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgPC9hcnRpY2xlPlxuICAgICAgICAgIDxhc2lkZT5cbiAgICAgICAgICAgIDxoMj5BZGQgZGF0ZXMgZm9yIHByaWNlczwvaDI+XG4gICAgICAgICAgICA8RGF0ZVJhbmdlUGlja2VyXG4gICAgICAgICAgICAgIGRhdGVzQ2hhbmdlZD17KHN0YXJ0RGF0ZSwgZW5kRGF0ZSkgPT4ge1xuICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKCdzdGFydCcsIHN0YXJ0RGF0ZSwgJ2VuZCcsIGVuZERhdGUpO1xuICAgICAgICAgICAgICAgIHNldE51bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzKFxuICAgICAgICAgICAgICAgICAgY2FsY051bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzKHN0YXJ0RGF0ZSwgZW5kRGF0ZSlcbiAgICAgICAgICAgICAgICApO1xuICAgICAgICAgICAgICAgIHNldERhdGVDaG9zZW4odHJ1ZSk7XG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICAge2RhdGVDaG9zZW4gJiYgKFxuICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgIDxoMj5QcmljZSBwZXIgbmlnaHQ8L2gyPlxuICAgICAgICAgICAgICAgIDxwPiR7cHJvcHMuaG91c2UucHJpY2V9PC9wPlxuICAgICAgICAgICAgICAgIDxoMj5Ub3RhbCBwcmljZSBmb3IgYm9va2luZzwvaDI+XG4gICAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgICAkeyhudW1iZXJPZk5pZ2h0c0JldHdlZW5EYXRlcyAqIHByb3BzLmhvdXNlLnByaWNlKS50b0ZpeGVkKDIpfVxuICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgICAgICBjbGFzc05hbWU9J3Jlc2VydmUnXG4gICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHNldFNob3dMb2dpbk1vZGFsKCk7XG4gICAgICAgICAgICAgICAgICB9fT5cbiAgICAgICAgICAgICAgICAgIFJlc2VydmVcbiAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApfVxuICAgICAgICAgIDwvYXNpZGU+XG4gICAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgICAgLmNvbnRhaW5lciB7XG4gICAgICAgICAgICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgICAgICAgICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogNjAlIDQwJTtcbiAgICAgICAgICAgICAgZ3JpZC1nYXA6IDMwcHg7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIGFzaWRlIHtcbiAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcbiAgICAgICAgICAgICAgcGFkZGluZzogMjBweDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICBgfTwvc3R5bGU+XG4gICAgICAgIDwvZGl2PlxuICAgICAgfVxuICAgIC8+XG4gICk7XG59O1xuXG5Ib3VzZS5nZXRJbml0aWFsUHJvcHMgPSAoeyBxdWVyeSB9KSA9PiB7XG4gIGNvbnN0IHsgaWQgfSA9IHF1ZXJ5O1xuXG4gIHJldHVybiB7XG4gICAgaG91c2U6IGhvdXNlcy5maWx0ZXIoaG91c2UgPT4gaG91c2UuaWQgPT09IGlkKVswXSxcbiAgfTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEhvdXNlO1xuIl19 */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/pages/houses/[id].js */")),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 35
     },
     __self: this
   });
@@ -18975,10 +22764,9 @@ var House = function House(props) {
 
 House.getInitialProps = function (_ref) {
   var query = _ref.query;
-  console.log(query);
   var id = query.id;
   return {
-    house: _houses_json__WEBPACK_IMPORTED_MODULE_4__.filter(function (house) {
+    house: _houses_json__WEBPACK_IMPORTED_MODULE_6__.filter(function (house) {
       return house.id === id;
     })[0]
   };

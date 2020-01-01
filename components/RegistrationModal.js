@@ -1,27 +1,35 @@
-export default props => (
-  <React.Fragment>
-    <h2>Sign Up</h2>
-    <div>
-      <form
-        onSubmit={event => {
-          alert('Sign up!');
-          event.preventDefault();
-        }}>
-        <input id='email' type='email' placeholder='Email Address' />
-        <input id='password' type='password' placeholder='Password' />
-        <input
-          id='passwordconfirmation'
-          type='password'
-          placeholder='Enter Password Again'
-        />
-        <button>Sign Up</button>
-      </form>
-      <p>
-        Already have an account?{' '}
-        <a href='javascript:;' onClick={() => props.showLogin()}>
-          Log in
-        </a>
-      </p>
-    </div>
-  </React.Fragment>
-);
+import { useState } from 'react';
+import { useStoreActions } from 'easy-peasy';
+
+export default props => {
+  const setUser = useStoreActions(actions => actions.user.setUser);
+  const setHideModal = useStoreActions(actions => actions.modals.setHideModal);
+
+  return (
+    <>
+      <h2>Sign up</h2>
+      <div>
+        <form
+          onSubmit={event => {
+            alert('Sign up!');
+            event.preventDefault();
+          }}>
+          <input id='email' type='email' placeholder='Email address' />
+          <input id='password' type='password' placeholder='Password' />
+          <input
+            id='passwordconfirmation'
+            type='password'
+            placeholder='Enter password again'
+          />
+          <button>Sign Up</button>
+        </form>
+        <p>
+          Already have an account?{' '}
+          <a href='#' onClick={() => props.showLogin()}>
+            Log in
+          </a>
+        </p>
+      </div>
+    </>
+  );
+};

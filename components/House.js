@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useStoreActions, useStoreState } from 'easy-peasy';
 
 const House = props => {
   return (

@@ -277,102 +277,99 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! easy-peasy */ "easy-peasy");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(easy_peasy__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/Header.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
-const Header = () => __jsx("div", {
-  className: "jsx-3553530342" + " " + 'nav-container',
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  href: "/",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "jsx-3553530342",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx("img", {
-  src: "/img/logo.png",
-  alt: "",
-  className: "jsx-3553530342",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}))), __jsx("nav", {
-  className: "jsx-3553530342",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}, __jsx("ul", {
-  className: "jsx-3553530342",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}, __jsx("li", {
-  className: "jsx-3553530342",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  href: "/register",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "jsx-3553530342",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}, "Sign Up"))), __jsx("li", {
-  className: "jsx-3553530342",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  href: "/login",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "jsx-3553530342",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
-}, "Log In"))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  id: "3553530342",
-  __self: undefined
-}, "ul.jsx-3553530342{margin:0;padding:0;}li.jsx-3553530342{display:block;float:left;}a.jsx-3553530342{-webkit-text-decoration:none;text-decoration:none;display:block;margin-right:15px;color:#333;}nav.jsx-3553530342 a.jsx-3553530342{padding:1em 0.5em;}.nav-container.jsx-3553530342{border-bottom:1px solid #eee;height:100px;}img.jsx-3553530342{float:left;}ul.jsx-3553530342{float:right;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBeUJnQixBQUdrQixBQUtLLEFBS08sQUFPSCxBQUlXLEFBS2xCLEFBSUMsU0E3QkYsRUEwQlosQ0FJQSxFQXpCYSxJQVliLENBaEJBLE1BS0EsSUFlZSxhQUNmLFFBWmdCLGNBQ0ksa0JBQ1AsV0FDYiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL2NvbXBvbmVudHMvSGVhZGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcblxuY29uc3QgSGVhZGVyID0gKCkgPT4gKFxuICA8ZGl2IGNsYXNzTmFtZT0nbmF2LWNvbnRhaW5lcic+XG4gICAgPExpbmsgaHJlZj0nLyc+XG4gICAgICA8YT5cbiAgICAgICAgPGltZyBzcmM9Jy9pbWcvbG9nby5wbmcnIGFsdD0nJyAvPlxuICAgICAgPC9hPlxuICAgIDwvTGluaz5cbiAgICA8bmF2PlxuICAgICAgPHVsPlxuICAgICAgICA8bGk+XG4gICAgICAgICAgPExpbmsgaHJlZj0nL3JlZ2lzdGVyJz5cbiAgICAgICAgICAgIDxhPlNpZ24gVXA8L2E+XG4gICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2xpPlxuXG4gICAgICAgIDxsaT5cbiAgICAgICAgICA8TGluayBocmVmPScvbG9naW4nPlxuICAgICAgICAgICAgPGE+TG9nIEluPC9hPlxuICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgPC9saT5cbiAgICAgIDwvdWw+XG4gICAgPC9uYXY+XG5cbiAgICA8c3R5bGUganN4PntgXG4gICAgICB1bCB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgIH1cblxuICAgICAgbGkge1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgZmxvYXQ6IGxlZnQ7XG4gICAgICB9XG5cbiAgICAgIGEge1xuICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICBtYXJnaW4tcmlnaHQ6IDE1cHg7XG4gICAgICAgIGNvbG9yOiAjMzMzO1xuICAgICAgfVxuXG4gICAgICBuYXYgYSB7XG4gICAgICAgIHBhZGRpbmc6IDFlbSAwLjVlbTtcbiAgICAgIH1cblxuICAgICAgLm5hdi1jb250YWluZXIge1xuICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2VlZTtcbiAgICAgICAgaGVpZ2h0OiAxMDBweDtcbiAgICAgIH1cblxuICAgICAgaW1nIHtcbiAgICAgICAgZmxvYXQ6IGxlZnQ7XG4gICAgICB9XG5cbiAgICAgIHVsIHtcbiAgICAgICAgZmxvYXQ6IHJpZ2h0O1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgPC9kaXY+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBIZWFkZXI7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Header.js */"));
+
+const Header = () => {
+  const setShowLoginModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_3__["useStoreActions"])(actions => actions.modals.setShowLoginModal);
+  const setShowRegistrationModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_3__["useStoreActions"])(actions => actions.modals.setShowRegistrationModal);
+  return __jsx("div", {
+    className: "jsx-3160102859" + " " + 'nav-container',
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, __jsx("a", {
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }, __jsx("img", {
+    src: "/img/logo.png",
+    alt: "",
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }))), __jsx("nav", {
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, __jsx("ul", {
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }, __jsx("li", {
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    onClick: () => setShowRegistrationModal(),
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: undefined
+  }, "Sign up")), __jsx("li", {
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    onClick: () => setShowLoginModal(),
+    className: "jsx-3160102859",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  }, "Log in")))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "3160102859",
+    __self: undefined
+  }, "ul.jsx-3160102859{margin:0;padding:0;}li.jsx-3160102859{display:block;float:left;}a.jsx-3160102859{-webkit-text-decoration:none;text-decoration:none;display:block;margin-right:15px;color:#333;}nav.jsx-3160102859 a.jsx-3160102859{padding:1em 0.5em;}.nav-container.jsx-3160102859{border-bottom:1px solid #eee;height:100px;}img.jsx-3160102859{float:left;}ul.jsx-3160102859{float:right;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0NrQixBQUdvQixBQUtLLEFBS08sQUFPSCxBQUlXLEFBS2xCLEFBSUMsU0E3QkYsRUEwQlosQ0FJQSxFQXpCYSxJQVliLENBaEJBLE1BS0EsSUFlZSxhQUNmLFFBWmdCLGNBQ0ksa0JBQ1AsV0FDYiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL2NvbXBvbmVudHMvSGVhZGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcbmltcG9ydCB7IHVzZVN0b3JlQWN0aW9ucywgdXNlU3RvcmVTdGF0ZSB9IGZyb20gJ2Vhc3ktcGVhc3knO1xuXG5jb25zdCBIZWFkZXIgPSAoKSA9PiB7XG4gIGNvbnN0IHNldFNob3dMb2dpbk1vZGFsID0gdXNlU3RvcmVBY3Rpb25zKFxuICAgIGFjdGlvbnMgPT4gYWN0aW9ucy5tb2RhbHMuc2V0U2hvd0xvZ2luTW9kYWxcbiAgKTtcbiAgY29uc3Qgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsID0gdXNlU3RvcmVBY3Rpb25zKFxuICAgIGFjdGlvbnMgPT4gYWN0aW9ucy5tb2RhbHMuc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsXG4gICk7XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT0nbmF2LWNvbnRhaW5lcic+XG4gICAgICA8TGluayBocmVmPScvJz5cbiAgICAgICAgPGE+XG4gICAgICAgICAgPGltZyBzcmM9Jy9pbWcvbG9nby5wbmcnIGFsdD0nJyAvPlxuICAgICAgICA8L2E+XG4gICAgICA8L0xpbms+XG5cbiAgICAgIDxuYXY+XG4gICAgICAgIDx1bD5cbiAgICAgICAgICA8bGk+XG4gICAgICAgICAgICA8YSBocmVmPScjJyBvbkNsaWNrPXsoKSA9PiBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwoKX0+XG4gICAgICAgICAgICAgIFNpZ24gdXBcbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICAgIDxsaT5cbiAgICAgICAgICAgIDxhIGhyZWY9JyMnIG9uQ2xpY2s9eygpID0+IHNldFNob3dMb2dpbk1vZGFsKCl9PlxuICAgICAgICAgICAgICBMb2cgaW5cbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICA8L2xpPlxuICAgICAgICA8L3VsPlxuICAgICAgPC9uYXY+XG5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgdWwge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICB9XG5cbiAgICAgICAgbGkge1xuICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgIGZsb2F0OiBsZWZ0O1xuICAgICAgICB9XG5cbiAgICAgICAgYSB7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICAgICAgICBjb2xvcjogIzMzMztcbiAgICAgICAgfVxuXG4gICAgICAgIG5hdiBhIHtcbiAgICAgICAgICBwYWRkaW5nOiAxZW0gMC41ZW07XG4gICAgICAgIH1cblxuICAgICAgICAubmF2LWNvbnRhaW5lciB7XG4gICAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlZWU7XG4gICAgICAgICAgaGVpZ2h0OiAxMDBweDtcbiAgICAgICAgfVxuXG4gICAgICAgIGltZyB7XG4gICAgICAgICAgZmxvYXQ6IGxlZnQ7XG4gICAgICAgIH1cblxuICAgICAgICB1bCB7XG4gICAgICAgICAgZmxvYXQ6IHJpZ2h0O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBIZWFkZXI7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Header.js */"));
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
@@ -391,10 +388,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Modal */ "./components/Modal.js");
-/* harmony import */ var _LoginModal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LoginModal */ "./components/LoginModal.js");
-/* harmony import */ var _RegistrationModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./RegistrationModal */ "./components/RegistrationModal.js");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! easy-peasy */ "easy-peasy");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(easy_peasy__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Modal */ "./components/Modal.js");
+/* harmony import */ var _LoginModal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./LoginModal */ "./components/LoginModal.js");
+/* harmony import */ var _RegistrationModal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./RegistrationModal */ "./components/RegistrationModal.js");
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/Layout.js";
 
 
@@ -405,73 +406,80 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 const Layout = props => {
-  const {
-    0: showModal,
-    1: setShowModal
-  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true);
-  const {
-    0: showLoginModal,
-    1: setShowLoginModal
-  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true);
-  const {
-    0: showRegistrationModal,
-    1: setShowRegistrationModal
-  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
+  const showModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreState"])(state => state.modals.showModal);
+  const showLoginModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreState"])(state => state.modals.showLoginModal);
+  const showRegistrationModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreState"])(state => state.modals.showRegistrationModal);
+  const setHideModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreActions"])(actions => actions.modals.setHideModal);
+  const setShowRegistrationModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreActions"])(actions => actions.modals.setShowRegistrationModal);
+  const setShowLoginModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreActions"])(actions => actions.modals.setShowLoginModal);
   return __jsx("div", {
-    className: "jsx-4242418061",
+    className: "jsx-3091886797",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 25
     },
     __self: undefined
-  }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 26
+    },
+    __self: undefined
+  }, __jsx("script", {
+    src: "https://js.stripe.com/v3/",
+    className: "jsx-3091886797",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
     },
     __self: undefined
   }), __jsx("main", {
-    className: "jsx-4242418061",
+    className: "jsx-3091886797",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 31
     },
     __self: undefined
-  }, props.content), showModal && __jsx(_Modal__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    close: () => setShowModal(false),
+  }, props.content), showModal && __jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    close: () => setHideModal(),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 34
     },
     __self: undefined
-  }, showLoginModal && __jsx(_LoginModal__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, showLoginModal && __jsx(_LoginModal__WEBPACK_IMPORTED_MODULE_6__["default"], {
     showSignup: () => {
-      setShowRegistrationModal(true);
-      setShowLoginModal(false);
+      setShowRegistrationModal();
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 36
     },
     __self: undefined
-  }), showRegistrationModal && __jsx(_RegistrationModal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), showRegistrationModal && __jsx(_RegistrationModal__WEBPACK_IMPORTED_MODULE_7__["default"], {
     showLogin: () => {
-      setShowRegistrationModal(false);
-      setShowLoginModal(true);
+      setShowLoginModal();
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 43
     },
     __self: undefined
   })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "205592485",
+    id: "2464272997",
     __self: undefined
-  }, "body{margin:0;font-family:Roboto,-apple-system,BlinkMacSystemFont,Segoe UI, Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;font-size:14px;line-height:1.5;color:#333;}button{background-color:rgb(255,90,95);color:white;font-size:13px;width:100%;height:40px;border-radius:4px;cursor:pointer;}input[type='text'],input[type='email'],input[type='password']{display:block;padding:20px;font-size:20px !important;width:100%;border:1px solid #ccc;box-sizing:border-box;margin-bottom:10px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9MYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUN5QixBQUdvQixBQVV5QixBQVlwQixTQW5CRixLQW9CQyxhQUNhLEtBYmQsWUFDRyxTQWFKLE1BWkEsS0FhVyxNQVpWLFlBQ00sSUFZSSxjQVhQLFFBWUksT0FYckIsWUFZQSxnQkF6QmlCLGVBQ0MsZ0JBQ0wsV0FDYiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL2NvbXBvbmVudHMvTGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBNb2RhbCBmcm9tICcuL01vZGFsJztcbmltcG9ydCBMb2dpbk1vZGFsIGZyb20gJy4vTG9naW5Nb2RhbCc7XG5pbXBvcnQgUmVnaXN0cmF0aW9uTW9kYWwgZnJvbSAnLi9SZWdpc3RyYXRpb25Nb2RhbCc7XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IHtcbiAgY29uc3QgW3Nob3dNb2RhbCwgc2V0U2hvd01vZGFsXSA9IHVzZVN0YXRlKHRydWUpO1xuICBjb25zdCBbc2hvd0xvZ2luTW9kYWwsIHNldFNob3dMb2dpbk1vZGFsXSA9IHVzZVN0YXRlKHRydWUpO1xuICBjb25zdCBbc2hvd1JlZ2lzdHJhdGlvbk1vZGFsLCBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWxdID0gdXNlU3RhdGUoZmFsc2UpO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxIZWFkZXIgLz5cbiAgICAgIDxtYWluPntwcm9wcy5jb250ZW50fTwvbWFpbj5cblxuICAgICAge3Nob3dNb2RhbCAmJiAoXG4gICAgICAgIDxNb2RhbCBjbG9zZT17KCkgPT4gc2V0U2hvd01vZGFsKGZhbHNlKX0+XG4gICAgICAgICAge3Nob3dMb2dpbk1vZGFsICYmIChcbiAgICAgICAgICAgIDxMb2dpbk1vZGFsXG4gICAgICAgICAgICAgIHNob3dTaWdudXA9eygpID0+IHtcbiAgICAgICAgICAgICAgICBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwodHJ1ZSk7XG4gICAgICAgICAgICAgICAgc2V0U2hvd0xvZ2luTW9kYWwoZmFsc2UpO1xuICAgICAgICAgICAgICB9fVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICApfVxuICAgICAgICAgIHtzaG93UmVnaXN0cmF0aW9uTW9kYWwgJiYgKFxuICAgICAgICAgICAgPFJlZ2lzdHJhdGlvbk1vZGFsXG4gICAgICAgICAgICAgIHNob3dMb2dpbj17KCkgPT4ge1xuICAgICAgICAgICAgICAgIHNldFNob3dSZWdpc3RyYXRpb25Nb2RhbChmYWxzZSk7XG4gICAgICAgICAgICAgICAgc2V0U2hvd0xvZ2luTW9kYWwodHJ1ZSk7XG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICl9XG4gICAgICAgIDwvTW9kYWw+XG4gICAgICApfVxuXG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICBib2R5IHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFJvYm90bywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBTZWdvZSBVSSxcbiAgICAgICAgICAgIE94eWdlbiwgVWJ1bnR1LCBDYW50YXJlbGwsIEZpcmEgU2FucywgRHJvaWQgU2FucywgSGVsdmV0aWNhIE5ldWUsXG4gICAgICAgICAgICBzYW5zLXNlcmlmO1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgICBsaW5lLWhlaWdodDogMS41O1xuICAgICAgICAgIGNvbG9yOiAjMzMzO1xuICAgICAgICB9XG5cbiAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCA5MCwgOTUpO1xuICAgICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICBmb250LXNpemU6IDEzcHg7XG4gICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgaGVpZ2h0OiA0MHB4O1xuICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIH1cblxuICAgICAgICBpbnB1dFt0eXBlPSd0ZXh0J10sXG4gICAgICAgIGlucHV0W3R5cGU9J2VtYWlsJ10sXG4gICAgICAgIGlucHV0W3R5cGU9J3Bhc3N3b3JkJ10ge1xuICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgIHBhZGRpbmc6IDIwcHg7XG4gICAgICAgICAgZm9udC1zaXplOiAyMHB4ICFpbXBvcnRhbnQ7XG4gICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cblxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBtYWluIHtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgICAgbWF4LXdpZHRoOiA1NmVtO1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICAgIHBhZGRpbmc6IDJlbTtcbiAgICAgICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Layout.js */"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, "body{margin:0;font-family:Roboto,-apple-system,BlinkMacSystemFont,Segoe UI, Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;font-size:14px;line-height:1.5;color:#333;}button{background-color:rgb(255,90,95);color:white;font-size:13px;width:100%;border:none;height:40px;border-radius:4px;cursor:pointer;}input[type='text'],input[type='email'],input[type='password']{display:block;padding:20px;font-size:20px !important;width:100%;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;margin-bottom:10px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9MYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBbUR5QixBQUdvQixBQVN5QixBQVlwQixTQWxCRixLQW1CQyxhQUNhLEtBYmQsWUFDRyxTQWFKLE1BWkEsS0FhVyxNQVpWLFlBQ0EsSUFZTSxRQVhBLFVBWUksUUFYUCxjQVlJLENBWHJCLGdCQWJpQixFQXlCakIsYUF4QmtCLGdCQUNMLFdBQ2IiLCJmaWxlIjoiL1VzZXJzL2Jlbm55d2FuZy9Eb2N1bWVudHMvUHJvamVjdHMvZ2FtZWRuZC9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZVN0b3JlU3RhdGUsIHVzZVN0b3JlQWN0aW9ucyB9IGZyb20gJ2Vhc3ktcGVhc3knO1xuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcblxuaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgTW9kYWwgZnJvbSAnLi9Nb2RhbCc7XG5pbXBvcnQgTG9naW5Nb2RhbCBmcm9tICcuL0xvZ2luTW9kYWwnO1xuaW1wb3J0IFJlZ2lzdHJhdGlvbk1vZGFsIGZyb20gJy4vUmVnaXN0cmF0aW9uTW9kYWwnO1xuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiB7XG4gIGNvbnN0IHNob3dNb2RhbCA9IHVzZVN0b3JlU3RhdGUoc3RhdGUgPT4gc3RhdGUubW9kYWxzLnNob3dNb2RhbCk7XG4gIGNvbnN0IHNob3dMb2dpbk1vZGFsID0gdXNlU3RvcmVTdGF0ZShzdGF0ZSA9PiBzdGF0ZS5tb2RhbHMuc2hvd0xvZ2luTW9kYWwpO1xuICBjb25zdCBzaG93UmVnaXN0cmF0aW9uTW9kYWwgPSB1c2VTdG9yZVN0YXRlKFxuICAgIHN0YXRlID0+IHN0YXRlLm1vZGFscy5zaG93UmVnaXN0cmF0aW9uTW9kYWxcbiAgKTtcblxuICBjb25zdCBzZXRIaWRlTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRIaWRlTW9kYWwpO1xuICBjb25zdCBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoXG4gICAgYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRTaG93UmVnaXN0cmF0aW9uTW9kYWxcbiAgKTtcbiAgY29uc3Qgc2V0U2hvd0xvZ2luTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoXG4gICAgYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRTaG93TG9naW5Nb2RhbFxuICApO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8c2NyaXB0IHNyYz0naHR0cHM6Ly9qcy5zdHJpcGUuY29tL3YzLyc+PC9zY3JpcHQ+XG4gICAgICA8L0hlYWQ+XG5cbiAgICAgIDxIZWFkZXIgLz5cbiAgICAgIDxtYWluPntwcm9wcy5jb250ZW50fTwvbWFpbj5cblxuICAgICAge3Nob3dNb2RhbCAmJiAoXG4gICAgICAgIDxNb2RhbCBjbG9zZT17KCkgPT4gc2V0SGlkZU1vZGFsKCl9PlxuICAgICAgICAgIHtzaG93TG9naW5Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8TG9naW5Nb2RhbFxuICAgICAgICAgICAgICBzaG93U2lnbnVwPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsKCk7XG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICl9XG4gICAgICAgICAge3Nob3dSZWdpc3RyYXRpb25Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8UmVnaXN0cmF0aW9uTW9kYWxcbiAgICAgICAgICAgICAgc2hvd0xvZ2luPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd0xvZ2luTW9kYWwoKTtcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9Nb2RhbD5cbiAgICAgICl9XG5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBmb250LWZhbWlseTogUm9ib3RvLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIFNlZ29lIFVJLFxuICAgICAgICAgICAgT3h5Z2VuLCBVYnVudHUsIENhbnRhcmVsbCwgRmlyYSBTYW5zLCBEcm9pZCBTYW5zLCBIZWx2ZXRpY2EgTmV1ZSxcbiAgICAgICAgICAgIHNhbnMtc2VyaWY7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjU7XG4gICAgICAgICAgY29sb3I6ICMzMzM7XG4gICAgICAgIH1cbiAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCA5MCwgOTUpO1xuICAgICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICBmb250LXNpemU6IDEzcHg7XG4gICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgICAgIGhlaWdodDogNDBweDtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICB9XG4gICAgICAgIGlucHV0W3R5cGU9J3RleHQnXSxcbiAgICAgICAgaW5wdXRbdHlwZT0nZW1haWwnXSxcbiAgICAgICAgaW5wdXRbdHlwZT0ncGFzc3dvcmQnXSB7XG4gICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgcGFkZGluZzogMjBweDtcbiAgICAgICAgICBmb250LXNpemU6IDIwcHggIWltcG9ydGFudDtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjY2NjO1xuICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cblxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBtYWluIHtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgICAgbWF4LXdpZHRoOiA1NmVtO1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICAgIHBhZGRpbmc6IDJlbTtcbiAgICAgICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Layout.js */"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "103826465",
     __self: undefined
-  }, "main.jsx-4242418061{position:relative;max-width:56em;background-color:white;padding:2em;margin:0 auto;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9MYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBdUVrQixBQUc2QixrQkFDSCxlQUNRLHVCQUNYLFlBQ0UsY0FDUSxzQkFDeEIiLCJmaWxlIjoiL1VzZXJzL2Jlbm55d2FuZy9Eb2N1bWVudHMvUHJvamVjdHMvZ2FtZWRuZC9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkZXIgZnJvbSAnLi9IZWFkZXInO1xuaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgTW9kYWwgZnJvbSAnLi9Nb2RhbCc7XG5pbXBvcnQgTG9naW5Nb2RhbCBmcm9tICcuL0xvZ2luTW9kYWwnO1xuaW1wb3J0IFJlZ2lzdHJhdGlvbk1vZGFsIGZyb20gJy4vUmVnaXN0cmF0aW9uTW9kYWwnO1xuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiB7XG4gIGNvbnN0IFtzaG93TW9kYWwsIHNldFNob3dNb2RhbF0gPSB1c2VTdGF0ZSh0cnVlKTtcbiAgY29uc3QgW3Nob3dMb2dpbk1vZGFsLCBzZXRTaG93TG9naW5Nb2RhbF0gPSB1c2VTdGF0ZSh0cnVlKTtcbiAgY29uc3QgW3Nob3dSZWdpc3RyYXRpb25Nb2RhbCwgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsXSA9IHVzZVN0YXRlKGZhbHNlKTtcblxuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8SGVhZGVyIC8+XG4gICAgICA8bWFpbj57cHJvcHMuY29udGVudH08L21haW4+XG5cbiAgICAgIHtzaG93TW9kYWwgJiYgKFxuICAgICAgICA8TW9kYWwgY2xvc2U9eygpID0+IHNldFNob3dNb2RhbChmYWxzZSl9PlxuICAgICAgICAgIHtzaG93TG9naW5Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8TG9naW5Nb2RhbFxuICAgICAgICAgICAgICBzaG93U2lnbnVwPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsKHRydWUpO1xuICAgICAgICAgICAgICAgIHNldFNob3dMb2dpbk1vZGFsKGZhbHNlKTtcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgICB7c2hvd1JlZ2lzdHJhdGlvbk1vZGFsICYmIChcbiAgICAgICAgICAgIDxSZWdpc3RyYXRpb25Nb2RhbFxuICAgICAgICAgICAgICBzaG93TG9naW49eygpID0+IHtcbiAgICAgICAgICAgICAgICBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwoZmFsc2UpO1xuICAgICAgICAgICAgICAgIHNldFNob3dMb2dpbk1vZGFsKHRydWUpO1xuICAgICAgICAgICAgICB9fVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICApfVxuICAgICAgICA8L01vZGFsPlxuICAgICAgKX1cblxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBSb2JvdG8sIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgU2Vnb2UgVUksXG4gICAgICAgICAgICBPeHlnZW4sIFVidW50dSwgQ2FudGFyZWxsLCBGaXJhIFNhbnMsIERyb2lkIFNhbnMsIEhlbHZldGljYSBOZXVlLFxuICAgICAgICAgICAgc2Fucy1zZXJpZjtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgICAgbGluZS1oZWlnaHQ6IDEuNTtcbiAgICAgICAgICBjb2xvcjogIzMzMztcbiAgICAgICAgfVxuXG4gICAgICAgIGJ1dHRvbiB7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgOTAsIDk1KTtcbiAgICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgICAgZm9udC1zaXplOiAxM3B4O1xuICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgIGhlaWdodDogNDBweDtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICB9XG5cbiAgICAgICAgaW5wdXRbdHlwZT0ndGV4dCddLFxuICAgICAgICBpbnB1dFt0eXBlPSdlbWFpbCddLFxuICAgICAgICBpbnB1dFt0eXBlPSdwYXNzd29yZCddIHtcbiAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICBwYWRkaW5nOiAyMHB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMjBweCAhaW1wb3J0YW50O1xuICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgbWFpbiB7XG4gICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICAgIG1heC13aWR0aDogNTZlbTtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICBwYWRkaW5nOiAyZW07XG4gICAgICAgICAgbWFyZ2luOiAwIGF1dG87XG4gICAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgTGF5b3V0O1xuIl19 */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Layout.js */"));
+  }, "main.jsx-3091886797{position:relative;max-width:56em;background-color:white;padding:2em;margin:0 auto;box-sizing:border-box;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvY29tcG9uZW50cy9MYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUZrQixBQUc2QixrQkFDSCxlQUNRLHVCQUNYLFlBQ0UsY0FDUSxzQkFDeEIiLCJmaWxlIjoiL1VzZXJzL2Jlbm55d2FuZy9Eb2N1bWVudHMvUHJvamVjdHMvZ2FtZWRuZC9jb21wb25lbnRzL0xheW91dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZVN0b3JlU3RhdGUsIHVzZVN0b3JlQWN0aW9ucyB9IGZyb20gJ2Vhc3ktcGVhc3knO1xuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcblxuaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgTW9kYWwgZnJvbSAnLi9Nb2RhbCc7XG5pbXBvcnQgTG9naW5Nb2RhbCBmcm9tICcuL0xvZ2luTW9kYWwnO1xuaW1wb3J0IFJlZ2lzdHJhdGlvbk1vZGFsIGZyb20gJy4vUmVnaXN0cmF0aW9uTW9kYWwnO1xuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiB7XG4gIGNvbnN0IHNob3dNb2RhbCA9IHVzZVN0b3JlU3RhdGUoc3RhdGUgPT4gc3RhdGUubW9kYWxzLnNob3dNb2RhbCk7XG4gIGNvbnN0IHNob3dMb2dpbk1vZGFsID0gdXNlU3RvcmVTdGF0ZShzdGF0ZSA9PiBzdGF0ZS5tb2RhbHMuc2hvd0xvZ2luTW9kYWwpO1xuICBjb25zdCBzaG93UmVnaXN0cmF0aW9uTW9kYWwgPSB1c2VTdG9yZVN0YXRlKFxuICAgIHN0YXRlID0+IHN0YXRlLm1vZGFscy5zaG93UmVnaXN0cmF0aW9uTW9kYWxcbiAgKTtcblxuICBjb25zdCBzZXRIaWRlTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRIaWRlTW9kYWwpO1xuICBjb25zdCBzZXRTaG93UmVnaXN0cmF0aW9uTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoXG4gICAgYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRTaG93UmVnaXN0cmF0aW9uTW9kYWxcbiAgKTtcbiAgY29uc3Qgc2V0U2hvd0xvZ2luTW9kYWwgPSB1c2VTdG9yZUFjdGlvbnMoXG4gICAgYWN0aW9ucyA9PiBhY3Rpb25zLm1vZGFscy5zZXRTaG93TG9naW5Nb2RhbFxuICApO1xuXG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8c2NyaXB0IHNyYz0naHR0cHM6Ly9qcy5zdHJpcGUuY29tL3YzLyc+PC9zY3JpcHQ+XG4gICAgICA8L0hlYWQ+XG5cbiAgICAgIDxIZWFkZXIgLz5cbiAgICAgIDxtYWluPntwcm9wcy5jb250ZW50fTwvbWFpbj5cblxuICAgICAge3Nob3dNb2RhbCAmJiAoXG4gICAgICAgIDxNb2RhbCBjbG9zZT17KCkgPT4gc2V0SGlkZU1vZGFsKCl9PlxuICAgICAgICAgIHtzaG93TG9naW5Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8TG9naW5Nb2RhbFxuICAgICAgICAgICAgICBzaG93U2lnbnVwPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd1JlZ2lzdHJhdGlvbk1vZGFsKCk7XG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICl9XG4gICAgICAgICAge3Nob3dSZWdpc3RyYXRpb25Nb2RhbCAmJiAoXG4gICAgICAgICAgICA8UmVnaXN0cmF0aW9uTW9kYWxcbiAgICAgICAgICAgICAgc2hvd0xvZ2luPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0U2hvd0xvZ2luTW9kYWwoKTtcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9Nb2RhbD5cbiAgICAgICl9XG5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBmb250LWZhbWlseTogUm9ib3RvLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIFNlZ29lIFVJLFxuICAgICAgICAgICAgT3h5Z2VuLCBVYnVudHUsIENhbnRhcmVsbCwgRmlyYSBTYW5zLCBEcm9pZCBTYW5zLCBIZWx2ZXRpY2EgTmV1ZSxcbiAgICAgICAgICAgIHNhbnMtc2VyaWY7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjU7XG4gICAgICAgICAgY29sb3I6ICMzMzM7XG4gICAgICAgIH1cbiAgICAgICAgYnV0dG9uIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCA5MCwgOTUpO1xuICAgICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICBmb250LXNpemU6IDEzcHg7XG4gICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgICAgIGhlaWdodDogNDBweDtcbiAgICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICB9XG4gICAgICAgIGlucHV0W3R5cGU9J3RleHQnXSxcbiAgICAgICAgaW5wdXRbdHlwZT0nZW1haWwnXSxcbiAgICAgICAgaW5wdXRbdHlwZT0ncGFzc3dvcmQnXSB7XG4gICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgcGFkZGluZzogMjBweDtcbiAgICAgICAgICBmb250LXNpemU6IDIwcHggIWltcG9ydGFudDtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjY2NjO1xuICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cblxuICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBtYWluIHtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgICAgbWF4LXdpZHRoOiA1NmVtO1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICAgIHBhZGRpbmc6IDJlbTtcbiAgICAgICAgICBtYXJnaW46IDAgYXV0bztcbiAgICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXX0= */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/components/Layout.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -489,76 +497,78 @@ const Layout = props => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! easy-peasy */ "easy-peasy");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(easy_peasy__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/LoginModal.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-/* harmony default export */ __webpack_exports__["default"] = (props => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 2
-  },
-  __self: undefined
-}, __jsx("h2", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
-}, "Log In"), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx("form", {
-  onSubmit: event => {
-    alert('Log in!');
-    event.preventDefault();
-  },
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx("input", {
-  id: "email",
-  type: "email",
-  placeholder: "Email Address",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}), __jsx("input", {
-  id: "password",
-  type: "password",
-  placeholder: "Password",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}), __jsx("button", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, "Log In")), __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}, "Don't have an account yet?", ' ', __jsx("a", {
-  href: "javascript:;",
-  onClick: () => props.showSignup(),
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16
-  },
-  __self: undefined
-}, "Sign up")))));
+
+
+/* harmony default export */ __webpack_exports__["default"] = (props => {
+  const setUser = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_1__["useStoreActions"])(actions => actions.user.setUser);
+  const setHideModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_1__["useStoreActions"])(actions => actions.modals.setHideModal);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, "Log In"), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, __jsx("form", {
+    onSubmit: event => {
+      alert('Log in!');
+      event.preventDefault();
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx("input", {
+    id: "email",
+    type: "email",
+    placeholder: "Email address",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }), __jsx("input", {
+    id: "password",
+    type: "password",
+    placeholder: "Password",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }), __jsx("button", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, "Log in")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }, "Don't have an account yet?", ' ', __jsx("a", {
+    href: "#",
+    onClick: () => props.showSignup(),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: undefined
+  }, "Sign up"))));
+});
 
 /***/ }),
 
@@ -619,85 +629,87 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! easy-peasy */ "easy-peasy");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(easy_peasy__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/RegistrationModal.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-/* harmony default export */ __webpack_exports__["default"] = (props => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 2
-  },
-  __self: undefined
-}, __jsx("h2", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
-}, "Sign Up"), __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx("form", {
-  onSubmit: event => {
-    alert('Sign up!');
-    event.preventDefault();
-  },
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx("input", {
-  id: "email",
-  type: "email",
-  placeholder: "Email Address",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}), __jsx("input", {
-  id: "password",
-  type: "password",
-  placeholder: "Password",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}), __jsx("input", {
-  id: "passwordconfirmation",
-  type: "password",
-  placeholder: "Enter Password Again",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}), __jsx("button", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17
-  },
-  __self: undefined
-}, "Sign Up")), __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
-}, "Already have an account?", ' ', __jsx("a", {
-  href: "javascript:;",
-  onClick: () => props.showLogin(),
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21
-  },
-  __self: undefined
-}, "Log in")))));
+
+
+/* harmony default export */ __webpack_exports__["default"] = (props => {
+  const setUser = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_1__["useStoreActions"])(actions => actions.user.setUser);
+  const setHideModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_1__["useStoreActions"])(actions => actions.modals.setHideModal);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, "Sign up"), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, __jsx("form", {
+    onSubmit: event => {
+      alert('Sign up!');
+      event.preventDefault();
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx("input", {
+    id: "email",
+    type: "email",
+    placeholder: "Email address",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }), __jsx("input", {
+    id: "password",
+    type: "password",
+    placeholder: "Password",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }), __jsx("input", {
+    id: "passwordconfirmation",
+    type: "password",
+    placeholder: "Enter password again",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }), __jsx("button", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: undefined
+  }, "Sign Up")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, "Already have an account?", ' ', __jsx("a", {
+    href: "#",
+    onClick: () => props.showLogin(),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  }, "Log in"))));
+});
 
 /***/ }),
 
@@ -2537,16 +2549,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_DateRangePicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/DateRangePicker */ "./components/DateRangePicker.js");
-/* harmony import */ var _houses_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../houses.json */ "./houses.json");
-var _houses_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../houses.json */ "./houses.json", 1);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! easy-peasy */ "easy-peasy");
+/* harmony import */ var easy_peasy__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(easy_peasy__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_DateRangePicker__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/DateRangePicker */ "./components/DateRangePicker.js");
+/* harmony import */ var _houses_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../houses.json */ "./houses.json");
+var _houses_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../houses.json */ "./houses.json", 1);
 var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/pages/houses/[id].js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
@@ -2574,41 +2589,49 @@ const House = props => {
   const {
     0: dateChosen,
     1: setDateChosen
-  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false); //create new dateChosen state propery, which defaults to false;
-
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false);
+  const {
+    0: startDate,
+    1: setStartDate
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])();
+  const {
+    0: endDate,
+    1: setEndDate
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])();
+  const setShowLoginModal = Object(easy_peasy__WEBPACK_IMPORTED_MODULE_2__["useStoreActions"])(actions => actions.modals.setShowLoginModal);
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     content: __jsx("div", {
       className: "jsx-1671841858" + " " + 'container',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 37
       },
       __self: undefined
-    }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 38
       },
       __self: undefined
     }, __jsx("title", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 39
       },
       __self: undefined
     }, props.house.title)), __jsx("article", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 41
       },
       __self: undefined
     }, __jsx("h1", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 42
       },
       __self: undefined
     }, "Welcome to ", props.house.hostName || 'no name', "'s listing"), __jsx("img", {
@@ -2618,45 +2641,45 @@ const House = props => {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 43
       },
       __self: undefined
     }), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 44
       },
       __self: undefined
     }, props.house.type, " - ", props.house.town), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 47
       },
       __self: undefined
     }, props.house.title), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 48
       },
       __self: undefined
     }, props.house.rating, " (", props.house.reviewsCount, ")")), __jsx("aside", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 52
       },
       __self: undefined
     }, __jsx("h2", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 53
       },
       __self: undefined
-    }, "Add dates for prices"), __jsx(_components_DateRangePicker__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }, "Add dates for prices"), __jsx(_components_DateRangePicker__WEBPACK_IMPORTED_MODULE_5__["default"], {
       datesChanged: (startDate, endDate) => {
         console.log('start', startDate, 'end', endDate);
         setNumberOfNightsBetweenDates(calcNumberOfNightsBetweenDates(startDate, endDate));
@@ -2664,58 +2687,61 @@ const House = props => {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 54
       },
       __self: undefined
     }), dateChosen && __jsx("div", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 64
       },
       __self: undefined
     }, __jsx("h2", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 65
       },
       __self: undefined
     }, "Price per night"), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 66
       },
       __self: undefined
     }, "$", props.house.price), __jsx("h2", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 67
       },
       __self: undefined
     }, "Total price for booking"), __jsx("p", {
       className: "jsx-1671841858",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 68
       },
       __self: undefined
     }, "$", (numberOfNightsBetweenDates * props.house.price).toFixed(2)), __jsx("button", {
+      onClick: () => {
+        setShowLoginModal();
+      },
       className: "jsx-1671841858" + " " + 'reserve',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 71
       },
       __self: undefined
     }, "Reserve"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
       id: "1671841858",
       __self: undefined
-    }, ".container.jsx-1671841858{display:grid;grid-template-columns:60% 40%;grid-gap:30px;}aside.jsx-1671841858{border:1px solid #ccc;padding:20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvcGFnZXMvaG91c2VzL1tpZF0uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUVzQixBQUc0QixBQU1TLGFBTFEsU0FNakIsYUFDZixRQU5nQixjQUNoQiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL3BhZ2VzL2hvdXNlcy9baWRdLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xuaW1wb3J0IERhdGVSYW5nZVBpY2tlciBmcm9tICcuLi8uLi9jb21wb25lbnRzL0RhdGVSYW5nZVBpY2tlcic7XG5pbXBvcnQgaG91c2VzIGZyb20gJy4uLy4uL2hvdXNlcy5qc29uJztcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vLi4vY29tcG9uZW50cy9MYXlvdXQnO1xuXG5jb25zdCBjYWxjTnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMgPSAoc3RhcnREYXRlLCBlbmREYXRlKSA9PiB7XG4gIGNvbnN0IHN0YXJ0ID0gbmV3IERhdGUoc3RhcnREYXRlKTtcbiAgY29uc3QgZW5kID0gbmV3IERhdGUoZW5kRGF0ZSk7XG4gIGxldCBkYXlDb3VudCA9IDA7XG5cbiAgd2hpbGUgKGVuZCA+IHN0YXJ0KSB7XG4gICAgZGF5Q291bnQrKztcbiAgICBzdGFydC5zZXREYXRlKHN0YXJ0LmdldERhdGUoKSArIDEpO1xuICB9XG4gIHJldHVybiBkYXlDb3VudDtcbn07XG5cbmNvbnN0IEhvdXNlID0gcHJvcHMgPT4ge1xuICBjb25zdCBbbnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMsIHNldE51bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzXSA9IHVzZVN0YXRlKFxuICAgIDBcbiAgKTtcbiAgY29uc3QgW2RhdGVDaG9zZW4sIHNldERhdGVDaG9zZW5dID0gdXNlU3RhdGUoZmFsc2UpOyAvL2NyZWF0ZSBuZXcgZGF0ZUNob3NlbiBzdGF0ZSBwcm9wZXJ5LCB3aGljaCBkZWZhdWx0cyB0byBmYWxzZTtcblxuICByZXR1cm4gKFxuICAgIDxMYXlvdXRcbiAgICAgIGNvbnRlbnQ9e1xuICAgICAgICA8ZGl2IGNsYXNzTmFtZT0nY29udGFpbmVyJz5cbiAgICAgICAgICA8SGVhZD5cbiAgICAgICAgICAgIDx0aXRsZT57cHJvcHMuaG91c2UudGl0bGV9PC90aXRsZT5cbiAgICAgICAgICA8L0hlYWQ+XG4gICAgICAgICAgPGFydGljbGU+XG4gICAgICAgICAgICA8aDE+V2VsY29tZSB0byB7cHJvcHMuaG91c2UuaG9zdE5hbWUgfHwgJ25vIG5hbWUnfSdzIGxpc3Rpbmc8L2gxPlxuICAgICAgICAgICAgPGltZyBzcmM9e3Byb3BzLmhvdXNlLnBpY3R1cmV9IHdpZHRoPScxMDAlJyBhbHQ9J0hvdXNlIHBpY3R1cmUnIC8+XG4gICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAge3Byb3BzLmhvdXNlLnR5cGV9IC0ge3Byb3BzLmhvdXNlLnRvd259XG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8cD57cHJvcHMuaG91c2UudGl0bGV9PC9wPlxuICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgIHtwcm9wcy5ob3VzZS5yYXRpbmd9ICh7cHJvcHMuaG91c2UucmV2aWV3c0NvdW50fSlcbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8L2FydGljbGU+XG4gICAgICAgICAgPGFzaWRlPlxuICAgICAgICAgICAgPGgyPkFkZCBkYXRlcyBmb3IgcHJpY2VzPC9oMj5cbiAgICAgICAgICAgIDxEYXRlUmFuZ2VQaWNrZXJcbiAgICAgICAgICAgICAgZGF0ZXNDaGFuZ2VkPXsoc3RhcnREYXRlLCBlbmREYXRlKSA9PiB7XG4gICAgICAgICAgICAgICAgY29uc29sZS5sb2coJ3N0YXJ0Jywgc3RhcnREYXRlLCAnZW5kJywgZW5kRGF0ZSk7XG4gICAgICAgICAgICAgICAgc2V0TnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMoXG4gICAgICAgICAgICAgICAgICBjYWxjTnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMoc3RhcnREYXRlLCBlbmREYXRlKVxuICAgICAgICAgICAgICAgICk7XG4gICAgICAgICAgICAgICAgc2V0RGF0ZUNob3Nlbih0cnVlKTtcbiAgICAgICAgICAgICAgfX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICAgICB7ZGF0ZUNob3NlbiAmJiAoXG4gICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgPGgyPlByaWNlIHBlciBuaWdodDwvaDI+XG4gICAgICAgICAgICAgICAgPHA+JHtwcm9wcy5ob3VzZS5wcmljZX08L3A+XG4gICAgICAgICAgICAgICAgPGgyPlRvdGFsIHByaWNlIGZvciBib29raW5nPC9oMj5cbiAgICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICAgICR7KG51bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzICogcHJvcHMuaG91c2UucHJpY2UpLnRvRml4ZWQoMil9XG4gICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPSdyZXNlcnZlJz5SZXNlcnZlPC9idXR0b24+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgKX1cbiAgICAgICAgICA8L2FzaWRlPlxuICAgICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAgIC5jb250YWluZXIge1xuICAgICAgICAgICAgICBkaXNwbGF5OiBncmlkO1xuICAgICAgICAgICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDYwJSA0MCU7XG4gICAgICAgICAgICAgIGdyaWQtZ2FwOiAzMHB4O1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICBhc2lkZSB7XG4gICAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XG4gICAgICAgICAgICAgIHBhZGRpbmc6IDIwcHg7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIH1cbiAgICAvPlxuICApO1xufTtcblxuSG91c2UuZ2V0SW5pdGlhbFByb3BzID0gKHsgcXVlcnkgfSkgPT4ge1xuICBjb25zb2xlLmxvZyhxdWVyeSk7XG4gIGNvbnN0IHsgaWQgfSA9IHF1ZXJ5O1xuXG4gIHJldHVybiB7XG4gICAgaG91c2U6IGhvdXNlcy5maWx0ZXIoaG91c2UgPT4gaG91c2UuaWQgPT09IGlkKVswXSxcbiAgfTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEhvdXNlO1xuIl19 */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/pages/houses/[id].js */")),
+    }, ".container.jsx-1671841858{display:grid;grid-template-columns:60% 40%;grid-gap:30px;}aside.jsx-1671841858{border:1px solid #ccc;padding:20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9iZW5ueXdhbmcvRG9jdW1lbnRzL1Byb2plY3RzL2dhbWVkbmQvcGFnZXMvaG91c2VzL1tpZF0uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZ0ZzQixBQUc0QixBQU1TLGFBTFEsU0FNakIsYUFDZixRQU5nQixjQUNoQiIsImZpbGUiOiIvVXNlcnMvYmVubnl3YW5nL0RvY3VtZW50cy9Qcm9qZWN0cy9nYW1lZG5kL3BhZ2VzL2hvdXNlcy9baWRdLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyB1c2VTdG9yZUFjdGlvbnMsIHVzZVN0b3JlU3RhdGUgfSBmcm9tICdlYXN5LXBlYXN5JztcblxuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vLi4vY29tcG9uZW50cy9MYXlvdXQnO1xuaW1wb3J0IERhdGVSYW5nZVBpY2tlciBmcm9tICcuLi8uLi9jb21wb25lbnRzL0RhdGVSYW5nZVBpY2tlcic7XG5cbmltcG9ydCBob3VzZXMgZnJvbSAnLi4vLi4vaG91c2VzLmpzb24nO1xuXG5jb25zdCBjYWxjTnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMgPSAoc3RhcnREYXRlLCBlbmREYXRlKSA9PiB7XG4gIGNvbnN0IHN0YXJ0ID0gbmV3IERhdGUoc3RhcnREYXRlKTtcbiAgY29uc3QgZW5kID0gbmV3IERhdGUoZW5kRGF0ZSk7XG4gIGxldCBkYXlDb3VudCA9IDA7XG5cbiAgd2hpbGUgKGVuZCA+IHN0YXJ0KSB7XG4gICAgZGF5Q291bnQrKztcbiAgICBzdGFydC5zZXREYXRlKHN0YXJ0LmdldERhdGUoKSArIDEpO1xuICB9XG4gIHJldHVybiBkYXlDb3VudDtcbn07XG5cbmNvbnN0IEhvdXNlID0gcHJvcHMgPT4ge1xuICBjb25zdCBbbnVtYmVyT2ZOaWdodHNCZXR3ZWVuRGF0ZXMsIHNldE51bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzXSA9IHVzZVN0YXRlKFxuICAgIDBcbiAgKTtcbiAgY29uc3QgW2RhdGVDaG9zZW4sIHNldERhdGVDaG9zZW5dID0gdXNlU3RhdGUoZmFsc2UpO1xuICBjb25zdCBbc3RhcnREYXRlLCBzZXRTdGFydERhdGVdID0gdXNlU3RhdGUoKTtcbiAgY29uc3QgW2VuZERhdGUsIHNldEVuZERhdGVdID0gdXNlU3RhdGUoKTtcblxuICBjb25zdCBzZXRTaG93TG9naW5Nb2RhbCA9IHVzZVN0b3JlQWN0aW9ucyhcbiAgICBhY3Rpb25zID0+IGFjdGlvbnMubW9kYWxzLnNldFNob3dMb2dpbk1vZGFsXG4gICk7XG5cbiAgcmV0dXJuIChcbiAgICA8TGF5b3V0XG4gICAgICBjb250ZW50PXtcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9J2NvbnRhaW5lcic+XG4gICAgICAgICAgPEhlYWQ+XG4gICAgICAgICAgICA8dGl0bGU+e3Byb3BzLmhvdXNlLnRpdGxlfTwvdGl0bGU+XG4gICAgICAgICAgPC9IZWFkPlxuICAgICAgICAgIDxhcnRpY2xlPlxuICAgICAgICAgICAgPGgxPldlbGNvbWUgdG8ge3Byb3BzLmhvdXNlLmhvc3ROYW1lIHx8ICdubyBuYW1lJ30ncyBsaXN0aW5nPC9oMT5cbiAgICAgICAgICAgIDxpbWcgc3JjPXtwcm9wcy5ob3VzZS5waWN0dXJlfSB3aWR0aD0nMTAwJScgYWx0PSdIb3VzZSBwaWN0dXJlJyAvPlxuICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgIHtwcm9wcy5ob3VzZS50eXBlfSAtIHtwcm9wcy5ob3VzZS50b3dufVxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgPHA+e3Byb3BzLmhvdXNlLnRpdGxlfTwvcD5cbiAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICB7cHJvcHMuaG91c2UucmF0aW5nfSAoe3Byb3BzLmhvdXNlLnJldmlld3NDb3VudH0pXG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgPC9hcnRpY2xlPlxuICAgICAgICAgIDxhc2lkZT5cbiAgICAgICAgICAgIDxoMj5BZGQgZGF0ZXMgZm9yIHByaWNlczwvaDI+XG4gICAgICAgICAgICA8RGF0ZVJhbmdlUGlja2VyXG4gICAgICAgICAgICAgIGRhdGVzQ2hhbmdlZD17KHN0YXJ0RGF0ZSwgZW5kRGF0ZSkgPT4ge1xuICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKCdzdGFydCcsIHN0YXJ0RGF0ZSwgJ2VuZCcsIGVuZERhdGUpO1xuICAgICAgICAgICAgICAgIHNldE51bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzKFxuICAgICAgICAgICAgICAgICAgY2FsY051bWJlck9mTmlnaHRzQmV0d2VlbkRhdGVzKHN0YXJ0RGF0ZSwgZW5kRGF0ZSlcbiAgICAgICAgICAgICAgICApO1xuICAgICAgICAgICAgICAgIHNldERhdGVDaG9zZW4odHJ1ZSk7XG4gICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAvPlxuICAgICAgICAgICAge2RhdGVDaG9zZW4gJiYgKFxuICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgIDxoMj5QcmljZSBwZXIgbmlnaHQ8L2gyPlxuICAgICAgICAgICAgICAgIDxwPiR7cHJvcHMuaG91c2UucHJpY2V9PC9wPlxuICAgICAgICAgICAgICAgIDxoMj5Ub3RhbCBwcmljZSBmb3IgYm9va2luZzwvaDI+XG4gICAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgICAkeyhudW1iZXJPZk5pZ2h0c0JldHdlZW5EYXRlcyAqIHByb3BzLmhvdXNlLnByaWNlKS50b0ZpeGVkKDIpfVxuICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgICAgICBjbGFzc05hbWU9J3Jlc2VydmUnXG4gICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIHNldFNob3dMb2dpbk1vZGFsKCk7XG4gICAgICAgICAgICAgICAgICB9fT5cbiAgICAgICAgICAgICAgICAgIFJlc2VydmVcbiAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApfVxuICAgICAgICAgIDwvYXNpZGU+XG4gICAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgICAgLmNvbnRhaW5lciB7XG4gICAgICAgICAgICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgICAgICAgICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogNjAlIDQwJTtcbiAgICAgICAgICAgICAgZ3JpZC1nYXA6IDMwcHg7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIGFzaWRlIHtcbiAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcbiAgICAgICAgICAgICAgcGFkZGluZzogMjBweDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICBgfTwvc3R5bGU+XG4gICAgICAgIDwvZGl2PlxuICAgICAgfVxuICAgIC8+XG4gICk7XG59O1xuXG5Ib3VzZS5nZXRJbml0aWFsUHJvcHMgPSAoeyBxdWVyeSB9KSA9PiB7XG4gIGNvbnN0IHsgaWQgfSA9IHF1ZXJ5O1xuXG4gIHJldHVybiB7XG4gICAgaG91c2U6IGhvdXNlcy5maWx0ZXIoaG91c2UgPT4gaG91c2UuaWQgPT09IGlkKVswXSxcbiAgfTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEhvdXNlO1xuIl19 */\n/*@ sourceURL=/Users/bennywang/Documents/Projects/gamednd/pages/houses/[id].js */")),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 35
     },
     __self: undefined
   });
@@ -2724,12 +2750,11 @@ const House = props => {
 House.getInitialProps = ({
   query
 }) => {
-  console.log(query);
   const {
     id
   } = query;
   return {
-    house: _houses_json__WEBPACK_IMPORTED_MODULE_4__.filter(house => house.id === id)[0]
+    house: _houses_json__WEBPACK_IMPORTED_MODULE_6__.filter(house => house.id === id)[0]
   };
 };
 
@@ -2878,6 +2903,17 @@ module.exports = require("date-fns/format");
 /***/ (function(module, exports) {
 
 module.exports = require("date-fns/parse");
+
+/***/ }),
+
+/***/ "easy-peasy":
+/*!*****************************!*\
+  !*** external "easy-peasy" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("easy-peasy");
 
 /***/ }),
 
