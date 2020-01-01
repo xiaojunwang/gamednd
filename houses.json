@@ -1,10 +1,12 @@
-[{
+[
+  {
     "id": "1",
     "hostName": "Anna",
     "picture": "/img/houses/Dungeons&Dragons.jpg",
     "type": "Board Game",
     "town": "San Francisco",
     "title": "Game night playing Dungeons and Dragons!",
+    "price": "50.00",
     "rating": 4.93,
     "reviewsCount": 198,
     "superhost": true,
@@ -21,12 +23,14 @@
     },
     "packageIncludes": "Equipment",
     "where": "Board games are played at the dining room table on main floor.",
-    "reviews": [{
-      "user": "Radhika",
-      "date": "August 2019",
-      "avatar": "https://a0.muscache.com/im/users/34403074/profile_pic/1432859567/original.jpg?aki_policy=profile_x_medium",
-      "comment": "We had an excellent time playing with others. Anna is a great host!"
-    }]
+    "reviews": [
+      {
+        "user": "Radhika",
+        "date": "August 2019",
+        "avatar": "https://a0.muscache.com/im/users/34403074/profile_pic/1432859567/original.jpg?aki_policy=profile_x_medium",
+        "comment": "We had an excellent time playing with others. Anna is a great host!"
+      }
+    ]
   },
   {
     "id": "2",
@@ -34,6 +38,7 @@
     "type": "Video Game",
     "town": "Ann Arbor",
     "title": "Let's Smash it up",
+    "price": "25.00",
     "rating": 4.77,
     "reviewsCount": 246
   }
