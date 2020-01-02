@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -631,7 +631,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/RegistrationModal.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -649,82 +648,44 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     0: passwordconfirmation,
     1: setPasswordconfirmation
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }, "Sign up"), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: undefined
-  }, __jsx("form", {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h2", null, "Sign up"), __jsx("div", null, __jsx("form", {
     onSubmit: async event => {
-      const response = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/auth/register', {
-        email,
-        password,
-        passwordconfirmation
-      });
-      console.log(response);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: undefined
+      try {
+        const response = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/auth/register', {
+          email,
+          password,
+          passwordconfirmation
+        });
+
+        if (response.data.status === 'error') {
+          alert(response.data.message);
+          return;
+        }
+      } catch (error) {
+        alert(error.response.data.message);
+        return;
+      }
+
+      event.preventDefault();
+    }
   }, __jsx("input", {
     id: "email",
     type: "email",
     placeholder: "Email address",
-    onChange: event => setEmail(event.target.value),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: undefined
+    onChange: event => setEmail(event.target.value)
   }), __jsx("input", {
     id: "password",
     type: "password",
     placeholder: "Password",
-    onChange: event => setPassword(event.target.value),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: undefined
+    onChange: event => setPassword(event.target.value)
   }), __jsx("input", {
     id: "passwordconfirmation",
     type: "password",
     placeholder: "Enter password again",
-    onChange: event => setPasswordconfirmation(event.target.value),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: undefined
-  }), __jsx("button", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: undefined
-  }, "Sign up")), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: undefined
-  }, "Already have an account?", ' ', __jsx("a", {
+    onChange: event => setPasswordconfirmation(event.target.value)
+  }), __jsx("button", null, "Sign up")), __jsx("p", null, "Already have an account?", ' ', __jsx("a", {
     href: "#",
-    onClick: () => props.showLogin(),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: undefined
+    onClick: () => props.showLogin()
   }, "Log in"))));
 });
 
@@ -2779,7 +2740,7 @@ House.getInitialProps = ({
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!************************************!*\
   !*** multi ./pages/houses/[id].js ***!
   \************************************/

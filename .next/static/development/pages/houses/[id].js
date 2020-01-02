@@ -570,7 +570,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "/Users/bennywang/Documents/Projects/gamednd/components/RegistrationModal.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -588,106 +587,78 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
       passwordconfirmation = _useState3[0],
       setPasswordconfirmation = _useState3[1];
 
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "Sign up"), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, __jsx("form", {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("h2", null, "Sign up"), __jsx("div", null, __jsx("form", {
     onSubmit: function _callee(event) {
       var response;
       return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              _context.next = 2;
+              _context.prev = 0;
+              _context.next = 3;
               return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/auth/register', {
                 email: email,
                 password: password,
                 passwordconfirmation: passwordconfirmation
               }));
 
-            case 2:
+            case 3:
               response = _context.sent;
-              console.log(response);
 
-            case 4:
+              if (!(response.data.status === 'error')) {
+                _context.next = 7;
+                break;
+              }
+
+              alert(response.data.message);
+              return _context.abrupt("return");
+
+            case 7:
+              _context.next = 13;
+              break;
+
+            case 9:
+              _context.prev = 9;
+              _context.t0 = _context["catch"](0);
+              alert(_context.t0.response.data.message);
+              return _context.abrupt("return");
+
+            case 13:
+              event.preventDefault();
+
+            case 14:
             case "end":
               return _context.stop();
           }
         }
-      });
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
+      }, null, null, [[0, 9]]);
+    }
   }, __jsx("input", {
     id: "email",
     type: "email",
     placeholder: "Email address",
     onChange: function onChange(event) {
       return setEmail(event.target.value);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
+    }
   }), __jsx("input", {
     id: "password",
     type: "password",
     placeholder: "Password",
     onChange: function onChange(event) {
       return setPassword(event.target.value);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
+    }
   }), __jsx("input", {
     id: "passwordconfirmation",
     type: "password",
     placeholder: "Enter password again",
     onChange: function onChange(event) {
       return setPasswordconfirmation(event.target.value);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }), __jsx("button", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, "Sign up")), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, "Already have an account?", ' ', __jsx("a", {
+    }
+  }), __jsx("button", null, "Sign up")), __jsx("p", null, "Already have an account?", ' ', __jsx("a", {
     href: "#",
     onClick: function onClick() {
       return props.showLogin();
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
+    }
   }, "Log in"))));
 });
 
@@ -24580,7 +24551,7 @@ House.getInitialProps = function (_ref) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fhouses%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhouses%2F%5Bid%5D.js ***!
   \**********************************************************************************************************************************************************************/
@@ -24603,5 +24574,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=[id].js.map
