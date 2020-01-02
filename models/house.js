@@ -21,7 +21,10 @@ House.init(
     guests: { type: Sequelize.DataTypes.INTEGER, allowNull: false },
     roomOfPlay: { type: Sequelize.DataTypes.STRING, allowNull: false },
     wifi: { type: Sequelize.DataTypes.BOOLEAN, allowNull: false },
-    houseTemperatue: { type: Sequelize.DataTypes.INTEGER, allowNull: false },
+    houseTemperatureInF: {
+      type: Sequelize.DataTypes.INTEGER,
+      allowNull: false
+    },
     freeParking: { type: Sequelize.DataTypes.BOOLEAN, allowNull: false },
     gameEquipmentProvided: {
       type: Sequelize.DataTypes.BOOLEAN,
