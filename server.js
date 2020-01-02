@@ -8,18 +8,24 @@ const handle = nextApp.getRequestHandler();
 
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
-const User = require('./model.js').User;
-const sequelize = require('./model.js').sequelize;
+const User = require('./models/user.js');
+const House = require('./models/house.js');
+const Review = require('./models/review.js');
+const sequelize = require('./database.js');
 
 const sessionStore = new SequelizeStore({
-  db: sequelize,
+  db: sequelize
 });
+
 sessionStore.sync();
+User.sync({ alter: true });
+House.sync({ alter: true });
+Review.sync({ alter: true });
 
 passport.use(
   new LocalStrategy(
@@ -65,7 +71,7 @@ passport.deserializeUser((email, done) => {
 nextApp.prepare().then(() => {
   const server = express();
 
-  server.use(bodyParser.json())
+  server.use(bodyParser.json());
   server.use(
     session({
       secret: '365364dfgsdgd765634',
@@ -73,9 +79,9 @@ nextApp.prepare().then(() => {
       saveUninitialized: true,
       name: 'gamednd',
       cookie: {
-        maxAge: 30 * 24 * 60 * 60 * 1000, //30 days
+        maxAge: 30 * 24 * 60 * 60 * 1000 //30 days
       },
-      store: sessionStore,
+      store: sessionStore
     }),
     passport.initialize(),
     passport.session()
@@ -119,7 +125,6 @@ nextApp.prepare().then(() => {
     }
   });
 
-  
   server.post('/api/auth/login', async (req, res) => {
     passport.authenticate('local', (err, user, info) => {
       if (err) {
@@ -127,51 +132,51 @@ nextApp.prepare().then(() => {
         res.end(
           JSON.stringify({
             status: 'error',
-            message: err,
+            message: err
           })
-          );
-          return;
-        }
-        if (!user) {
+        );
+        return;
+      }
+      if (!user) {
+        res.statusCode = 500;
+        res.end(
+          JSON.stringify({
+            status: 'error',
+            message: 'No user matching credentials'
+          })
+        );
+        return;
+      }
+      req.login(user, err => {
+        if (err) {
           res.statusCode = 500;
           res.end(
             JSON.stringify({
               status: 'error',
-              message: 'No user matching credentials',
+              message: err
             })
-            );
-            return;
-          }
-          req.login(user, err => {
-            if (err) {
-              res.statusCode = 500;
-              res.end(
-                JSON.stringify({
-                  status: 'error',
-                  message: err,
-                })
-                );
-                return;
-              }
-              return res.end(
-                JSON.stringify({
-                  status: 'success',
-                  message: 'Logged in',
-                })
-                );
-              });
-            })(req, res, next);
-          });
-          
+          );
+          return;
+        }
+        return res.end(
+          JSON.stringify({
+            status: 'success',
+            message: 'Logged in'
+          })
+        );
+      });
+    })(req, res, next);
+  });
+
   server.post('/api/auth/logout', (req, res) => {
     req.logout();
     req.session.destroy();
     return res.end(
-        JSON.stringify({ status: 'success', message: 'Logged Out' })
+      JSON.stringify({ status: 'success', message: 'Logged Out' })
     );
   });
- 
-    server.all('*', (req, res) => {
+
+  server.all('*', (req, res) => {
     return handle(req, res);
   });
 

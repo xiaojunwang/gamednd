@@ -23,7 +23,7 @@ const House = props => {
   const [numberOfNightsBetweenDates, setNumberOfNightsBetweenDates] = useState(
     0
   );
-  const [dateChosen, setDateChosen] = useState(false);
+  const [dateChosen, setDateChosen] = useState(false)
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
 
