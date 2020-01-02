@@ -23,9 +23,9 @@ const Layout = props => {
 
   return (
     <div>
-      <Head>
+      {/* <Head>
         <script src='https://js.stripe.com/v3/'></script>
-      </Head>
+      </Head> */}
 
       <Header />
       <main>{props.content}</main>

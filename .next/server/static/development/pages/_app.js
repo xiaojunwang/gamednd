@@ -1900,6 +1900,7 @@ function MyApp({
 }
 
 MyApp.getInitialProps = async appContext => {
+  //calls page's 'getInitialProps' and fills 'appProps.pageProps'
   const appProps = await next_app__WEBPACK_IMPORTED_MODULE_8___default.a.getInitialProps(appContext);
   let user = null;
 

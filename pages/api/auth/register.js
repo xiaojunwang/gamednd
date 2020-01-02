@@ -2,7 +2,7 @@ import { User } from '../../../model.js';
 
 export default async (req, res) => {
   if (req.method !== 'POST') {
-    res.status(405).end(); //do not allow this method
+    res.status(405).end(); //Method Not Allowed
     return;
   }
 
@@ -20,7 +20,7 @@ export default async (req, res) => {
     res.end(JSON.stringify({ status: 'success', message: 'User added' }));
   } catch (error) {
     res.statusCode = 500;
-    let message = 'An error occured';
+    let message = 'An error occurred';
     if (error.name === 'SequelizeUniqueConstraintError') {
       message = 'User already exists';
     }

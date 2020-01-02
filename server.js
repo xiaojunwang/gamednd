@@ -7,25 +7,25 @@ const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
 
 const session = require('express-session');
-
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-const User = require('./model.js').User;
-const sequelize = require('./model.js').sequelize;
+const bodyParser = require('body-parser')
 
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
+const User = require('./model.js').User;
+const sequelize = require('./model.js').sequelize;
+
 const sessionStore = new SequelizeStore({
   db: sequelize,
 });
-
-// sessionStore.sync();
+sessionStore.sync();
 
 passport.use(
   new LocalStrategy(
     {
       usernameField: 'email',
-      passwordField: 'password',
+      passwordField: 'password'
     },
     async function(email, password, done) {
       if (!email || !password) {
@@ -39,6 +39,7 @@ passport.use(
         done('User not found', null);
         return;
       }
+
       const valid = await user.isPasswordValid(password);
 
       if (!valid) {
@@ -56,6 +57,7 @@ passport.serializeUser((user, done) => {
 
 passport.deserializeUser((email, done) => {
   User.findOne({ where: { email: email } }).then(user => {
+    console.log(user);
     done(null, user);
   });
 });
@@ -63,9 +65,10 @@ passport.deserializeUser((email, done) => {
 nextApp.prepare().then(() => {
   const server = express();
 
+  server.use(bodyParser.json())
   server.use(
     session({
-      secret: '343ji43j4n3jn4jk3n',
+      secret: '365364dfgsdgd765634',
       resave: false,
       saveUninitialized: true,
       name: 'gamednd',
@@ -116,7 +119,59 @@ nextApp.prepare().then(() => {
     }
   });
 
-  server.all('*', (req, res) => {
+  
+  server.post('/api/auth/login', async (req, res) => {
+    passport.authenticate('local', (err, user, info) => {
+      if (err) {
+        res.statusCode = 500;
+        res.end(
+          JSON.stringify({
+            status: 'error',
+            message: err,
+          })
+          );
+          return;
+        }
+        if (!user) {
+          res.statusCode = 500;
+          res.end(
+            JSON.stringify({
+              status: 'error',
+              message: 'No user matching credentials',
+            })
+            );
+            return;
+          }
+          req.login(user, err => {
+            if (err) {
+              res.statusCode = 500;
+              res.end(
+                JSON.stringify({
+                  status: 'error',
+                  message: err,
+                })
+                );
+                return;
+              }
+              return res.end(
+                JSON.stringify({
+                  status: 'success',
+                  message: 'Logged in',
+                })
+                );
+              });
+            })(req, res, next);
+          });
+          
+  server.post('/api/auth/logout', (req, res) => {
+    req.logout();
+    req.session.destroy();
+    return res.end(
+        JSON.stringify({ status: 'success', message: 'Logged Out' })
+    );
+  });
+ 
+    server.all('*', (req, res) => {
     return handle(req, res);
   });
 

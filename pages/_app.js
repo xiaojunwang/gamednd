@@ -1,5 +1,5 @@
 import App from 'next/app';
-import { StoreProvider } from 'easy-peasy';
+import { StoreProvider, useStoreActions } from 'easy-peasy';
 import store from '../store';
 
 function MyApp({ Component, pageProps, user }) {
@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps, user }) {
 }
 
 MyApp.getInitialProps = async appContext => {
+  //calls page's 'getInitialProps' and fills 'appProps.pageProps'
   const appProps = await App.getInitialProps(appContext);
 
   let user = null;
