@@ -1,6 +1,9 @@
 const express = require('express');
 const next = require('next');
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
 const nextApp = next({ dev });
@@ -76,7 +79,14 @@ passport.deserializeUser((email, done) => {
 nextApp.prepare().then(() => {
   const server = express();
 
-  server.use(bodyParser.json());
+  server.use(
+    bodyParser.json({
+      verify: (req, res, buf) => {
+        //make rawBody available
+        req.rawBody = buf;
+      }
+    })
+  );
 
   server.use(
     session({
@@ -368,6 +378,93 @@ nextApp.prepare().then(() => {
       });
       res.end(JSON.stringify(houses));
     });
+  });
+
+  server.post('/api/stripe/session', async (req, res) => {
+    const amount = req.body.amount;
+
+    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ['card'],
+      line_items: [
+        {
+          name: 'Booking event on GameDnD',
+          amount: amount * 100,
+          currency: 'usd',
+          quantity: 1
+        }
+      ],
+      success_url: process.env.BASE_URL + '/bookings',
+      cancel_url: process.env.BASE_URL + '/bookings'
+    });
+    res.writeHead(200, {
+      'Content-Type': 'application/json'
+    });
+    res.end(
+      JSON.stringify({
+        status: 'success',
+        sessionId: session.id,
+        stripePublicKey: process.env.STRIPE_PUBLIC_KEY
+      })
+    );
+  });
+
+  server.post('/api/stripe/webhook', async (req, res) => {
+    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+    const endpointSecret = process.env.STRIP_WEBHOOK_SECRET;
+    const sig = req.headers['strip-signature'];
+
+    let event;
+
+    try {
+      event = stripe.webhooks.constructEvent(req.rawBody, sig, endpointSecret);
+    } catch (err) {
+      res.writeHead(400, {
+        'Content-Type': 'application/json'
+      });
+      console.log(err.message);
+      res.end(
+        JSON.stringify({
+          status: 'success',
+          message: `Webhook Error: ${err.message}`
+        })
+      );
+      return;
+    }
+
+    if (event.type === 'checkout.session.completed') {
+      const sessionId = event.data.object.id;
+
+      try {
+        Booking.update({ paid: true }, { where: { sessionId } });
+      } catch (err) {
+        console.log(err);
+      }
+    }
+
+    res.writeHead(200, {
+      'Content-Type': 'application/json'
+    });
+    res.end(JSON.stringify({ received: true }));
+  });
+
+  server.post('/api/bookings/clean', (req, res) => {
+    Booking.destroy({
+      where: {
+        paid: false
+      }
+    });
+
+    res.writeHead(200, {
+      'Content-Type': 'application/json'
+    });
+
+    res.end(
+      JSON.stringify({
+        status: 'success',
+        message: 'ok'
+      })
+    );
   });
 
   server.all('*', (req, res) => {
