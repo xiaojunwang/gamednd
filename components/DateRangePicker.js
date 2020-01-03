@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';
+import { DateUtils } from 'react-day-picker';
+
 import dateFnsFormat from 'date-fns/format';
 import dateFnsParse from 'date-fns/parse';
-import { DateUtils } from 'react-day-picker';
-import { useState } from 'react';
 
 const parseDate = (str, format, locale) => {
   const parsed = dateFnsParse(str, format, new Date(), { locale });
@@ -31,9 +32,13 @@ const numberOfNightsBetweenDates = (startDate, endDate) => {
   return dayCount;
 };
 
-export default ({ datesChanged }) => {
+export default ({ datesChanged, bookedDates }) => {
   const [startDate, setStartDate] = useState(today);
   const [endDate, setEndDate] = useState(tomorrow);
+
+  bookedDates = bookedDates.map(date => {
+    return new Date(date);
+  });
 
   return (
     <div className='date-range-picker-container'>
@@ -46,10 +51,13 @@ export default ({ datesChanged }) => {
           placeholder={`${dateFnsFormat(new Date(), format)}`}
           dayPickerProps={{
             modifiers: {
-              disabled: {
-                before: new Date(),
-              },
-            },
+              disabled: [
+                ...bookedDates,
+                {
+                  before: new Date()
+                }
+              ]
+            }
           }}
           onDayChange={day => {
             setStartDate(day);
@@ -73,11 +81,12 @@ export default ({ datesChanged }) => {
             modifiers: {
               disabled: [
                 startDate,
+                ...bookedDates,
                 {
-                  before: startDate,
-                },
-              ],
-            },
+                  before: startDate
+                }
+              ]
+            }
           }}
           onDayChange={day => {
             setEndDate(day);

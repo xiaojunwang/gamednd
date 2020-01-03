@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch';
+import axios from 'axios';
 import { useState } from 'react';
 import { useStoreActions, useStoreState } from 'easy-peasy';
-import axios from 'axios';
 
 import Head from 'next/head';
 import Layout from '../../components/Layout';
@@ -17,6 +17,49 @@ const calcNumberOfNightsBetweenDates = (startDate, endDate) => {
     start.setDate(start.getDate() + 1);
   }
   return dayCount;
+};
+
+const getBookedDates = async houseId => {
+  try {
+    const response = await axios.post(
+      'http://localhost:3000/api/houses/booked',
+      {
+        houseId
+      }
+    );
+    if (response.data.status === 'error') {
+      alert(response.data.message);
+      return;
+    }
+    return response.data.dates;
+  } catch (error) {
+    console.error(error);
+    return;
+  }
+};
+
+const canReserve = async (houseId, startDate, endDate) => {
+  try {
+    const response = await axios.post(
+      'http://localhost:3000/api/houses/check',
+      {
+        houseId,
+        startDate,
+        endDate
+      }
+    );
+    if (response.data.status === 'error') {
+      alert(response.data.message);
+      return;
+    }
+    if (response.data.message === 'busy') {
+      return false;
+    }
+    return true;
+  } catch (error) {
+    console.error(error);
+    return;
+  }
 };
 
 const House = props => {
@@ -76,6 +119,7 @@ const House = props => {
                 setStartDate(startDate);
                 setEndDate(endDate);
               }}
+              bookedDates={props.bookedDates}
             />
             {dateChosen && (
               <div>
@@ -90,6 +134,12 @@ const House = props => {
                   <button
                     className='reserve'
                     onClick={async () => {
+                      if (
+                        !(await canReserve(props.house.id, startDate, endDate))
+                      ) {
+                        alert('The dates chosen are not valid');
+                        return;
+                      }
                       try {
                         const response = await axios.post(
                           '/api/houses/reserve',
@@ -147,8 +197,11 @@ House.getInitialProps = async ({ query }) => {
   const res = await fetch(`http://localhost:3000/api/houses/${id}`);
   const house = await res.json();
 
+  const bookedDates = await getBookedDates(id);
+
   return {
-    house
+    house,
+    bookedDates
   };
 };
 
