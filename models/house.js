@@ -16,7 +16,11 @@ House.init(
     town: { type: Sequelize.DataTypes.STRING, allowNull: false },
     title: { type: Sequelize.DataTypes.STRING, allowNull: false },
     price: { type: Sequelize.DataTypes.INTEGER, allowNull: false },
-    superhost: { type: Sequelize.DataTypes.BOOLEAN, allowNull: false },
+    superhost: {
+      type: Sequelize.DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
     description: { type: Sequelize.DataTypes.STRING, allowNull: false },
     guests: { type: Sequelize.DataTypes.INTEGER, allowNull: false },
     roomOfPlay: { type: Sequelize.DataTypes.STRING, allowNull: false },
@@ -26,10 +30,10 @@ House.init(
       allowNull: false
     },
     freeParking: { type: Sequelize.DataTypes.BOOLEAN, allowNull: false },
-    gameEquipmentProvided: {
-      type: Sequelize.DataTypes.BOOLEAN,
-      allowNull: false
-    },
+    // gameEquipmentProvided: {
+    //   type: Sequelize.DataTypes.BOOLEAN,
+    //   allowNull: false
+    // },
     lightSnackProvided: { type: Sequelize.DataTypes.BOOLEAN, allowNull: false },
     lightBeverageProvided: {
       type: Sequelize.DataTypes.BOOLEAN,

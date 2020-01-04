@@ -29,12 +29,17 @@ const Header = () => {
               <li className='username'>{user}</li>
               <li>
                 <Link href='/bookings'>
-                  <a>Bookings</a>
+                  <a>My Bookings</a>
                 </Link>
               </li>
               <li>
                 <Link href='/host'>
-                  <a>Your Hostings</a>
+                  <a>My Hostings</a>
+                </Link>
+              </li>
+              <li>
+                <Link href='/host/new'>
+                  <a>Add New Event</a>
                 </Link>
               </li>
               <li>
