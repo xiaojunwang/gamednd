@@ -1,5 +1,7 @@
 const express = require('express');
 const next = require('next');
+const fileupload = require('express-fileupload');
+const randomstring = require('randomstring');
 
 const sanitizeHtml = require('sanitize-html');
 const dotenv = require('dotenv');
@@ -101,8 +103,8 @@ nextApp.prepare().then(() => {
       store: sessionStore
     }),
     passport.initialize(),
-    passport.session()
-    // fileupload()
+    passport.session(),
+    fileupload()
   );
 
   server.post('/api/auth/register', async (req, res) => {
@@ -666,6 +668,41 @@ nextApp.prepare().then(() => {
           return;
         }
       });
+    });
+  });
+
+  server.post('/api/host/image', (req, res) => {
+    if (!req.session.passport) {
+      res.writeHead(403, {
+        'Content-Type': 'application/json'
+      });
+      res.end(
+        JSON.stringify({
+          status: 'error',
+          message: 'Unauthorized'
+        })
+      );
+      return;
+    }
+    const image = req.files.image;
+    const fileName = randomstring.generate(7) + image.name.replace(/\s/g, '');
+    const path = __dirname + '/public/img/houses/' + fileName;
+
+    image.mv(path, error => {
+      if (error) {
+        console.log(error);
+        res.writeHead(500, {
+          'Content-Type': 'application/json'
+        });
+        res.end(JSON.stringify({ status: 'error', mesage: error }));
+        return;
+      }
+      res.writeHead(200, {
+        'Content-Type': 'application/json'
+      });
+      res.end(
+        JSON.stringify({ status: 'success', path: '/img/houses/' + fileName })
+      );
     });
   });
 
