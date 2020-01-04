@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/host/new.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/host/[id].js"],{
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -10419,21 +10419,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhost%2Fnew&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2Fnew.js!./":
-/*!****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhost%2Fnew&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2Fnew.js ***!
-  \****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhost%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2F%5Bid%5D.js!./":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhost%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2F%5Bid%5D.js ***!
+  \**************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/host/new", function() {
-      var mod = __webpack_require__(/*! ./pages/host/new.js */ "./pages/host/new.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/host/[id]", function() {
+      var mod = __webpack_require__(/*! ./pages/host/[id].js */ "./pages/host/[id].js")
       if(true) {
-        module.hot.accept(/*! ./pages/host/new.js */ "./pages/host/new.js", function() {
-          if(!next.router.components["/host/new"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/host/new.js */ "./pages/host/new.js")
-          next.router.update("/host/new", updatedPage)
+        module.hot.accept(/*! ./pages/host/[id].js */ "./pages/host/[id].js", function() {
+          if(!next.router.components["/host/[id]"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/host/[id].js */ "./pages/host/[id].js")
+          next.router.update("/host/[id]", updatedPage)
         })
       }
       return mod
@@ -16292,47 +16292,79 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/host/new.js":
-/*!***************************!*\
-  !*** ./pages/host/new.js ***!
-  \***************************/
+/***/ "./pages/host/[id].js":
+/*!****************************!*\
+  !*** ./pages/host/[id].js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_HouseForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/HouseForm */ "./components/HouseForm.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_HouseForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/HouseForm */ "./components/HouseForm.js");
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 
-var NewHouse = function NewHouse() {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    content: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx("title", null, "Add a new house")), __jsx(_components_HouseForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      edit: false
+
+var EditHouse = function EditHouse(props) {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    content: __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, null, __jsx("title", null, "Edit Event")), __jsx(_components_HouseForm__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      edit: true,
+      house: props.house
     }))
   });
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (NewHouse);
+EditHouse.getInitialProps = function _callee(_ref) {
+  var query, id, response;
+  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          query = _ref.query;
+          id = query.id;
+          _context.next = 4;
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("http://localhost:3000/api/houses/".concat(id)));
+
+        case 4:
+          response = _context.sent;
+          return _context.abrupt("return", {
+            house: response.data
+          });
+
+        case 6:
+        case "end":
+          return _context.stop();
+      }
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (EditHouse);
 
 /***/ }),
 
-/***/ 1:
-/*!********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fhost%2Fnew&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2Fnew.js ***!
-  \********************************************************************************************************************************************************/
+/***/ 3:
+/*!******************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fhost%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2F%5Bid%5D.js ***!
+  \******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fhost%2Fnew&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2Fnew.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhost%2Fnew&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2Fnew.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fhost%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2F%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fhost%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fbennywang%2FDocuments%2FProjects%2Fgamednd%2Fpages%2Fhost%2F%5Bid%5D.js!./");
 
 
 /***/ }),
@@ -16348,5 +16380,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=new.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=[id].js.map

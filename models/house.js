@@ -16,6 +16,7 @@ House.init(
     town: { type: Sequelize.DataTypes.STRING, allowNull: false },
     title: { type: Sequelize.DataTypes.STRING, allowNull: false },
     price: { type: Sequelize.DataTypes.INTEGER, allowNull: false },
+    duration: { type: Sequelize.DataTypes.INTEGER, allowNull: false },
     superhost: {
       type: Sequelize.DataTypes.BOOLEAN,
       allowNull: true,

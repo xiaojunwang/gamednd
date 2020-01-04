@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2598,10 +2598,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/host/new.js":
-/*!***************************!*\
-  !*** ./pages/host/new.js ***!
-  \***************************/
+/***/ "./pages/host/[id].js":
+/*!****************************!*\
+  !*** ./pages/host/[id].js ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2609,36 +2609,52 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_HouseForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/HouseForm */ "./components/HouseForm.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_HouseForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/HouseForm */ "./components/HouseForm.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-const NewHouse = () => {
+
+const EditHouse = props => {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    content: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx("title", null, "Add a new house")), __jsx(_components_HouseForm__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      edit: false
+    content: __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, null, __jsx("title", null, "Edit Event")), __jsx(_components_HouseForm__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      edit: true,
+      house: props.house
     }))
   });
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (NewHouse);
+EditHouse.getInitialProps = async ({
+  query
+}) => {
+  const {
+    id
+  } = query;
+  const response = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`http://localhost:3000/api/houses/${id}`);
+  return {
+    house: response.data
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (EditHouse);
 
 /***/ }),
 
-/***/ 4:
-/*!*********************************!*\
-  !*** multi ./pages/host/new.js ***!
-  \*********************************/
+/***/ 6:
+/*!**********************************!*\
+  !*** multi ./pages/host/[id].js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/bennywang/Documents/Projects/gamednd/pages/host/new.js */"./pages/host/new.js");
+module.exports = __webpack_require__(/*! /Users/bennywang/Documents/Projects/gamednd/pages/host/[id].js */"./pages/host/[id].js");
 
 
 /***/ }),
@@ -2864,4 +2880,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=new.js.map
+//# sourceMappingURL=[id].js.map
